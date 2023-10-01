@@ -7,13 +7,13 @@
 
 ### Лекция 1. Введение в Web
 
-Основы Web: URI, Document, HTTP, HTML, CSS, Кратко JavaScript
+Основы Webа. Говорим обо всем: URI, Document, HTTP, HTML, CSS, Кратко JavaScript
 
 * [Презентация](/lectures/lec1.pdf)
 
 ### Лекция 2. Основы JavaScript
 
-Основы JavaScript: типы, операторы, функции, объекты, коллекции, классы, DOM
+Основы JavaScript: типы, операторы, функции, объекты, коллекции, классы, DOM. Все как есть.
 
 * [Презентация](/lectures/lec2.pdf)
 
