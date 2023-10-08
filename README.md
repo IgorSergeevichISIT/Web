@@ -61,7 +61,7 @@ Service Workers, PWA, Virtual DOM, Deploy, Производительность
 
 Создание калькулятора. Верстка на HTML, CSS.
 
-* [Методические указания](/tutorials/lab1/README.md)
+* [Методические указания](/turorials/lab1/README.md)
 
 #### Лабораторная работа 2
 
