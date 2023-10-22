@@ -101,7 +101,7 @@ Service Workers, PWA, Virtual DOM, Deploy, Производительность
 
 Реализация собственного API на Node.js, подключение к интерфейсу.
 
-* [Методические указания](/turorials/lab6/README.md)
+* [Методические указания](/turorials/lab6/readme.md)
 
 #### Дополнительное задание
 
