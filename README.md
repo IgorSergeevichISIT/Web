@@ -79,7 +79,7 @@ Service Workers, PWA, Virtual DOM, Deploy, Производительность
 
 Работа с коллекциями, функциями, классами.
 
-* [Методические указания](/turorials/hw1/readme.md)
+* [Методические указания](/turorials/tasks/readme.md)
 
 #### Рубежный контроль 1
 
