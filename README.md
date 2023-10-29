@@ -118,6 +118,10 @@ Service Workers, PWA, Virtual DOM, Deploy, Производительность
 3. [VS Code](https://code.visualstudio.com)
 4. [VS Code LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
+## Публикация работ
+Все свои работы вы публикуете на выделенном хостинге от Гита - https://pages.github.com/
+ТАм же описано, как это сделать.
+
 ## Сдача работ
 
 
