@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="calc_stile.css">
+  
+</head>
+<body style="background-image: url('img/back.jpg'); background-size: 200%; background-repeat: no-repeat; background-position: center;"></body>>
+    <div id="night_them" class="moon" >
+        <img src="img/moon.png"style="width: 30px;
+        height: 30px; margin-bottom: 0;">
+        
+        <a href="https://github.com/strafari">
+          <img src="img/github.png" style="width: 30px;
+          height: 30px; margin-bottom: 0;">
+        </a>
+      </div>
+      <!-- <div class="back">
+        <img src="img/back.jpg" style="background-image: url('img/back.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+      </div> -->
+    <div class="calc">
+        <div class="calc-screen">
+            <p>0</p>
+        </div>
+    <div class="buttons">
+        <div class="btn backspace bg-darkblue"><=</div>
+        <div class="btn sqrt bg-darkblue">√</div>
+        <div class="btn sqr bg-darkblue">x²</div>
+        <div class="btn factorial bg-darkblue">!</div>
+
+        <div class="btn ac bg-darkblue">ac</div>
+        <div class="btn plus-minus bg-darkblue">+/-</div>
+        <div class="btn prosent bg-darkblue">%</div>
+        <div class="btn division bg-darkblue">/</div>
+
+        <div class="btn seven">7</div>
+        <div class="btn eight">8</div>
+        <div class="btn nine">9</div>
+        <div class="btn myltiply bg-darkblue">X</div>
+
+        <div class="btn four">4</div>
+        <div class="btn five">5</div>
+        <div class="btn six">6</div>
+        <div class="btn minus bg-darkblue">-</div>
+
+        <div class="btn one">1</div>
+        <div class="btn two">2</div>
+        <div class="btn three">3</div>
+        <div class="btn plus bg-darkblue">+</div>
+
+        <div class="btn zero">0</div>
+        <div class="btn triple_zero">000</div>
+        <div class="btn dot">.</div>
+        <div class="btn equal bg-darkblue">=</div>
+
+       
+    </div>
+    <div id = "details"class="details">
+        <h3>Автор работы</h3>
+        <p>ФИО: Антошкин Никита Дмитриевич</p>
+        <p>Группа: ИЭ-21</p>
+       </div>
+       <script>
+        var details = document.getElementsByClassName("details");
+        for (var i = 0; i < details.length; i++) {
+         details[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.getElementsByTagName("p");
+          for (var j = 0; j < content.length; j++) {
+           if (content[j].style.display === "block") {
+            content[j].style.display = "none";
+           } else {
+            content[j].style.display = "block";
+           }
+          }
+         });
+        }
+       </script>
+       <h1 style="color: rgb(249, 249, 249);">Цель:</h1>
+       <p style="color: rgb(249, 249, 249);">Цель данной лабораторной работы - изучение основ HTML и CSS.</p>
+       <p style="color: rgb(249, 249, 249);">Планируется освоить следующие темы:</p>
+       <ul style="color: rgb(249, 249, 249);">
+           <li><mark>Знакомство</mark> с основами HTML</li>
+           <li><mark>HTML</mark> теги и их использование</li>
+           <li><mark>CSS</mark> стили и их применение</li>
+       </ul>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
