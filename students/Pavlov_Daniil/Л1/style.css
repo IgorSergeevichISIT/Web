@@ -1,0 +1,130 @@
+:root {
+  --color-bg: #000000;
+  --color-btn-act: #ff9f0a;
+  --color-btn-num: #343334;
+  --color-btn-up: #a5a6a5;
+  --color-text: #ffffff;
+}
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-display: swap;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: rgb(255, 255, 255);
+  background-image: url(i.webp);
+  background-size: cover;
+}
+
+.calc {
+  width: 290px;
+  height: 605px;
+  background-color: var(--color-bg);
+  border-radius: 40px;
+  color: var(--color-text);
+}
+
+.img {
+  position: absolute;
+  left: 481px;
+  width: 300px;
+  object-fit: cover;
+  z-index: -1;
+}
+.result {
+  border-radius: 40px 40px 0px 0px;
+  height: 220px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 4rem;
+  font-weight: 100;
+}
+.btns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  line-height: 60px;
+  cursor: pointer;
+  user-select: none;
+}
+.btn:hover {
+  filter: brightness(120%);
+}
+.btn:active {
+  filter: brightness(90%);
+}
+
+.g {
+  background-color: var(--color-btn-up);
+  color: var(--color-bg);
+}
+.a {
+  background-color: var(--color-btn-act);
+}
+.n {
+  background-color: var(--color-btn-num);
+}
+.zero {
+  width: 130px;
+  border-radius: 34px;
+}
+.line {
+  margin-top: 25px;
+  width: 35%;
+  height: 3px;
+  background-color: var(--color-text);
+  border-radius: 5px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  margin-top: 100px;
+  color: var(--color-text);
+  text-align: center;
+}
+.btn-git {
+  width: 100px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: var(--color-bg);
+  border: 2px solid var(--color-btn-act);
+  text-align: center;
+}
+.link-git {
+  color: var(--color-text);
+  padding: 0px 25px 0px 25px;
+  font-size: 24px;
+}
+a {
+  text-decoration: none;
+}

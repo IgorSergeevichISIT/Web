@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="calc">
+      <img src="performance.png" class="img" />
+
+      <section class="result">0</section>
+      <section class="btns">
+        <div class="btn g ac">C</div>
+        <div class="btn g plus-minus">+/-</div>
+        <div class="btn g percent">%</div>
+        <div class="btn a division">÷</div>
+        <div class="btn n seven">7</div>
+        <div class="btn n eigth">8</div>
+        <div class="btn n nine">9</div>
+        <div class="btn a myltiply">x</div>
+        <div class="btn n four">4</div>
+        <div class="btn n five">5</div>
+        <div class="btn n six">6</div>
+        <div class="btn a minus">−</div>
+        <div class="btn n one">1</div>
+        <div class="btn n two">2</div>
+        <div class="btn n three">3</div>
+        <div class="btn a plus">+</div>
+        <div class="btn n zero">0</div>
+        <div class="btn n dot">.</div>
+        <div class="btn a equal">=</div>
+      </section>
+      <hr class="line" />
+      <section class="info">
+        <h1>ЛР выполнил: Павлов Даниил Андреевич</h1>
+        <button class="btn-git">
+          <a class="link-git" href="https://github.com/whayido">Git</a>
+        </button>
+
+        <label for="pet-select">Автор:</label>
+        <select>
+          <option>Павлов Даниил Андреевич, Иэ-21</option>
+          <option>Даниилов Андрей Павлович, Иэ-31</option>
+        </select>
+        <p>
+          Цель данной лабораторной работы - <strong>знакомство</strong> с
+          инструментами <br />построения пользовательских интерфейсов
+          web-сайтов: <strong>HTML</strong>, <strong>CSS</strong>.<br />
+          В ходе выполнения работы, вам предстоит ознакомиться с кодом <br />
+          реализации простого калькулятора, и затем выполнить задания по
+          варианту.
+        </p>
+        <button class="zero btn" onclick="myFunction()">Тема</button>
+      </section>
+    </main>
+    <script>
+      function myFunction() {
+        document.getElementsByTagName("body")[0].style.background = "pink";
+      }
+    </script>
+  </body>
+</html>
