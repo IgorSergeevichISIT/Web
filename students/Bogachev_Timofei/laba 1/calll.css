@@ -2,30 +2,23 @@
     width: 300px;
     height: 500px;
     border-radius: 20px;
-    background: rgb(26, 0, 142);
+    background: #f0adad;
     color: #000000;
     font-family: Arial;
     padding: 18px;
-    margin-left: auto;
-    margin-right: auto;
+    box-shadow: 4px 4px 4px #f4c3c3;
+
 }
 
-
 .calc-screen{
-    
-    height: 60px;
+    height: 125px;
     padding: 10px;
     display: grid;
     justify-items: end;
     align-items: end;
-    margin-top: 30px;
-    margin-bottom: 60px;
-    border-radius: 10px; 
-    background-color: rgb(31, 11, 72); 
 }
 
 .calc-screen p {
-    color: #ffffff;
     text-align: right;
     font-size: 4rem;
     margin: 0;
@@ -47,7 +40,7 @@
 .btn {
     width: 60px;
     height: 60px;
-    background: #6fb5ff;
+    background: #efd5d5;
     border-radius: 50%;
     text-align: center;
     line-height: 60px;
@@ -66,34 +59,33 @@
     filter: brightness(120%);
 }
 
-.btn:active {
-    filter: brightness(80%);
+.bth:active{
+    filter: brightness(90%);
 }
 
 .btn.bg-grey {
-    background: #0040ff;
+    background: #fd8e8e;
 }
 
 .btn.bg-orange {
-    background: #0040ff;
+    background: #6701ff;
 }
 
 .details {
     
     margin: 60px 10px 0;
     padding: 5px;
-    border: 1px solid #9089f5;
+    border: 1px solid #f58989;
     border-radius: 5px;
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
-    color: #ffffff;
     border-radius: 15px;
    }
    .details p {
     display: none;
     margin: 5px 0;
     padding: 5px;
-    border: 1px solid #9089f5;
+    border: 1px solid #fc7e7e;
     border-radius: 5px;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 15px;
