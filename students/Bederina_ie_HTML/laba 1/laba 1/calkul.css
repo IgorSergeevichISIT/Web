@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('C:\Скачка\Montserrat\Montserrat-Italic-VariableFont_wght.ttf') 
+    
+
+}
+html {
+    background-image: url("./img/4a17932cfb9a2f7273f95388b7a99e0a.jpeg");
+    background-size: auto;
+
+
+  }
+.nthem{
+margin: 50px;
+margin-right: 30px;
+}
+
+.calcul{
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    border: 6px solid #5e2c4e;
+    background: #784c6a;
+    color: #000000;
+    font-family: Arial;
+    padding: 18px;
+    box-shadow: 4px 4px 4px #784c6a;
+
+}
+
+.calcul-screen{
+    height: 125px;
+    padding: 10px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+}
+
+.calcul-screen p {
+    text-align: right;
+    font-size: 4rem;
+    margin: 0;
+    margin-bottom: 25px;
+    background-color: #966185;
+    color: rgb(200, 181, 159);
+    width: 105%;
+    border-radius: 10px;
+}
+
+.but {
+    display: grid;
+    grid-template-areas:
+    "ac plus-minus prosent division"
+    "seven eight nine myltiply"
+    "four five six minus"
+    "one two three plus"
+    "zero zero dot equal";
+    grid-gap: 7px;
+    justify-items: centre;
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+    background: rgb(164, 105, 186);
+    border-radius: 10%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn.zero {
+    grid-area: zero;
+    width: 100%;
+    border-radius: 35px;
+}
+
+.btn:hover{
+    filter: brightness(120%);
+}
+
+.bth:active{
+    filter: brightness(90%);
+}
+
+.btn.bg-one {
+    background: #a26e6e;
+}
+
+.btn.bg-two {
+    background: #714256;
+}
+
+.info {
+    
+    margin: 60px 10px 0;
+    padding: 5px;
+    border: 5px solid #6c4e83;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    color: #8f72a5;
+   }
+   .info p {
+    display: none;
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #6c4e83;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+   }
+  .text{
+    color: #8f72a5;
+  }
