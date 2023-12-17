@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="callkul.css">
+</head>
+
+<body>
+    <center>
+        <div id="nthem" class="moon">
+            <img src="./img/free-icon-brightness-7513476.png" style="width: 50px; 
+        height: 50px; margin-bottom: 0;">
+            <!-- Иконка луны -->
+            <a href="https://github.com/uzitape">
+                <img src="./img/logo (1).png" style="width: 50px;
+          height: 50px; margin-bottom: 0;">
+                <!-- Иконка гита -->
+            </a>
+        </div>
+        <div class="calcul">
+            <div class="calc-screen">
+                <p>0</p>
+            </div>
+            <div class="buttons">
+                <div class="btn ac bg-one">ac</div>
+                <div class="btn plus-minus bg-one">+/-</div>
+                <div class="btn prosent bg-one">%</div>
+                <div class="btn division bg-two">/</div>
+
+                <div class="btn seven">7</div>
+                <div class="btn eight">8</div>
+                <div class="btn nine">9</div>
+                <div class="btn myltiply bg-two">X</div>
+
+                <div class="btn four">4</div>
+                <div class="btn five">5</div>
+                <div class="btn six">6</div>
+                <div class="btn minus bg-two">-</div>
+
+                <div class="btn one">1</div>
+                <div class="btn two">2</div>
+                <div class="btn three">3</div>
+                <div class="btn plus bg-two">+</div>
+
+                <div class="btn zero">0</div>
+                <div class="btn dot">.</div>
+                <div class="btn equal bg-two">=</div>
+            </div>
+            <div id="details" class="details">
+                <h3>Автор</h3>
+                <p>ФИО: Богданов Роман Вячеславович</p>
+                <p>Группа: ИЭ-21</p>
+            </div>
+            <script>
+                var details = document.getElementsByClassName("details");
+                for (var i = 0; i < details.length; i++) {
+                    details[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var content = this.getElementsByTagName("p");
+                        for (var j = 0; j < content.length; j++) {
+                            if (content[j].style.display === "block") {
+                                content[j].style.display = "none";
+                            } else {
+                                content[j].style.display = "block";
+                            }
+                        }
+                    });
+                }
+            </script>
+            <div class="text">
+                <h1 > <b>Цель ЛР </b></h1>
+                <p style="font-weight: lighter">Цель данной лабораторной работы - изучение основ HTML и CSS.</p>
+                <p>Планируется освоить следующие темы:</p>
+                <ul>
+                    <li><u>Знакомство</u> с основами HTML</li>
+                    <li><u>HTML теги</u> и их использование</li>
+                    <li><u>CSS стили</u> и их применение</li>
+                </ul>
+            </div>
+        </div>
+    </center>
+</body>
+
+</html>

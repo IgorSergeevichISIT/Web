@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="callkul.css">
+
+</head>
+
+<body class="bk">
+    <center>
+        <div id="nthem1" class="moon">
+            <img  class="change-color-btn" src="./img/free-icon-brightness-7513476.png" style="width: 50px; 
+            height: 50px; margin-bottom: 0;">
+            <img class="nthem" src="./img/free-icon-moon-half-visible-face-on-light-and-half-on-darkness-42146.png" style="width: 50px; 
+        height: 50px; margin-bottom: 0;">
+        
+            <a href="https://github.com/uzitape">
+                <img class="logo" src="./img/logo (1).png" style="width: 50px;
+          height: 50px; margin-bottom: 0;">
+                          
+            </a>
+           
+        </div>
+        <div class="calcul">
+            <div class="calcul-screen p">
+                <p>0</p>
+            </div>
+            <div class="but">
+                <div class="btn ac bg-one">ac</div>
+                <div class="btn plus-minus bg-one">+/-</div>
+                <div class="btn prosent bg-one">%</div>
+                <div class="btn division bg-one">/</div>
+                <div class="btn sqrt bg-two">√</div>
+
+                <div class="btn seven">7</div>
+                <div class="btn eight">8</div>
+                <div class="btn nine">9</div>
+                <div class="btn myltiply bg-one">X</div>
+                <div class="btn square bg-two">x²</div>
+
+
+                <div class="btn four">4</div>
+                <div class="btn five">5</div>
+                <div class="btn six">6</div>
+                <div class="btn minus bg-one">-</div>
+                <div class="btn factorial bg-two">x!</div>
+
+
+                <div class="btn one">1</div>
+                <div class="btn two">2</div>
+                <div class="btn three">3</div>
+                <div class="btn plus bg-one">+</div>
+                <div class="btn backspase bg-two">Bksp</div>
+
+
+                <div class="btn zero">0</div>
+                <div class="btn dot">.</div>
+                <div class="btn equal bg-one">=</div>
+                <div class="btn triple-zero bg-two">000</div>
+
+                          
+
+            </div>
+
+
+            <div id="info" class="info">
+                <h3>Автор</h3>
+                <p>ФИО: Богданов Роман Вячеславович</p>
+                <p>Группа: ИЭ-21</p>
+            </div>
+
+
+            <script>
+                var info = document.getElementsByClassName("info");
+                for (var i = 0; i < info.length; i++) {
+                    info[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var content = this.getElementsByTagName("p");
+                        for (var j = 0; j < content.length; j++) {
+                            if (content[j].style.display === "block") {
+                                content[j].style.display = "none";
+                            } else {
+                                content[j].style.display = "block";
+                            }
+                        }
+                    });
+                }
+            </script>
+
+
+            <div class="text">
+                <h1 > <b>Цель ЛР </b></h1>
+                <p style="font-weight: lighter">Цель данной лабораторной работы - изучение основ HTML и CSS.</p>
+                <p>Планируется освоить следующие темы:</p>
+                <ul>
+                    <li><u>Знакомство</u> с основами HTML</li>
+                    <li><u>HTML теги</u> и их использование</li>
+                    <li><u>CSS стили</u> и их применение</li>
+                </ul>
+            </div>
+
+
+        </div>
+        
+    </center>
+    <script src="./Calculat.js"></script>
+</body>
+
+</html>

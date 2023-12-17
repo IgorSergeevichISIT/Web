@@ -1,0 +1,215 @@
+/* @font-face {
+    font-family: 'Raleway';
+    src: url('"C:\Users\Uzitape\Desktop\laba 2\raleway\Raleway-Italic-VariableFont_wght.ttf"') 
+    
+
+} */
+.bk {
+    background-color: rgb(133, 160, 196);
+    background-size: auto;
+}
+
+.nthem1 {
+    margin: 50px;
+    margin-right: 30px;
+}
+
+.calcul {
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    border: 6px solid #595e2c;
+    background: rgb(84, 8, 8);
+    color: #000000;
+    font-family: Arial;
+    padding: 18px;
+    box-shadow: 4px 4px 4px rgb(111, 120, 76);
+
+}
+
+
+.calcul-screen {
+    height: 125px;
+    padding: 10px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+}
+
+.calcul-screen p{
+    text-align: right;
+    font-size: 4rem;
+    margin: 0;
+    margin-bottom: 25px;
+    background-color: #330707;
+    color: white;
+    width: 105%;
+    border-radius: 10px;
+}
+
+.but {
+    display: grid;
+    grid-template-areas:
+        "ac plus-minus prosent division sqrt"
+        "seven eight nine myltiply square"
+        "four five six minus factorial"
+        "one two three plus backspace"
+        "zero zero dot equal triple-zero";
+    grid-gap: 7px;
+    justify-items: centre;
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+    background: rgb(222, 61, 12);
+    border-radius: 10%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn.zero {
+    grid-area: zero;
+    width: 100%;
+    border-radius: 35px;
+}
+
+.btn:hover {
+    filter: brightness(120%);
+}
+
+.bth:active {
+    filter: brightness(90%);
+}
+
+.btn.bg-one {
+    background: #800404;
+}
+
+.btn.bg-two {
+    background: #ac094f;
+}
+
+.info {
+
+    margin: 60px 10px 0;
+    padding: 5px;
+    border: 5px solid rgb(138, 28, 30);
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    color: rgb(212, 106, 19);
+}
+
+.info p {
+    display: none;
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #c32d15;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+}
+
+.text {
+    color: #c32d15;
+}
+
+
+.dark-mode {
+    color: white;
+    background: rgb(24, 23, 39);
+
+    .calcul {
+        background: #1e1919;
+        color: #ffffff;
+        font-family: Arial;
+        padding: 18px;
+        box-shadow: 4px 4px 4px #211f1f;
+    }
+
+    .btn {
+        background: #3b454f;
+        border-radius: 10%;
+        text-align: center;
+        line-height: 60px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .calcul-screen p {
+        text-align: right;
+        font-size: 4rem;
+        margin: 0;
+        margin-bottom: 25px;
+        background-color: rgb(25, 48, 71);
+        width: 105%;
+        border-radius: 10px;
+    }
+
+    .btn.zero {
+        grid-area: zero;
+        width: 100%;
+        border-radius: 35px;
+    }
+
+    .btn:hover {
+        filter: brightness(120%);
+    }
+
+    .bth:active {
+        filter: brightness(90%);
+    }
+
+    .btn.bg-one {
+        background: #182d42;
+    }
+
+    .btn.bg-two {
+        background: #072c52;
+    }
+
+    .calcul {
+        width: 350px;
+        height: 500px;
+        border-radius: 20px;
+        border: 6px solid rgb(33, 59, 85);
+        background: rgb(25, 54, 67);
+
+        font-family: Arial;
+        padding: 18px;
+        box-shadow: 4px 4px 4px rgb(25, 54, 67);
+    }
+
+    .info {
+
+        margin: 60px 10px 0;
+        padding: 5px;
+        border: 5px solid #6e56d1;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 15px;
+        color: #553db2;
+    }
+
+    .info p {
+        display: none;
+        margin: 5px 0;
+        padding: 5px;
+        border: 1px solid #6e56d1;
+        border-radius: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 15px;
+    }
+
+    .text {
+        color: #553db2;
+    }
+
+}
