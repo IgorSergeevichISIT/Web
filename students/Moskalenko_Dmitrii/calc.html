@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Калькулятор</title>
+  <link rel="stylesheet" href="calc.css"> 
+  <script type="text/javascript" src="script.js"></script> 
+</head>
+<style>
+  #leftcorner {
+    position: fixed;
+    left: 0; bottom: 0;
+    padding 10px;
+    background: darkblue;
+    color: white;
+    width: 10%;
+  }
+  #list{
+    color: white;
+  }
+</style>
+<body class="back">
+
+  <div align="center"> <!-- div - это базовый html-контейнер, который может содержать в себе другие html-элементы. -->
+    
+    <!-- блок с экраном калькулятора, где будет выводиться результат вычислений. -->
+    
+    <div id="result" class="result">
+      0
+    </div>
+
+    <form>
+    <select id="num" name = "num">
+      <option value="4">4</option>
+      <option value='15'>15</option>
+      <option value='47'>47</option>
+    </select>
+  </form>
+
+    <!-- блок с кнопками калькулятора. -->
+    <div>
+      <!--горизонтальный ряд из четырех кнопок-->
+      <div>  
+        <button id="btn_op_clear" class="my-btn secondary">C</button>   <!-- про тэг кнопки: https://www.w3schools.com/tags/tag_button.asp -->
+        <button id="btn_op_sign" class="my-btn secondary">+/-</button>
+        <button id="btn_op_percent" class="my-btn secondary">%</button>
+        <button id="btn_op_div" class="my-btn primary">/</button>
+        <button id ="backspace" class="my-btn secondary"><<</button>
+      </div>
+
+      <div>
+        <button id="btn_digit_7" class="my-btn">7</button>
+        <button id="btn_digit_8" class="my-btn">8</button>
+        <button id="btn_digit_9" class="my-btn">9</button>
+        <button id="btn_op_mult" class="my-btn primary">x</button>
+        <button id="sqrt" class="my-btn secondary">√</button>
+      </div>
+
+      <div>
+        <button id="btn_digit_4" class="my-btn">4</button>
+        <button id="btn_digit_5" class="my-btn">5</button>
+        <button id="btn_digit_6" class="my-btn">6</button>
+        <button id="btn_op_minus" class="my-btn primary">-</button>
+        <button id="sqr" class="my-btn secondary">x²</button>
+      </div>
+
+      <div>
+        <button id="btn_digit_1" class="my-btn">1</button>
+        <button id="btn_digit_2" class="my-btn">2</button>
+        <button id="btn_digit_3" class="my-btn">3</button>
+        <button id="btn_op_plus" class="my-btn primary">+</button>
+        <button id="fact" class="my-btn secondary">x!</button>
+      </div>
+
+      <div>
+        <button id="btn_digit_0" class="my-btn">0</button>
+        <button id="btn_op_dot" class="my-btn secondary">.</button>
+        <button id="zeros" class="my-btn secondary">000</button>
+        <button id="btn_op_equal" class="my-btn primary execute">=</button>
+      </div>
+      <div id = "leftcorner"> ЛР выполнена Москаленко Д.С.</div>
+
+    </div>
+  </div>
+  <div class="info">
+    <input id = 'infobod1' class="info-switch" type="checkbox">
+    <label for = "infobod1" class="info-headline">Автор</label>
+    <div class = 'info-body'>
+      Москаленко Дмитрий Сергеевич
+      ИЭ-21
+      <h1 style="color: rgb(249, 249, 249);">Цель:</h1>
+       <p style="color: rgb(249, 249, 249);">Цель данной лабораторной работы - изучение основ HTML и CSS.</p>
+       <p style="color: rgb(249, 249, 249);">Планируется освоить следующие темы:</p>
+       <ul style="color: rgb(249, 249, 249);">
+           <li><mark>Знакомство</mark> с основами HTML</li>
+           <li><mark>HTML</mark> теги и их использование</li>
+           <li><mark>CSS</mark> стили и их применение</li>
+       </ul>
+    </div>
+  </div>
+  <div>
+    <button id = 'swap' class='rescolor'>Цвет результата</button>
+    <button id="change" class="changebtn">Поменять фон</button>
+    <a href="https://github.com/Turbi-kon">
+    <button id = "linkbrn" class = "linkbtn" >Ссылка на гит</button>
+  </a>
+  </div>
+  
+</body>
+</html>
