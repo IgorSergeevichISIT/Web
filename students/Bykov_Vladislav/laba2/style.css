@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fffefb;
+  font-family: "Open Sans", sans-serif;
+}
+
+p,
+label {
+  color: rgb(44, 44, 44);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+h1 {
+  color: rgb(44, 44, 44);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+a {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: transparent;
+  text-decoration: none;
+  color: rgb(55, 67, 87);
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+a:hover,
+.select:hover {
+  transform: scale(1.1);
+}
+
+.blok {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border-radius: 30px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+select {
+  border-radius: 10px;
+  background-color: rgb(55, 67, 87);
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  cursor: pointer;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  border: none;
+}
+
+.my-btn {
+  margin-right: 5px;
+  margin-top: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 0%;
+  border: none;
+  background: #f5f4f1;
+  color: rgb(41, 41, 41);
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  transition: all 1s ease;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  user-select: none;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.my-btn:hover {
+  background: rgba(222, 220, 215, 0.588);
+  transform: scale(1.05);
+}
+
+.my-btn:active {
+  filter: brightness(130%);
+}
+
+.my-btn.primary {
+  background: #cccbc8;
+}
+
+.my-btn.primary:hover {
+  background: #bbbab6;
+}
+
+.my-btn.secondary {
+  background: #d4eaf7;
+}
+.my-btn.secondary:hover {
+  background: #c9deea;
+}
+
+.my-btn.execute {
+  background: #546975;
+  color: rgb(255, 255, 255);
+  width: 109px;
+  border-radius: 15px;
+}
+
+.my-btn.execute:hover {
+  background: #4a5c67;
+}
+
+.result {
+  margin-top: 10px;
+  width: 220px;
+  height: 70px;
+  border-radius: 20px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+
+  text-align: right;
+  color: rgb(8, 8, 8);
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+.tema {
+  background-image: url(123.png);
+  background-size: 25%;
+  background-repeat: no-repeat;
+  background-color: #fffefb;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
