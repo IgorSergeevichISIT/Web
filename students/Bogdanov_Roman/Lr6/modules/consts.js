@@ -1,0 +1,5 @@
+export const groupId = 223899064
+export const accessToken = 'vk1.a.pGXTLH2fZ0iIZXEuxaSqL9f-MKjnCW4tgm8NNAUshAcATtJwoDsTpkhXf9FdvUJihapbnp3-s8Pl_zARadmskd3ncLBTwBivWDPjYJbirvHOETIlqNsdAKH3YTMJCPIQhScqa7tjirVsxeHmDxzOvs2o8GXXurSj6WIJPGg0ChZ_perDhrr57NBmmF3BrtuJEG0R8EUD28IJ5uRyUBNRwg'
+export const version = '5.131'
+export const peerId2 = 2000000002
+export const peerId1 = 2000000001
