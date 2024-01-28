@@ -1,0 +1,81 @@
+/* опишем базовый стиль кнопки калькулятора */
+.my-btn { 
+    margin-right: 5px;           /* задаем отступ от кнопки справа */
+    margin-top: 5px;             /* задаем отступ от кнопки сверху*/
+    width: 75px;                 /* задаем ширину кнопки */
+    height: 50px;                /* задаем высоту кнопки */
+    border-radius: 40%;          /* округляем кнопку */
+    border: 1px ridge #f6ff00;                /* отключаем обводку */
+    background: #620eac;         /* задаем серый цвет кнопки */
+    color: rgb(238, 255, 0);                /* задаем белый цвет текста внутри кнопки */
+    font-size: 3rem;           /* увеличим размер шрифта */
+    font-family: 'Times New Roman', Times, serif; /* сменим шрифт */
+    cursor: pointer;             /* при наведении на кнопку курсор будет изменен
+                                    со стрелки на 'указательный палец' */
+    user-select: none;           /* отключаем возможность выделить текст внутри кнопки */
+    text-align: center;
+  } 
+  
+  /* hover - это состояние элемента, когда на него наведен курсор */
+  .my-btn:hover {
+    background: rgb(255, 0, 0); /* при наведение курсора на кнопку, она будет окрашена в серый */
+  }
+  
+  /* active - это состояние активации элемента. В случае кнопки - нажатие на нее */
+  .my-btn:active {
+    filter: brightness(130%); /* увеличим интенсивность цвета для эффекта вспышки */
+  }
+  
+  /* селектор для кнопок первостепенных операций */
+  .my-btn.primary { 
+    background: #01a2ff; /* цвет кнопки оранжевый */
+  }
+  
+  /* селектор для кнопок второстепенных операций */
+  .my-btn.secondary { 
+    background: #620eac; /* цвет кнопки сервый */
+  }
+  
+  /* селектор для кнопки расчета выражения (=) */
+  .my-btn.execute { 
+    width: 100px;          /* сделаем кнопку шире других */
+    border-radius: 34px;   /* подкорректируем округлость */
+  }
+
+    /* селектор для кнопки расчета выражения (=) */
+    .my-btn.DARKMOD { 
+      width: 300px;          /* сделаем кнопку шире других */
+      border-radius: 34px;   /* подкорректируем округлость */
+    }
+  /* селектор для поля вывода результата */
+  .result { 
+    width: 250px;
+    height: 75px;
+    margin-bottom: 15px;         /* отступ снизу */
+    padding-right: 10px;         /* выступ справа */
+    border-radius: 15px;   
+    background: rgb(0, 0, 0); /* цвет можно задавать и таким образом */
+    text-align: right;           /* примагнитим текст к правой стороне */
+    color: #f00606;              /* цвет текста белый */
+    font-size: 1.5rem;
+     
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  #themeButton {
+    padding: 10px 20px;
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dark-theme {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .light-theme {
+    background-color: #f5f5f5;
+    color: #333;
+  }
