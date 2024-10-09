@@ -1,5 +1,0 @@
-export const groupId = 223898771
-export const accessToken = 'vk1.a.CQWZN0frx6o2V7csoafmFSY4r9MI4YhwvEVtl0rQg0vh2ElB3szdOTN4g84J5kfYx4tB02b6Sjw0c_UEnrpYQ5KD0FAxjUm17Cb4jdlVtsdUUzfiUrivy1t8hl1F0FHXM5buEiFN3jVOTYqUanUNE2KMtgQOUNQt4jxE7RBeUlpYZ_HUbFflgBLIOIU_9R74TdHyff3Y2RIg2yAPrVZ28A'
-export const version = '5.131'
-export const peerId2 = 2000000002
-export const peerId1 = 2000000001

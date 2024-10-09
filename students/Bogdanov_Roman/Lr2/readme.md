@@ -1,1 +1,0 @@
-https://uzitape.github.io/Lr2

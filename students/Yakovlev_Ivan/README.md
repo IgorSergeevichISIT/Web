@@ -1,1 +1,0 @@
-https://vanyakovlev.github.io
