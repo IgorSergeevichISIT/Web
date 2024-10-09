@@ -297,7 +297,4 @@ function add(a, b) {
 }
 ```
 
-###
 
-Citations:
-[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/8239451/aae0c705-fd7c-486e-be96-9f37002fd1e1/lec1.pdf
