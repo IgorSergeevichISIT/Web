@@ -130,7 +130,6 @@ Service Workers, PWA, Virtual DOM, Deploy, Производительность
 
 <img width="1105" alt="Снимок экрана 2024-10-23 в 07 06 15" src="https://github.com/user-attachments/assets/a49cb38b-7d53-42ca-ad8c-fe85f1f9a4a9">
 
-
 Все студенческие работы хранятся в папке **Students**
 Для сдачи работы необходимо:
 1. Зарегиться на гите.
