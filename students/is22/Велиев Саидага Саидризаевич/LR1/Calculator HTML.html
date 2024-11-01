@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!--Указание браузеру, какой стандарт HTML использовать (сейчас HTML 5 по умолчанию)-->
+<html lang="ru"> <!--Начало html-блока. Можно указать язык, чтобы избежать ошибок отображения текста-->
+
+<!-- секция head, как правило, используется для описания служебной и мета информации,
+    в ней также можно указывать ссылки на нужные странице ресурсы, например, шрифты, скрипты и т.д.-->
+
+<head>
+  <meta charset="UTF-8"> <!--указание кодировки символов-->
+  <title>Калькулятор</title>
+  <link rel="stylesheet" href="style.css"> <!--Заголовок страницы, который будет отображен во вкладке браузера-->
+</head>
+
+<!--секция body - это тело документа. Здесь размещается вся информация, которая будет показана на странице-->
+
+<body>
+  
+  <div class="all_ground">
+
+    <div id="result" class="result">
+      0
+    </div>
+
+    <button id="btn_op_clear" class="my-btn secondary">C</button>
+    <button id="btn_op_sign" class="my-btn secondary">+/-</button>
+    <button id="btn_op_percent" class="my-btn secondary">%</button>
+    <button id="btn_op_div" class="my-btn secondary">/</button>
+
+    <button id="btn_digit_7" class="my-btn">7</button>
+    <button id="btn_digit_8" class="my-btn">8</button>
+    <button id="btn_digit_9" class="my-btn">9</button>
+    <button id="btn_op_mult" class="my-btn primary">x</button>
+
+    <button id="btn_digit_4" class="my-btn">4</button>
+    <button id="btn_digit_5" class="my-btn">5</button>
+    <button id="btn_digit_6" class="my-btn">6</button>
+    <button id="btn_op_minus" class="my-btn primary">-</button>
+
+    <button id="btn_digit_1" class="my-btn">1</button>
+    <button id="btn_digit_2" class="my-btn">2</button>
+    <button id="btn_digit_3" class="my-btn">3</button>
+    <button id="btn_op_plus" class="my-btn primary">+</button>
+
+    <button id="btn_digit_0" class="my-btn">0</button>
+    <button id="btn_digit_dot" class="my-btn">.</button>
+    <button id="btn_op_equal" class="my-btn primary execute">=</button>
+
+    <select>
+      <option>Как дела</option>
+      <option>Привет</option>
+    </select>
+
+    <button id="gitlink" class="my-btn" onclick="location.href='https://github.com/DokinsKING'">
+      GitHub
+    </button>
+
+    <button id="change-theme">
+      Сменить тему
+    </button>
+    
+    <details>
+      <summary>Автор</summary>
+      <mark>ФИО</mark>: Велиев Саидага Саидризаевич
+    </details>
+
+    <div>
+      
+    </div>
+
+    <p>ЛР выполнена Велиевым Саидагой Саидризаевичем</p>
+
+
+  </div>
+</body>
+
+</html> <!--конец html-документа -->
