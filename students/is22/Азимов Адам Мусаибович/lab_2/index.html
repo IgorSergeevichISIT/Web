@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Калькулятор</title>
+  </head>
+
+  <body id="fone">
+    <div>
+      <!-- div - это базовый html-контейнер, который может содержать в себе другие html-элементы. -->
+
+      <div id="btn_fone" class="btn fone"></div>
+      <div id="btn_fone_display" class="btn fone"></div>
+      <div class="calc_fone">
+        <!-- блок с экраном калькулятора, где будет выводиться результат вычислений. -->
+        <div class="result">0</div>
+
+        <div class="calc">
+          <button id="btn_ctrl_factorial" class="btn controls">x!</button>
+          <button id="btn_ctrl_degree" class="btn controls">x²</button>
+          <button id="btn_ctrl_square" class="btn controls">√</button>
+          <button id="btn_ctrl_backspace" class="btn controls">⌫</button>
+
+          <button id="btn_ctrl_clear" class="btn controls">C</button>
+          <button id="btn_ctrl_sign" class="btn controls">+/-</button>
+          <button id="btn_ctrl_percent" class="btn controls">%</button>
+          <button id="btn_op_div" class="btn operations">/</button>
+
+          <button id="btn_digit_7" class="btn digit">7</button>
+          <button id="btn_digit_8" class="btn digit">8</button>
+          <button id="btn_digit_9" class="btn digit">9</button>
+          <button id="btn_op_mult" class="btn operations">*</button>
+
+          <button id="btn_digit_4" class="btn digit">4</button>
+          <button id="btn_digit_5" class="btn digit">5</button>
+          <button id="btn_digit_6" class="btn digit">6</button>
+          <button id="btn_op_minus" class="btn operations">-</button>
+
+          <button id="btn_digit_1" class="btn digit">1</button>
+          <button id="btn_digit_2" class="btn digit">2</button>
+          <button id="btn_digit_3" class="btn digit">3</button>
+          <button id="btn_op_plus" class="btn operations">+</button>
+
+          <button id="btn_digit_0" class="btn digit">0</button>
+          <button id="btn_digit_dot" class="btn digit">.</button>
+          <button id="btn_digit_zeros" class="btn digit">000</button>
+          <button id="btn_op_equal" class="btn operations equal">=</button>
+        </div>
+      </div>
+      <div id="info">
+        <p class="lebel">ЛР выполнена ФИО: Азимов Адам Мусаибович</p>
+        <p class="lebel">
+          Мой GitHub:<a
+            href="https://github.com/feed619"
+            id="git"
+            target="_blank"
+          >
+            перейти
+            <!-- <button id="git">github</button> -->
+          </a>
+        </p>
+        <p class="lebel">
+          Выберите язык программирования
+          <select name="" class="select">
+            <option disabled selected>----------</option>
+            <option>python</option>
+            <option>c++</option>
+            <option>java</option>
+          </select>
+        </p>
+
+        <p class="lebel">
+          Цель данной лабораторной работы - <strong>знакомство</strong> с
+          инструмент ами построения пользовательских интерфейсов web-сайтов:
+          <strong>HTML</strong>, <strong>CSS</strong>. В ходе выполнения работы,
+          вам предстоит ознакомиться с кодом реализации простого калькулятор а,
+          и затем выполнить задания по варианту.
+        </p>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

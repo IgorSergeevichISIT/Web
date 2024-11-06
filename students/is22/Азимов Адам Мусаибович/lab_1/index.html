@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Калькулятор</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div> <!-- div - это базовый html-контейнер, который может содержать в себе другие html-элементы. -->
+    <div id="fone" class="btn controls" ></div>    <!-- про тэг кнопки: https://www.w3schools.com/tags/tag_button.asp -->
+    
+    <!-- блок с экраном калькулятора, где будет выводиться результат вычислений. -->
+    <div class="result">
+      0
+    </div>
+
+    <!-- блок с кнопками калькулятора. -->
+    <div class="calc">
+      <!--горизонтальный ряд из четырех кнопок-->
+      <div>  
+        <button id="btn_op_clear" class="btn controls" >C</button>    <!-- про тэг кнопки: https://www.w3schools.com/tags/tag_button.asp -->
+        <button id="btn_op_sign" class="btn controls">+/-</button>
+        <button id="btn_op_percent" class="btn controls" >%</button>
+        <button id="btn_op_div" class="btn operations">/</button>
+      </div>
+
+      <div >
+        <button id="btn_digit_7" class="btn digit" >7</button>
+        <button id="btn_digit_8" class="btn digit" >8</button>
+        <button id="btn_digit_9" class="btn digit" >9</button>
+        <button id="btn_op_mult" class="btn operations">x</button>
+      </div>
+
+      <div >
+        <button id="btn_digit_4" class="btn digit" >4</button>
+        <button id="btn_digit_5" class="btn digit" >5</button>
+        <button id="btn_digit_6" class="btn digit" >6</button>
+        <button id="btn_op_minus" class="btn operations">-</button>
+      </div>
+
+      <div>
+        <button id="btn_digit_1" class="btn digit" >1</button>
+        <button id="btn_digit_2" class="btn digit" >2</button>
+        <button id="btn_digit_3" class="btn digit" >3</button>
+        <button id="btn_op_plus" class="btn operations">+</button>
+      </div>
+
+      <div>
+        <button id="btn_digit_0" class="btn digit">0</button>
+        <button id="btn_digit_dot" class="btn digit">.</button>
+        <button id="btn_op_equal" class="btn operations equal">=</button>
+      
+      </div>
+    </div>
+    <div id="info">
+
+        <p class="lebel">ЛР выполнена ФИО: Азимов Адам </p>
+        <p class="lebel">Мой GitHub:<a href="https://github.com/feed619" id="git" target="_blank">
+          перейти   
+          <!-- <button id="git">github</button> -->
+        </a>
+      </p>
+      <p class="lebel">Выберите язык программирования
+        <select name="" class="select">
+          <option   disabled selected>----------</option>
+          <option > python </option>
+          <option > c++ </option>
+          <option > java </option>
+          
+        </select>
+      </p>
+      
+      <p class="lebel"> Цель данной лабораторной  работы - <strong>знакомство</strong> с инструмент
+        ами построения пользовательских 
+        интерфейсов web-сайтов: <strong>HTML</strong>, <strong>CSS</strong>.
+        В ходе выполнения работы, вам
+        предстоит ознакомиться с кодом 
+        реализации простого калькулятор
+        а, и затем выполнить задания по
+        варианту.</p>
+      </div>
+  </div>
+</body>
+</html>
