@@ -1,0 +1,174 @@
+body {
+text-align: center;
+background-image: linear-gradient( to bottom right, rgb(67, 83, 225),rgb(142, 1, 1));
+height: 100vh;
+width: 100vw;
+display: grid;
+place-items: center;
+margin: 0px;
+}
+
+.btn
+{
+    margin-right: 5px;          
+    margin-top: 5px;             
+    width: 50px;                 
+    height: 50px;                
+    border-radius: 5px;          
+    border: none;                
+    background: #515151;         
+    color: white;               
+    font-size: 1.5rem;           
+    font-family: Arial;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.result{
+    
+    width: 230px;
+    height: 60px;
+    /* margin-top: 10px;; */
+    margin-bottom: 15px;         /* отступ снизу */
+    padding-right: 10px;
+    background: rgb(67, 57, 57); /* цвет можно задавать и таким образом */
+    text-align: right;           /* примагнитим текст к правой стороне */
+    color: #ff8f8f;              /* цвет текста белый */
+    font-size: 1.3rem;
+    font-family:serif;
+    font-weight:lighter;
+    margin: auto;
+    padding-top: 1px;
+    border-radius: 10px;
+    /* margin-top: 10px;         выступ справа */
+}
+.btn.controls{
+    background-color:rgb(203, 40, 40);
+    /* text-align: center; */
+}
+
+
+.btn.digit{
+    background-color:rgb(20, 69, 159);
+    font-family: Georgia;
+}
+
+
+.btn.operations{
+    background-color:rgb(145, 197, 48);
+}
+
+/* .btn.operations.equal */
+/* { */
+    /* width: 110px; */
+        /* border-radius: 25px; */
+        
+    /* } */
+.btn:hover{
+    background-color:cyan;
+    
+}
+.btn:active{
+    background-color:rgb(107, 108, 108);
+    
+}
+.result:hover{
+    background-color:rgb(214, 214, 214);
+
+}
+#info
+{
+    margin-left: 10px;
+}
+.lebel
+{
+    text-align: left;
+    font-family:'Segoe UI';
+    font-size: 0.9em;
+    color: azure;
+    /* font-weight: bolder; */
+}
+#link-body
+{
+    color: #ff8f8f;
+    text-align: left;
+}
+#git{
+    color: #515151;
+    font-family:Georgia;
+    background-color:beige;
+    border-radius: 10px 5px 10px 5px;
+    background-color: #ff8f8f;
+    text-decoration: none;
+    padding-right: 5px;
+    margin-left: 5px;
+    font-weight: bold;
+
+}
+#git:hover
+{
+    cursor:pointer;
+    color: #ffffff;
+    background-color: black;
+    border-bottom: 1px;
+}
+.select
+{
+    background-color: #ff8f8f;
+    border-radius: 10px 5px 10px 5px;
+    font-family:Georgia;
+    font-weight: bold;
+}
+.select:hover
+{
+    cursor:pointer;
+    color: #ffffff;
+    background-color: black;
+    border-bottom: 1px;
+}
+.btn.fone{
+    /* text-align: center; */
+    background-color: rgb(207, 223, 255);
+    margin: -2px;
+    display: inline-block;
+}
+#btn_fone
+{
+    /* position:absolute; */
+    position: relative;
+    border-radius: 50%;
+    border-radius: 100% 0% 0% 100%;
+
+    background-color: rgb(207, 223, 255);
+}
+#btn_fone_display
+{
+    background-color: rgb(57, 81, 68);
+    position: relative;
+    border-radius: 0% 100% 100% 0%;
+    position:fixed 30px ;
+
+}
+#btn_digit_zeros
+{
+    font-size: 1em;
+}
+.calc
+{
+    /* margin-left: 23vh; */
+    margin-left: 2.4vh;
+    display: grid;
+    grid-template-columns: repeat(4,60px);
+}
+
+.calc_fone{
+    /* background-color: #666161; */
+    /* background-color: linear-gradient( to bottom right, rgb(67, 83, 225),rgb(142, 1, 1)); */
+    background-image: linear-gradient( to bottom right, rgb(207, 223, 255),rgb(43, 113, 62));
+    width: 270px;
+    height: 400px;
+    border-radius: 30px;
+    margin-left: 41vw;
+}
