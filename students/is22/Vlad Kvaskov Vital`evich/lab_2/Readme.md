@@ -1,9 +1,9 @@
 # Скриншоты
 ### Реализация вычислений:
 ![alt text](image/okno_vivoda.png)
-![alt text](rezultat.jpg)
+![alt text](image/rezultat.jpg)
 ### Реализация смены цвета темы
-![alt text](smena_cveta_okna.png)
+![alt text](image/smena_cveta_okna.png)
 ### Реализация смены цвета окна результата
 ![alt text](image/smena_cveta_rezultata.png)
 
