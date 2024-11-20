@@ -17,16 +17,16 @@ export class ProductCardComponent {
         `;
     }
 
-    // addListeners(data, listener) {
-    //     document
-    //         .getElementById(`click-card-${data.id}`)
-    //         .addEventListener("click", listener); // Подписываемся на событие click
-    // }
+    addListeners(data, listener) {
+        document
+            .getElementById(`click-card-${data.id}`)
+            .addEventListener("click", listener); // Подписываемся на событие click
+    }
 
     // Метод для рендеринга карточки, принимает данные
     render(data, listener) {
         const html = this.getHTML(data); // Генерируем HTML для карточки
         this.parent.insertAdjacentHTML('beforeend', html); // Вставляем карточку в родительский элемент
-        // this.addListeners(data, listener); // Подписываемся на событие клика
+        this.addListeners(data, listener); // Подписываемся на событие клика
     }
 }
