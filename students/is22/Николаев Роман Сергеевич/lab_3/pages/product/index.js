@@ -1,3 +1,7 @@
+import { BackButtonComponent } from "../../components/back-button/index.js";
+import { MainPage } from "../main/index.js";  // Импортируем главную страницу
+import { ProductComponent } from "../../components/product/index.js";
+
 export class ProductPage {
     constructor(parent, id) {
         this.parent = parent;
@@ -19,34 +23,35 @@ export class ProductPage {
         return document.getElementById('product-page');
     }
 
-    // Генерируем HTML для страницы продукта
+    // HTML-шаблон для страницы
     getHTML() {
-        const data = this.getData();
         return `
-            <div id="product-page">
-                <div class="card" style="width: 300px;">
-                    <img class="card-img-top" src="${data.src}" alt="картинка">
-                    <div class="card-body">
-                        <h5 class="card-title">${data.title}</h5>
-                        <p class="card-text">${data.text}</p>
-                        <button id="back-button" class="btn btn-secondary">Назад</button>
-                    </div>
-                </div>
-            </div>
+            <div id="product-page"></div>
         `;
+    }
+
+    // Обработчик кнопки "Назад"
+    clickBack() {
+        const mainPage = new MainPage(this.parent);
+        mainPage.render(); // Переходим обратно на главную страницу
     }
 
     // Метод рендеринга страницы продукта
     render() {
-        this.parent.innerHTML = ''; // Очищаем родительский элемент
-        const html = this.getHTML(); // Генерируем HTML для страницы продукта
-        this.parent.insertAdjacentHTML('beforeend', html); // Вставляем HTML на страницу
+        // Очищаем родительский элемент и добавляем HTML страницы
+        this.parent.innerHTML = '';
+        const html = this.getHTML();
+        this.parent.insertAdjacentHTML('beforeend', html);
 
-        // Добавляем обработчик на кнопку "Назад"
-        document.getElementById('back-button').addEventListener('click', () => {
-            // Возвращаемся на главную страницу
-            const mainPage = new MainPage(this.parent);
-            mainPage.render();
-        });
+        // Добавляем кнопку "Назад"
+        const backButton = new BackButtonComponent(this.pageRoot);
+        backButton.render(this.clickBack.bind(this));  // Прокидываем обработчик
+        
+        // Получаем данные для продукта
+        const data = this.getData();
+
+        // Создаем и рендерим компонент с данными
+        const product = new ProductComponent(this.pageRoot);
+        product.render(data);
     }
 }
