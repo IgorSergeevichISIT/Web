@@ -24,21 +24,24 @@ export class MainPage {
         return [
             {
                 id: 1,
-                src: "https://i.pinimg.com/originals/c9/ea/65/c9ea654eb3a7398b1f702c758c1c4206.jpg",
-                title: "Акция",
-                text: "Такой акции вы еще не видели 1"
+                src: "images/sobaka-1.jpg",
+                title: "Чиро",
+                text: "*блин* какой же он *могучий*",
+                text_btn: "Клик"
             },
             {
                 id: 2,
-                src: "https://i.pinimg.com/originals/c9/ea/65/c9ea654eb3a7398b1f702c758c1c4206.jpg",
-                title: "Акция",
-                text: "Такой акции вы еще не видели 2"
+                src: "images/sobaka-2.jpg",
+                title: "Ауф волк",
+                text: "\"Волк слабее льва и тигра, но в цирке волк не выступает\"",
+                text_btn: "Клак"
             },
             {
                 id: 3,
-                src: "https://i.pinimg.com/originals/c9/ea/65/c9ea654eb3a7398b1f702c758c1c4206.jpg",
-                title: "Акция",
-                text: "Такой акции вы еще не видели 3"
+                src: "images/sobaka-3.png",
+                title: "Фродо и кега",
+                text: "\"Собачку жалко.\"",
+                text_btn: "Бум"
             },
         ]
     }
