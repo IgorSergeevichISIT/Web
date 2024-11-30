@@ -20,6 +20,7 @@ export class MainPage {
         )
     }
 
+
     getData() {
         return [
             {
@@ -31,17 +32,17 @@ export class MainPage {
             },
             {
                 id: 2,
-                src: "images/sobaka-2.jpg",
-                title: "Ауф волк",
-                text: "\"Волк слабее льва и тигра, но в цирке волк не выступает\"",
+                src: "images/sobaka-2.png",
+                title: "Фродо и кега",
+                text: "\"Собачку жалко.\"",
                 text_btn: "Клак"
             },
             {
                 id: 3,
-                src: "images/sobaka-3.png",
-                title: "Фродо и кега",
-                text: "\"Собачку жалко.\"",
-                text_btn: "Бум"
+                src: "images/sobaka-3.jpg",
+                title: "Ауф волк",
+                text: "\"Тут должна умная цитата\"",
+                text_btn: "Жмяк"
             },
         ]
     }
@@ -52,7 +53,6 @@ export class MainPage {
 
         const productPage = new ProductPage(this.parent, cardId)
         productPage.render()
-
     }
 
     render() {

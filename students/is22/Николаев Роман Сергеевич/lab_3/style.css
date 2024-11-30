@@ -91,3 +91,34 @@
 .btn:hover {
     background-color: #0056b3;
 }
+
+.accordion {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.product-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 65vh;
+    max-width: 900px;
+    margin: auto;
+}
+
+.product-container .product-image {
+    max-width: 35%;
+    margin-right: 1rem;
+}
+
+.product-container .product-image img {
+    max-width: 115%;
+    border-radius: 8px;
+}
+
+.product-container .product-accordion {
+    max-width: 60%;
+    flex-grow: 1;
+}
