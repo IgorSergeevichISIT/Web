@@ -27,7 +27,7 @@ export class MainPage {
                 id: 1,
                 src: "images/sobaka-1.jpg",
                 title: "Чиро",
-                text: "*блин* какой же он *могучий*",
+                text: "<i>*блин*</i> какой же он <i>*могучий*</i>",
                 text_btn: "Клик"
             },
             {
