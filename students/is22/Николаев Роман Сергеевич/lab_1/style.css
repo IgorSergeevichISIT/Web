@@ -1,0 +1,126 @@
+.my-btn-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.my-btn{
+    height: 50px;
+    width: 50px;
+    border-radius: 15px; /* тут меняется форма кнопок(задание 3) */
+    border: none;
+    background: #eb7e70; /* тут меняется цвет кнопок(задание 1) */
+    cursor: pointer;
+    font-size: 1.6rem; /* тут меняется размерт шрифта(задание 13) */
+    font-weight: bold;  /* тут меняется шрифта на толстый(задание 7) */
+    font-family: Andale Mono, monospace; /* тут менятеся шрифт(залание 6) */
+    color: white;  /* тут меняется цвет шрифта(задание 14) */
+}
+
+.my-btn:hover {
+    filter: brightness(90%); /* тут меняется цвет кнопки при наведении(задание 8) */
+}
+
+.my-btn:active {
+    filter: brightness(115%);
+}
+
+.my-btn.primary { 
+    background: #dd546e; /* тут меняется цвет кнопок(задание 1) */
+}
+
+.my-btn.secondary { 
+    background: #a6a6a6; /* тут меняется цвет кнопок(задание 1) */
+}
+
+.my-btn.execute {
+    width: 100%;
+    background: #ff9100; /* тут меняется цвет кнопок(задание 1) */
+    grid-column: span 2 / span 2;
+}
+
+.calculator{
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: #444444; /* тут меняется цвет фона (задание 2) */
+}
+
+.result{
+    width: 195px;
+    height: 40px; /* тут меняется размер поля вывода(задание 11) */
+    overflow-x: auto;
+    scrollbar-width: none;
+    background-color: #ede2dcb4;
+    color: #dd546e; /* тут меняется цвет поля(задание 4) */
+    text-align: right;
+    padding: 10px;  
+    font-size: 2rem;
+    font-family: Andale Mono, monospace;
+    font-weight: bold;
+    border-radius: 15px 15px 0px 0px;
+    margin-bottom: 10px;
+    border-radius: 15px; /* тут меняется форма поля вывода(задание 5)*/
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: grid; /* тут калькултор выравниватеся во центру(задание 10) */
+    place-items: center;
+    user-select: none;
+    background-image: url(image/back.png); /* тут добавляется изображение на фон(задание 15) */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+details {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(154, 2, 2, 0.7);
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    max-width: 300px;
+    border: none;
+}
+
+#btn_toggle_background{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    background: linear-gradient(45deg, #000000 50%, #ffffff 50%); 
+}
+
+#btn_op_ooo{
+    font-size: 1.3rem;
+}
+.link-git{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.info-png{
+    width: 30px;
+    height: 30px;
+}
+
+/* дополнительное задание: смена цвета фона в зависимости от темы системы */
+/* @media (prefers-color-scheme: light) {
+    .calculator {
+        background-color: #ffffff;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .calculator {
+        background-color: #121212;
+    }
+} */

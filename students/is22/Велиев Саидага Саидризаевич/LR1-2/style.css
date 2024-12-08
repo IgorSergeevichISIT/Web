@@ -1,0 +1,121 @@
+body
+{
+    background-image: url("depositphotos_53106465-stock-photo-beautiful-morning-light-in-public.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Закрепляет фон */
+}
+
+.all_ground
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 7px;
+    padding: 7px;
+    background-color: #1f1f1f;
+    border-radius: 7px;
+    width: 235px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.result 
+{ 
+    grid-column: 1 / -1;
+    height: 50px;
+    padding-right: 3px;
+        /* отступ снизу */
+    background: #aa4e47; /* цвет можно задавать и таким образом */
+    text-align: right;           /* примагнитим текст к правой стороне */
+    color: #ffffff;              /* цвет текста белый */
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 7px;
+    white-space: nowrap; /* не переносить текст на новую строку */
+    overflow-x: auto; /* добавляем горизонтальную прокрутку */
+}
+.my-btn 
+{ 
+               /* задаем ширину кнопки */
+    height: 50px;                /* задаем высоту кнопки */
+    /*border-radius: 50%;          /* округляем кнопку */
+    border: none;                /* отключаем обводку */
+    background: #9ea7a7;         /* задаем серый цвет кнопки */
+    color: white;                /* задаем белый цвет текста внутри кнопки */
+    font-size: 1.5rem;           /* увеличим размер шрифта */
+    font-family: Arial, Helvetica, sans-serif; /* сменим шрифт */
+    cursor: pointer;             /* при наведении на кнопку курсор будет изменен
+    user-select: none;           /* отключаем возможность выделить текст внутри кнопки */
+} 
+
+.my-btn:hover 
+{
+    background: darkgray; /* при наведение курсора на кнопку, она будет окрашена в серый */
+}
+  
+.my-btn:active 
+{
+    filter: brightness(130%); /* увеличим интенсивность цвета для эффекта вспышки */
+}
+
+.my-btn.primary 
+{ 
+    background: #b9817d; /* цвет кнопки оранжевый */
+}
+
+.my-btn.secondary 
+{ 
+    background: #e6b368; /* цвет кнопки сервый */
+}
+  
+  /* селектор для кнопки расчета выражения (=) */
+.my-btn.execute 
+{ 
+    grid-column: span 2;        /* сделаем кнопку шире других */
+    /* border-radius: 34px;   /* подкорректируем округлость */
+}
+  
+  /* селектор для поля вывода результата */
+p
+{
+    color: white;
+    grid-column: 1 / -1;
+}
+select
+{
+    grid-column: 1 / -1;
+}
+#gitlink
+{
+    grid-column: span 2; /* Занимает всю ширину */
+    width: 100%;
+}
+#change-theme
+{
+    grid-column: span 2;
+}
+details
+{
+    color: white;
+    grid-column: 1 / -1;
+}
+
+@media (prefers-color-scheme: light) {
+    .calculator {
+        background-color: #ffffff;
+    }
+    .my-btn {
+        color: black; /* цвет текста */
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .calculator {
+        background-color: #444444;
+    }
+    .my-btn {
+        color: white; /* цвет текста */
+    }
+}

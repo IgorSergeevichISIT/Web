@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <button id="btn_color_result">Клик</button>
+    <details>
+        <summary style="list-style: none;">
+            <img src="image/info.png" alt="Info" class="info-png">
+        </summary>
+        <ul>
+            <li>Выполнил: Николаев Роман</li>
+            <li>Группа: ИС-22</li>
+            <li><a href="https://github.com/uh-well-niko" class="link-git" target="_blank">Мой GitHub</a></li>
+            <li>
+                Цель данной лабораторной работы - <span style="color:rgb(0, 255, 98)">знакомство</span>
+                с инструментами построения пользовательских интерфейсов web-сайтов:
+                <span style="color:rgb(0, 255, 98)">HTML, CSS</span>.
+                В ходе выполнения работы, вам предстоит ознакомиться с кодом реализации простого
+                калькулятора, и затем выполнить задания по варианту.
+            </li>
+            <li>
+                <label for="options">Выпадает:</label>
+                <select id="options" name="options">
+                    <option value="option1">Нуу</option>
+                    <option value="option2">Эээ</option>
+                    <option value="option3">Даа</option>
+                </select>
+            </li>
+        </ul>
+    </details>
+    
+    <button id="btn_toggle_background"></button>
+
+    <div class="calculator">
+        <div id="result_field" class="result">0</div>
+        <div class="my-btn-grid">
+            <button id="btn_act_sqrt" class="my-btn secondary">√</button>
+            <button id="btn_act_sqr" class="my-btn secondary">x²</button>
+            <button id="btn_act_fac" class="my-btn secondary">x!</button>
+            <button id="btn_del" class="my-btn secondary">←</button>
+
+            <button id="btn_clear" class="my-btn secondary">C</button>
+            <button id="btn_act_sign" class="my-btn secondary">±</button>
+            <button id="btn_percent" class="my-btn secondary">%</button>
+            <button id="btn_op_div" class="my-btn primary">/</button>
+
+            <button id="btn_digit_7" class="my-btn">7</button>
+            <button id="btn_digit_8" class="my-btn">8</button>
+            <button id="btn_digit_9" class="my-btn">9</button>
+            <button id="btn_op_mult" class="my-btn primary">*</button>
+            
+            <button id="btn_digit_4" class="my-btn">4</button>
+            <button id="btn_digit_5" class="my-btn">5</button>
+            <button id="btn_digit_6" class="my-btn">6</button>
+            <button id="btn_op_minus" class="my-btn primary">-</button>
+            
+            <button id="btn_digit_1" class="my-btn">1</button>
+            <button id="btn_digit_2" class="my-btn">2</button>
+            <button id="btn_digit_3" class="my-btn">3</button>
+            <button id="btn_op_plus" class="my-btn primary">+</button>
+
+            <button id="btn_digit_0" class="my-btn">0</button>
+            <button id="btn_digit_dot" class="my-btn">.</button>
+            <button id="btn_ooo" class="my-btn">000</button>
+            <button id="btn_equal" class="my-btn primary execute">=</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid; /* Используем grid для расположения элементов */
+    place-items: center; /* Центрируем по горизонтали и вертикали */
+    height: 100vh; /* Высота 100% от высоты экрана */
+    transition: background-color 0.5s, color 0.5s; /* Плавный переход для смены темы */
+}
+
+.light-background {
+    background-color: #f0f0f0;
+    color: #000; /* Цвет текста для светлой темы */
+    background-image: url('https://imgur.la/images/2024/10/28/ddf054e3d32be9b6bc34681b34100af8.jpg'); /* путь к изображению для светлой темы */
+}
+
+.dark-background {
+    background-color: #2c2c2c;
+    color: #fff; /* Цвет текста для тёмной темы */
+    background-image: url('https://imgur.la/images/2024/10/28/111Picsart_24-10-24_08-48-44-242.jpg'); /* путь к изображению для тёмной темы */
+}
+.theme-toggle {
+    display: inline-block; /* Отображение как блочный элемент для ссылок */
+    background-color: #ff08c1; /* Цвет фона для ссылки */
+    color: #fff; /* Цвет текста ссылки */
+    padding: 5px 5px; /* Отступы внутри ссылки */
+    border-radius: 5px; /* Закругление углов ссылки */
+    text-align: center; /* Центрируем текст ссылки */
+    font-size: 15px; /* Размер шрифта ссылки */
+    font-family: Tahoma, Helvetica, sans-serif;
+    margin-top: 5px; /* Отступ сверху для разделения с другим контентом */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+}
+.theme-toggle:hover {
+    background-color: #5b5a5a; /* Цвет фона при наведении */
+    cursor: pointer; /* Изменяем курсор при наведении */
+    color: #0800ff;
+}
+
+.second-table {
+    width: 300px; /* Ширина контейнера для калькулятора */
+    height: 470px; /* Высота контейнера для калькулятора */
+    background-color: #0800ff; /* Цвет фона контейнера */
+    color: #ff08c1; /* Цвет текста внутри контейнера */
+    font-size: 28px; /* Размер шрифта */
+    text-align: center; /* Центрирование текста */
+    font-weight: 800; /* Жирность шрифта */
+    font-family: Tahoma, Helvetica, sans-serif;
+    box-shadow: 0px 10px 10px -5px black; /* Тень для контейнера */
+    padding: 20px; /* Отступы внутри контейнера */
+    display: flex; /* Используем flexbox для внутренних элементов */
+    flex-direction: column; /* Вертикальное направление */
+    border-radius: 20px; /* Закругляем углы синего прямоугольника */
+}
+
+#result {
+    height: 80px; /* Увеличен размер высоты окна вывода */
+    display: flex; /* flexbox для выравнивания текста */
+    align-items: center; /* Центрируем по вертикали */
+    justify-content: end; /* Результаты выравниваются вправо */
+    padding: 0 20px; /* Отступы слева и справа */
+    font-size: 40px; /* Размер шрифта в окне вывода */
+    border: 1px solid #ffffff; /* Рамка окна вывода */
+    margin-bottom: 20px; /* Отступ снизу */
+    background: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон */
+    border-radius: 40px; /* Закругление углов окна вывода */
+    font-family: Tahoma, Helvetica, sans-serif;
+    text-align: right; /* Выравнивание текста вправо */
+    overflow: hidden; /* Скрываем всё, что выходит за пределы блока */
+    /* Новые стили для прокрутки */
+    white-space: nowrap; /* Не переносить текст на новую строку */
+    overflow-x: auto; /* Позволяет прокручивать содержимое по оси X */
+    scrollbar-width: thin; /* Уменьшаем ширину панели прокрутки для Firefox */
+    scrollbar-color: #ff08c1 transparent; /* Цвет панели прокрутки */
+}
+/* Стили для вебkit браузеров (Chrome, Safari) */
+#result::-webkit-scrollbar {
+    height: 10px; /* Высота полосы прокрутки */
+}
+
+#result::-webkit-scrollbar-thumb {
+    background-color: #ff08c1; /* Цвет полосы прокрутки */
+    border-radius: 5px; /* Закругляем углы полосы прокрутки */
+}
+
+#result::-webkit-scrollbar-track {
+    background: transparent; /* Фон полосы прокрутки */
+}
+
+.button-grid {
+    display: grid; /* Используем grid для расположения кнопок */
+    grid-template-columns: repeat(4, 1fr); /* 4 колонки для кнопок */
+    gap: 10px; /* Расстояние между кнопками */
+}
+
+button {
+    border-radius: 5px; /* Закругление углов для кнопок */
+    width: 60px;  /* Ширина кнопок */
+    height: 50px; /* Высота кнопок */
+    font-weight: 500;
+    background-color: #ff08c1; /* Цвет фона кнопок */
+    border: 0; /* Убираем рамку для кнопок */
+    color: #fff; /* Цвет текста на кнопках */
+    font-size: 32px; /* Размер шрифта на кнопках */
+    font-family: Tahoma, Helvetica, sans-serif; 
+    outline: none; /* Убираем фокус, когда кнопка нажата */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+}
+
+button:hover {
+    background-color: #5b5a5a; /* Цвет фона при наведении */
+    cursor: pointer; /* Изменяем курсор при наведении */
+}
+
+/* Кнопки дополнительных операций */
+button.small-button {
+    width: 60px; /* Небольшая ширина для кнопок */ 
+}
+
+/* Правила для тёмной темы */
+.dark-background .second-table {
+    background-color: #222; /* Цвет фона контейнера для темной темы */
+    color: #ffffff; /* Цвет текста в контейнере для темной темы */
+}
+
+.link-button {
+    display: inline-block; /* Отображение как блочный элемент для ссылок */
+    background-color: #ff08c1; /* Цвет фона для ссылки */
+    color: #fff; /* Цвет текста ссылки */
+    padding: 10px 20px; /* Отступы внутри ссылки */
+    border-radius: 5px; /* Закругление углов ссылки */
+    text-align: center; /* Центрируем текст ссылки */
+    font-size: 20px; /* Размер шрифта ссылки */
+    text-decoration: none; /* Убираем подчеркивание текста ссылки */
+    font-family: Tahoma, Helvetica, sans-serif;
+    margin-top: 10px; /* Отступ сверху для разделения с другим контентом */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+}
+
+.link-button:hover {
+    background-color: #5b5a5a; /* Цвет фона ссылки при наведении */
+    color: #0800ff;
+}
+
+.link-button-container {
+    display: flex; /* Используем flexbox для расположения строк ссылок */
+    justify-content: center; /* Центрирует содержимое по горизонтали */
+    width: 100%; /* Ширина для занимаемой области */
+    margin-top: 1px; /* Отступ сверху для разделения с другим контентом */
+}
+
+.footer {
+    font-family: Tahoma, Helvetica, sans-serif; /* Шрифт для нижнего колонтитула */
+}
+
+mark {
+    background-color: #ff08c1; /* Цвет фона для подсветки */
+    color: black; /* Цвет текста для подсветки */
+}

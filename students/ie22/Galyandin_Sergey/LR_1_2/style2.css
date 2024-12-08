@@ -1,0 +1,98 @@
+html {
+  overflow: hidden;
+}
+body {
+    background-image: url("gleblox.jpg");
+    background-color: #f007d1;
+    grid-template-columns: [one] 1fr [two] 1fr [three] 1fr;
+    grid-template-rows: [one] 1fr [two] 1fr [three] 1fr [four] 1fr [five] 1fr [six] 1fr [seven] 1fr[eight] 1fr [nine] 1fr;
+    display: grid;
+    height: 900px;
+    background-size: 20rem;
+    border: none;
+    font-family: Calibri, sans-serif, 'Helvetica';
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    border: solid 1px black;
+    gap: 3px;
+    padding: 3px;
+ 
+  }
+  .calculator{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: repeat(6,1fr);
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    width: 30vw;
+    height: 25vh;
+    display: grid;
+    row-gap: 10px;
+    column-gap: 10px;
+    text-align: right;
+  }
+  .result {
+    grid-column: 2/2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    background: rgb(195, 73, 200);
+    border-radius: 20px;
+    color: #ffffff;
+    width: 30vw;
+    height: 5vh;
+    display: grid;
+    text-align: right;
+
+  }
+
+  /* #btn_op_equal
+  {
+    grid-column: span 2 / span 4;
+  } */
+   
+  .my_btn {
+
+      cursor: pointer;
+    background: #f70606;
+  }
+  .my_btn:hover {
+    background: #e6e208;
+  }
+
+  .Special_btn_primary {
+    background: rgba(13, 130, 134, 0.77);
+  }
+  .Special_btn {
+    background: #1f6ee6;
+  }
+
+  .my-btn:active {
+    filter: brightness(130%);
+  }
+  .my-btn.primary {
+    background: rgba(11, 30, 221, 0.77);
+  }
+  #txtwho{
+    color: #bc22c5;
+    font-size: 1rem;
+    font-family: Calibri, sans-serif;
+    background-color: green;
+  }
+  h3 {
+    color: #000000;
+    font-size: 80%;
+    background-color: rgb(243, 21, 195);
+  }
+  .btn{
+    grid-column: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    color:#f70606;
+    
+
+  }
+  .my_btn_custom2{
+    color:#bc22c5;
+  }

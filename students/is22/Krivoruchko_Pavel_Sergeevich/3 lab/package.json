@@ -1,0 +1,22 @@
+{
+  "name": "3-lab",
+  "version": "1.0.0",
+  "description": "\"3 лабораторная по вэбу\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pavlushechko/Web.git"
+  },
+  "author": "Pavlushechko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pavlushechko/Web/issues"
+  },
+  "homepage": "https://github.com/Pavlushechko/Web#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}

@@ -1,0 +1,135 @@
+body {
+  background-image: url('background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.calculator-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 колонки одинаковой ширины, которые автоматически подстраиваются */
+  grid-template-rows: auto 1fr;
+  gap: 5px;
+  background-color: #1f1f1f;
+  border-radius: 7px;
+  width: 100%;
+  max-width: 232.5px; /* Максимальная ширина */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px;
+}
+
+/* Поле вывода результата */
+.result {
+  background: rgb(73, 73, 73);
+  color: #00ff00;
+  font-size: 2rem;
+  border-radius: 10px;
+  text-align: right;
+  grid-column: 1/-1;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  /* Растягиваем поле результата на все 4 колонки */
+}
+
+#result {
+  background-color: gray; /* Начальный цвет */
+  transition: background-color 0.5s ease; /* Плавная смена цвета */
+}
+
+/* Базовый стиль кнопок */
+.my-btn {
+  height: 50px;
+  border: none;
+  background: #9ea7a7;
+  color: white;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Эффект при наведении */
+.my-btn:hover {
+  filter: brightness(1.2); /* Увеличиваем яркость на 20% при наведении */
+}
+
+/* Эффект при нажатии */
+.my-btn:active {
+  filter: brightness(1.4); /* Увеличиваем яркость на 40% при нажатии */
+}
+
+/* Цвета для кнопок операций */
+.my-btn.primary {
+  background: #e0db49;
+}
+
+.my-btn.secondary {
+  background: #a1e1ec;
+}
+
+/* Стиль кнопки равенства (=) */
+.my-btn.execute {
+  background: #3e8b3e;
+  grid-column: span 2;
+  width: 100%;
+}
+
+#btn_op_backspace{
+  grid-column: span 2;
+}
+
+.my-btn.change_topic,
+.my-btn.link-btn {
+  grid-column: span 2;
+  width: 100%;
+}
+
+.link-btn {
+  text-decoration: none;
+  color: white;
+  background-color: #4b4b4b;
+}
+
+.link-btn:hover {
+  background-color: #3e8b3e;
+  filter: brightness(1.1);
+}
+
+/* Эффект при нажатии */
+.link-btn:active {
+  filter: brightness(1.4); /* Увеличиваем яркость на 40% при нажатии */
+}
+
+#dit, .goal, .dropdown, .name_bottom {
+  grid-column: 1/-1;
+  color: white;
+}
+
+
+.goal {
+  font-size: 1.2rem;
+}
+
+
+.dropdown {
+  background-color: #4b4b4b;
+  border: none;
+  border-radius: 5px;
+}
+
+
+.name_bottom {
+  position: absolute;  /* Закрепляем элемент относительно родительского контейнера */
+  bottom: 10px;        /* Отступ от нижнего края контейнера */
+  left: 10px;          /* Отступ от левого края контейнера */
+  font-size: 1rem;     /* Размер шрифта */
+  color: white;        /* Цвет текста */
+}
