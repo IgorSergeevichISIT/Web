@@ -1,0 +1,81 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://avatars.mds.yandex.net/i?id=5c5fdd4c336bce5a3c9ae2d4be80322b_l-9844228-images-thumbs&ref=rim&n=13&w=1280&h=720');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    
+}
+.header {
+  width: 100vw;
+  height: 6vh;
+  z-index: 3;
+  
+  background-color: #fcfcfc;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.103);
+
+  position: fixed;
+  top: 0;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+#liveToastBtn{
+    display: block;
+    margin: 25px  auto 25px auto;
+    z-index: -10;
+    
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-right: 15px;
+
+  }
+
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    
+  }
+  .footer {
+    width: 100%;
+    background-color: #f8f9fa;
+    color: #6c757d;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .btn-primary {
+    color: #ffffff;
+    background-color: #fd4c00;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+  }
