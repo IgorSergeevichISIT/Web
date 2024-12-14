@@ -1,5 +1,4 @@
 # Скриншоты
-### Калькулятор:
 ![alt text](images/scrin/scrin-1.png)
 ![alt text](images/scrin/scrin-2.png)
 ![alt text](images/scrin/scrin-2.png)
