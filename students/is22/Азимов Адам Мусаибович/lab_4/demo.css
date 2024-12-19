@@ -1,0 +1,70 @@
+body {
+    color: #bdbdbd;
+    font-family: 'Montserrat';
+    font-weight: 100;
+    background-color: white;
+    margin: 0;
+    padding-top: 6vh; /* Добавлен отступ для учета фиксированного header */
+  }
+  
+  .header {
+    width: 100vw;
+    height: 6vh;
+    z-index: 3;
+  
+    background-color: #fcfcfc;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.103);
+  
+    position: fixed;
+    top: 0;
+  
+    display: flex;
+    align-items: center;
+  }
+  
+  #main-page {
+    justify-content: space-between;
+    padding-top: 20px; /* Дополнительный отступ, если нужно */
+  }
+  
+  .card {
+    width: 540px;
+    margin-bottom: 20px;
+    background-color: #ba1010;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    color: #ffffff;
+  }
+  
+  .footer {
+    width: 100vw;
+    height: 6vh;
+    z-index: 3;
+  
+    background-color: #fcfcfc;
+    border-top: 1px solid rgba(0, 0, 0, 0.103);
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.8vh;
+  }
+  
