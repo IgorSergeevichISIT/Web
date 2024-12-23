@@ -1,0 +1,128 @@
+body {
+  color: #000000;
+  font-family: 'Montserrat';
+  font-weight: 100;
+  background-color: rgb(214, 214, 214);
+  margin: 0;
+  padding-top: 6vh; /* Добавлен отступ для учета фиксированного header */
+}
+
+.header {
+  width: 100vw;
+  height: 6vh;
+  z-index: 3;
+  
+  background-color: #fcfcfc;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.103);
+
+  position: fixed;
+  top: 0;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+#main-page {
+  justify-content: space-between;
+  padding-top: 20px; /* Дополнительный отступ, если нужно */
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    padding: 20px; 
+  }
+  
+  /* Стили для карточки продукта */
+  .card {
+    width: 540px;
+    margin-bottom: 20px;
+    background-color: #ebe7e7;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    color: #ffffff;
+  }
+  .text1 {
+    color: #555;
+    font-size: 3em;
+  }
+  .text2 {
+    color: #555;
+    font-size: 2em;
+  }
+  .btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .btn-primary {
+    color: #ffffff;
+    background-color: #6b6b6b;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: -15px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #838383;
+  }
+  
+  /* Стили для кнопки возврата */
+  #back-button {
+    margin-top: -10px;
+  }
+
+  /* Общие стили для футтера */
+  .footer {
+	width: 100vw;
+	height: 6vh;
+	z-index: 3;
+  
+	background-color: #fcfcfc;
+	border-top: 1px solid rgba(0, 0, 0, 0.103);
+  
+	display: flex;
+	align-items: center;
+	align-self: center;
+	align-content: center;
+	text-align: center;
+	justify-content: center;
+	justify-self: center;
+	justify-items: center;
+	padding-top: 1.8vh;
+  }
+
+
+  #liveToastBtn{
+    display: block;
+    margin: 25px  auto 25px auto;
+    background-color: #838383;
+    /* z-index: -10; */
+    
+}
