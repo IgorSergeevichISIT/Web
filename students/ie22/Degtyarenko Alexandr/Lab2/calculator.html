@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script> 
+</head>
+
+<body>
+    </div>
+
+        <div class="button-container">
+            <div id="result" class="result">0</div>
+            <button id="btn_op_backspace" class="my-btn secondary large-btn">←</button>
+
+            <div class="button-row">
+            <button id="btn_op_sqrt" class="my-btn secondary">√</button>
+            <button id="btn_op_square" class="my-btn secondary">x²</button>
+            <button id="btn_op_factorial" class="my-btn secondary">x!</button>
+            <button id="btn_op_add_three_zeros" class="my-btn secondary">000</button>
+            </div>    
+
+            <div class="button-row">
+                <button id="btn_op_clear" class="my-btn secondary">C</button>
+                <button id="btn_op_sign" class="my-btn secondary">+/-</button>
+                <button id="btn_op_percent" class="my-btn secondary">%</button>
+                <button id="btn_op_divide" class="my-btn primary">/</button>
+            </div>
+
+            <div class="button-row">
+                <button id="btn_digit_7" class="my-btn">7</button>
+                <button id="btn_digit_8" class="my-btn">8</button>
+                <button id="btn_digit_9" class="my-btn">9</button>
+                <button id="btn_op_mult" class="my-btn primary">x</button>
+            </div>
+
+            <div class="button-row">
+                <button id="btn_digit_4" class="my-btn">4</button>
+                <button id="btn_digit_5" class="my-btn">5</button>
+                <button id="btn_digit_6" class="my-btn">6</button>
+                <button id="btn_op_minus" class="my-btn primary">-</button>
+            </div>
+
+            <div class="button-row">
+                <button id="btn_digit_1" class="my-btn">1</button>
+                <button id="btn_digit_2" class="my-btn">2</button>
+                <button id="btn_digit_3" class="my-btn">3</button>
+                <button id="btn_op_plus" class="my-btn primary">+</button>
+            </div>
+
+            <div class="button-row">
+                <button id="btn_digit_0" class="my-btn">0</button>
+                <button id="btn_digit_dot" class="my-btn">.</button>
+                <button id="btn_op_equal" class="my-btn primary execute">=</button>
+            </div>
+
+            <button id="btn_result_color_change" class="my-btn secondary large-btn">(￣﹃￣)</button>
+            <button id="btn_color_change" class="my-btn secondary large-btn">ʕ ᵔᴥᵔ ʔ</button>
+
+            <div class="theme-toggle-container">
+                <audio id="themeToggleSound" src="m1.mp3" preload="auto"></audio>
+                <audio id="themeToggleOffSound" src="m2.mp3" preload="auto"></audio>
+                <button id="btn_theme_toggle" class="my-btn secondary">☽</button>
+            </div>
+        </div>
+
+        <div class="dropdown-container">
+            <div class="biba">
+                <label for="operations">Общая информация</label>
+            </div>
+
+            <p class="aga">Лабораторная работа №1</p>
+
+            <div class="aga">
+                <p>Цель ЛР:Познакомиться с основами <span class="highlight">HTML</span> и <span class="highlight">CSS</span>.</p>
+            </div>
+            
+            <details>
+                <summary class="toggle-button">Автор: Дегтяренко А. Е.</summary>
+                <div class="details">
+                    Группа: ИЭ-22
+                </div>
+                <div class="details">
+                    Кафедра: ИСиТ
+                </div>
+                <div class="details">
+                    Факультет: ЭЭиУ
+                </div>
+            </details>
+            <a href="https://github.com/SiansElderly" class="github-btn">Перейти на GitHub</a>
+        </div>
+
+        <button id="btn_do_not_press" class="do-not-press">Не нажимать</button>
+
+        <div id="hiddenContent" class="hidden-content" style="display: none;">
+            <img id="gifImage" src="b.gif" alt="Creepy GIF" style="display: none; width: 100%; height: 100%; position: fixed; top: 0; left: 0; object-fit: cover;">
+            <button id="continueButton" class="continue-button">Продолжить</button>
+            <audio id="continueSound" src="m3.mp3" preload="auto"></audio>
+            <div id="questionContainer" class="question-container" style="display: none;">
+                <p class="question">Ты один?</p>
+                <button id="btn_yes" class="answer-button">Да</button>
+                <button id="btn_no" class="answer-button">Нет</button>
+            </div>
+
+            <div id="notAloneContainer" style="display: none;">
+                <p id="notAloneMessage" class="hidden-message">Теперь ты не один.</p>
+            </div>
+        
+            <div id="playQuestionContainer" class="play-question-container" style="display: none;">
+                <p class="play-question">Хочешь поиграть?</p>
+                <button id="btn_play_yes" class="answer-button">Да</button>
+                <button id="btn_play_no" class="answer-button">Нет</button>
+            </div>
+        </div>
+    <div>
+ <body>

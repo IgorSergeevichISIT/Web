@@ -1,0 +1,230 @@
+body {
+  background-image: url('gigachad.jpeg');
+  background-size: cover;
+  transition: background-image 1s ease, opacity 1s ease;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100%; 
+}
+
+.button-container {
+  background-color: #011821;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 5px; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  margin-top: 20vh;  
+}
+
+.button-row {
+  margin-left: 9px;
+}
+
+.my-btn { 
+    margin-right: 5px;           
+    margin-top: 5px;             
+    width: 50px;                 
+    height: 50px;                
+    border-radius: 0%;          
+    border: none;                
+    background: #2B5257;         
+    color: #D6C7BB;               
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    user-select: none;           
+  } 
+  
+  .my-btn:hover {
+    background: #ABD3D6;
+  }
+  
+  .my-btn:active {
+    filter: brightness(130%);
+  }
+  
+  .my-btn.primary { 
+    background: #854B20;
+  }
+  
+  .my-btn.secondary { 
+    background: #719296;
+  }
+  
+  .my-btn.execute { 
+    width: 110px;     
+    border-radius: 34px;
+  }
+  
+  .result { 
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    margin-bottom: 10px;        
+    padding-right: 10px;         
+    background: #2B5257;
+    text-align: right;           
+    color: #D6C7BB;             
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .aga {
+        font-weight: bold;
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .github-btn {
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #24292e;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .github-btn:hover {
+        background-color: #3b4045;
+    }
+
+    .biba {
+        width: 95%;
+        padding: 10px; 
+        border-radius: 5px; 
+        background-color: #2B5257; 
+        color: #D6C7BB; 
+        text-align: center;
+    }
+
+    .details {
+        margin-top: 10px; 
+        color: #ffffff; 
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .toggle-button {
+        cursor: pointer; 
+        color: #ffffff; 
+        text-decoration: underline; 
+    }
+    
+    .highlight {
+        background-color: rgb(230, 230, 147); 
+        color: #b91717
+    }
+
+    body.night {
+        background-image: url('sleep.jpg'); 
+        opacity: 2; 
+    }
+
+    .dropdown-container {
+      background-color: #011821;
+      position: absolute; 
+      top: 0; 
+      left: 0; 
+      display: flex; 
+      flex-direction: column; 
+      align-items: center; 
+  }
+
+  .theme-toggle-container {
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    display: flex; 
+    align-items: center; 
+}
+
+.large-btn {
+  width: 226px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.do-not-press {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #FF5733;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.do-not-press:hover {
+  background-color: #C0392B;
+}
+
+.hidden-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  width: 100%;
+  height: 100%;
+}
+
+.continue-button {
+  font-size: 2rem;
+  color: #800000;
+  border: 2px solid black;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  position: absolute;
+  z-index: 10;
+}
+
+.continue-button:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.question {
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.answer-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+}
+
+.play-question-container {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hidden-message {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-top: 20px;
+  text-align: center;
+}
+
