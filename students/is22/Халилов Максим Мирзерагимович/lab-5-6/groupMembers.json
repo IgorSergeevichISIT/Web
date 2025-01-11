@@ -1,0 +1,16 @@
+{
+  "response": {
+    "count": 3,
+    "items": [
+      {
+        "id": 441169882,
+        "photo_400_orig": "https://sun33-2.userapi.com/s/v1/ig2/eroXL80DbUCPjM3sewO1ZjaU_gl2c-WfBecha_PiyPZtaf8jTaG-apmxYy2LJXEAXYj_TYKfdDa4Mq_mWfLKZF4f.jpg?quality=95&crop=509,512,511,511&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480&ava=1&cs=240x240",
+        "first_name": "Дмитрий",
+        "last_name": "Лаврентьев",
+        "can_access_closed": true,
+        "is_closed": false
+      }
+    ],
+    "next_from": ""
+  }
+}
