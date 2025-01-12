@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dota2</title>
+    <link href="css/tailwind-output.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="tailwind.css" rel="stylesheet">
+</head>
+<body>
+    <div id="notificationContainer" style="position: absolute; top: 20px; right: 20px; z-index: 999;"></div>
+    <header class="bg-red-600 p-4 text-center">
+        <h1 class="text-3xl text-white">Информация о герое</h1>
+    </header>
+    
+    <main class="flex justify-center items-center min-h-screen"> 
+        <section id="dotaCard" class="dota-card max-w-md mx-auto p-4 bg-white shadow rounded-lg">
+            <img id="dotaImage" src="" alt="" class="w-full h-48 object-cover rounded-md mb-2">
+            <h3 id="dotaName" class="text-xl font-bold animate-jump"></h3> 
+            <p id="dotaDescription" class="text-gray-700"></p>
+            <button id="backButton" class="back-button mt-4 hover:bg-red-900 transition duration-300">Назад</button>
+        </section>
+    </main>
+
+    <script src="js/dota.js"></script>
+    <script src="js/alert.js"></script>
+    <script>
+        document.getElementById('backButton').addEventListener('click', function () {
+            showAlert('Вы возвращаетесь к поиску игры!'); 
+        
+            setTimeout(() => {
+                const notificationContainer = document.getElementById('notificationContainer');
+                notificationContainer.innerHTML = '';
+                window.history.back();
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
