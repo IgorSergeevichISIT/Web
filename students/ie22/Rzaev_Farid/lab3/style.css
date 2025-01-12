@@ -1,0 +1,61 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#liveToastBtn{
+    display: block;
+    margin-top: 10px;
+    z-index: -10;
+}
+
+.card {
+    height: 310px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+
+  }
+
+  .card img {
+    height: 50%;
+    margin-bottom: 1%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  .card-text
+  {
+    text-align: left;
+    height:40px ;
+  }
+  .card
+  {
+    width: 300px;
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+  .card-body
+  {
+    width: 300px;
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+  .card2
+  {
+    width: 540px;
+    height: 300px;
+    background-color:antiquewhite;
+  }
+  .col-md-4
+  {
+    width: 100px;
+    margin-right:60px;
+  }
