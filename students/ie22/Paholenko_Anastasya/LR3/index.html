@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошки</title>
+    <link href="css/tailwind-output.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="tailwind.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-pink-400 p-4 text-center">
+        <h1 class="text-3xl font-bold text-white">Список кисок</h1>
+        <h3 class="text-lg text-white animate-jump">Выбери любую</h3> <!-- анимация прыжка -->
+    </header>
+    <main>
+        <div id="notificationContainer" class="my-5"></div>
+        
+        <section id="catList" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4"></section>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/alert.js"></script>
+</body>
+</html>

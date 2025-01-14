@@ -1,0 +1,17 @@
+{
+  "name": "3-laba",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i tailwind.css -o css/tailwind-output.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.16"
+  }
+}
