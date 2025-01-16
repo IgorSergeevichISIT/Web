@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center; /* Центруем текст по всему документу */
+}
+head {
+    background-color: #f05aa2;
+    padding: 10px;
+}
+.col-md-4 {
+    border: 5px solid #f05aa2;
+    text-align: center;
+    transition: transform 0.2s;
+}
+.nav-link-active{
+    border: 1px solid #f05aa2;
+    text-align: center;
+    background-color: pink;
+}
