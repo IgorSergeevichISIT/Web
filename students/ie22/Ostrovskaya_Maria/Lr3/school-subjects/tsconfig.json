@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es6",  // или выше
+    "lib": ["es6", "dom"],  // Подключаем библиотеки ES6 и DOM
+    "module": "esnext",
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "./dist",
+    "allowJs": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "main.ts"  // или ваш основной файл
+  ],
+  "exclude": [
+    "dist"
+  ]
+}
