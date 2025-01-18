@@ -1,0 +1,6 @@
+export const accessToken = "vk1.a.a5eg7kJchoRqwn5uiWBoPqEajpwUDpqrpF4vyCnQ9OOWswRekqhGZkTR1RNyb3lgyBrDzawHbdilimGqabs_U2J7dbIRZVSLveAPH-T67D5Sf9JmxSLq3Ukj5KX2IxRNTW29S7hyCSUE3ABYo_LRuX6506dK9pT4C8ziyamI-Yhf42ZVvF1X1wuwBrS3_zhRt33VCeTNHKJZE0lTzGIG-Q"
+export const version = "5.199"
+export const userId = "690905549"
+export const groupId = "228805183"
+export const filterByFriends = "friends"
+export const filterByAdmins = "managers"
