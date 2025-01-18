@@ -1,0 +1,1 @@
+docker run --rm -v ${PWD}:/local openapitools/openapi-generator-cli generate -i /local/asd.json -g typescript-axios -o /local/generated
