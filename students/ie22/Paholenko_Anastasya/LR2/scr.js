@@ -11,15 +11,13 @@ window.onload = function() {
     function updateOutput(value) {
         outputElement.innerHTML = value;
 
-        // Проверяем обращение к длине текста и добавляем класс для прокрутки
         if (outputElement.scrollWidth > outputElement.clientWidth) {
             outputElement.classList.add('scrolling-text');
         } else {
             outputElement.classList.remove('scrolling-text');
         }
 
-        // Прокручиваем до конца, если это необходимо
-        outputElement.scrollLeft = outputElement.scrollWidth; // Устанавливаем прокрутку в конец
+        outputElement.scrollLeft = outputElement.scrollWidth;
     }
 
     function resetCalculator() {
@@ -32,33 +30,15 @@ window.onload = function() {
         updateOutput('0'); // Вернуть к начальному состоянию
     }
     
-    // Функция для проверки Infinity
     function checkInfinity() {
         if (outputElement.innerHTML === 'Infinity') {
             resetCalculator();
-            return true; // Указание на то, что сброс был выполнен
+            return true;
         }
         return false;
     }
 
-    function onDigitButtonClicked(digit) {
-        if (checkInfinity()) return; // Проверка на Infinity
 
-        if (!selectedOperation) {
-            if ((digit !== '.') || (digit === '.' && !a.includes(digit))) { 
-                a += digit;
-            }
-            updateOutput(a || '0'); 
-        } else {
-            if ((digit !== '.') || (digit === '.' && !b.includes(digit))) { 
-                b += digit;
-                expressionString = a + ' ' + selectedOperation + ' ' + b;
-                updateOutput(expressionString);         
-            }
-        }
-    }
-
-    // Привязываем кнопки цифр
     const digitButtons = document.querySelectorAll('[id^="btn_digit_"]');
     digitButtons.forEach(button => {
         button.onclick = function() {
@@ -67,10 +47,9 @@ window.onload = function() {
         }
     });
 
-    // Обработчики для кнопок операций
     document.getElementById("btn_op_mult").onclick = function() { 
-        if (checkInfinity()) return; // Проверка на Infinity
-        if (selectedOperation) return; // Если уже выбрана операция, не делаем ничего
+        if (checkInfinity()) return;
+        if (selectedOperation) return;
         if (a === '') return;
         selectedOperation = '×';
         expressionString = a + ' ' + selectedOperation; 
@@ -78,41 +57,41 @@ window.onload = function() {
     }
     
     document.getElementById("btn_op_plus").onclick = function() { 
-        if (checkInfinity()) return; // Проверка на Infinity
+        if (checkInfinity()) return;
         if (selectedOperation) { 
-            selectedOperation = '+'; // Меняем знак, если он уже есть
+            selectedOperation = '+';
         } else {
             if (a === '') return;
             if (isAccumulated) {
-                a = expressionResult.toString(); // Используем накопленный результат
+                a = expressionResult.toString();
             }
             selectedOperation = '+';
         }
         expressionString = a + ' ' + selectedOperation;
         updateOutput(expressionString);
-        isAccumulated = true; // Включаем флаг накопления
+        isAccumulated = true;
     }
     
     document.getElementById("btn_op_minus").onclick = function() { 
-        if (checkInfinity()) return; // Проверка на Infinity
+        if (checkInfinity()) return;
         if (selectedOperation) { 
-            selectedOperation = '-'; // Меняем знак, если он уже есть
+            selectedOperation = '-';
         } else {
             if (a === '') return;
             if (isAccumulated) {
-                a = expressionResult.toString(); // Используем накопленный результат
+                a = expressionResult.toString();
             }
             selectedOperation = '-';
         }
         expressionString = a + ' ' + selectedOperation;
         updateOutput(expressionString);
-        isAccumulated = true; // Включаем флаг накопления
+        isAccumulated = true;
     }
     
     document.getElementById("btn_op_div").onclick = function() { 
-        if (checkInfinity()) return; // Проверка на Infinity
+        if (checkInfinity()) return;
         if (selectedOperation) {
-            selectedOperation = '/'; // Меняем знак, если он уже есть
+            selectedOperation = '/';
         } else {
             if (a === '') return;
             selectedOperation = '/';
@@ -121,13 +100,10 @@ window.onload = function() {
         updateOutput(expressionString);
     }
 
-    // Кнопка очистки
     document.getElementById("btn_op_clear").onclick = resetCalculator;
 
-    // Переключение знака
     document.getElementById("btn_op_sign").onclick = function() {
-        checkInfinity(); // Проверка на Infinity
-        // Находим текущее значение в зависимости от того, есть ли b
+        checkInfinity();
         if (b === '' && a !== '') {
             a = (-a).toString();
             updateOutput(a);
@@ -138,23 +114,37 @@ window.onload = function() {
         }
     }
 
-    // Кнопка процента
     document.getElementById("btn_op_percent").onclick = function() {
-        if (checkInfinity()) return; // Проверка на Infinity
-        if (b === '' && a !== '') {
-            a = (+a / 100).toString();
-            expressionString = a + ' ' + (selectedOperation || '') + ' ' + b;
-            updateOutput(expressionString);
-        } else if (b !== '') {
-            b = (+b / 100).toString();
-            expressionString = a + ' ' + (selectedOperation || '') + ' ' + b;
-            updateOutput(expressionString);
+        if (selectedOperation) {
+            // применяется процент к числу b
+            if (selectedOperation === "+" || selectedOperation === "-") {
+                // применяется процент к a
+                const percentValue = parseFloat(b) / 100; // преобраз b в десятичное значение
+                if (selectedOperation === "+") {
+                    a = (parseFloat(a) + (parseFloat(a) * percentValue)).toString(); // добав процент к a
+                } else if (selectedOperation === "-") {
+                    a = (parseFloat(a) - (parseFloat(a) * percentValue)).toString(); // вычитается процент от a
+                }
+                // сброс b и selectedOperation, чтобы можно было продолжить с новой операцией
+                b = '0';
+                selectedOperation = null; 
+                updateOutput(a); // обнов вывод только с результатом
+            } else {
+                // Применяем процент к b
+                b = (parseFloat(b) / 100).toString(); // Делим b на 100
+                expressionString = a + ' ' + selectedOperation + ' ' + b;
+                updateOutput(expressionString);
+            }
+        } else {
+            // Применяем процент к числу a
+            a = (parseFloat(a) / 100).toString();
+            updateOutput(a || '0');
         }
     }
-
-    // Кнопка результата
+            
+    
     document.getElementById("btn_op_equal").onclick = function() { 
-        if (checkInfinity()) return; // Проверка на Infinity
+        if (checkInfinity()) return;
         if (a === '' || b === '' || !selectedOperation) return;
 
         switch(selectedOperation) { 
@@ -176,12 +166,11 @@ window.onload = function() {
         a = expressionResult.toString(); 
         b = '';
         selectedOperation = null;
-        isAccumulated = false; // Сбрасываем флаг накопления
+        isAccumulated = false;
     }
 
-    // Позволяет удалять последние символы
     document.getElementById("btn_op_backspace").onclick = function() {
-        if (checkInfinity()) return; // Проверка на Infinity
+        if (checkInfinity()) return;
         if (b !== '') { 
             b = b.slice(0, -1);
             updateOutput(a + ' ' + selectedOperation + ' ' + b || a || '0');
@@ -194,22 +183,28 @@ window.onload = function() {
         }
     }
 
-    // Кнопка квадратного корня
     document.getElementById("btn_op_sqrt").onclick = function() {
-        if (checkInfinity()) return; // Проверка на Infinity
+        if (checkInfinity()) return;
         if (!selectedOperation && a !== '') {
-            a = Math.sqrt(+a).toString();
-            updateOutput(a);
+            // проверка, что a является числом
+            const numberA = parseFloat(a);
+            if (!isNaN(numberA)) {
+                a = Math.sqrt(numberA).toString();
+                updateOutput(a);
+            }
         } else if (b !== '') {
-            b = Math.sqrt(+b).toString();
-            expressionString = a + ' ' + selectedOperation + ' ' + b;
-            updateOutput(expressionString);
+            // проверка, что b является числом
+            const numberB = parseFloat(b);
+            if (!isNaN(numberB)) {
+                b = Math.sqrt(numberB).toString();
+                expressionString = a + ' ' + selectedOperation + ' ' + b;
+                updateOutput(expressionString);
+            }
         }
     }
 
-    // Кнопка возведения в квадрат
     document.getElementById("btn_op_square").onclick = function() {
-        if (checkInfinity()) return; // Проверка на Infinity
+        if (checkInfinity()) return;
         if (!selectedOperation && a !== '') {
             a = Math.pow(+a, 2).toString();
             updateOutput(a);
@@ -220,16 +215,15 @@ window.onload = function() {
         }
     }
 
-    // Кнопка факториала
     document.getElementById("btn_op_fact").onclick = function() {
         function factorial(n) {
             if (n >= 171) {
-                return Infinity; // Возвращаем Infinity для факториала большего 170
+                return Infinity;
             }
-            return (n != 1 && n != 0) ? n * factorial(n - 1) : 1; // Факториал
+            return (n != 1 && n != 0) ? n * factorial(n - 1) : 1;
         }
 
-        if (checkInfinity()) return; // Проверка на Infinity
+        if (checkInfinity()) return;
         if (!selectedOperation && a !== '') {
             a = factorial(+a).toString();
             updateOutput(a);
@@ -240,16 +234,44 @@ window.onload = function() {
         }
     };
 
-    // Кнопка добавления трех нулей
     document.getElementById("btn_op_triple_zero").onclick = function() {
-        if (checkInfinity()) return; // Проверка на Infinity
+        if (checkInfinity()) return;
         if (!selectedOperation) {
-            a += '000'; // Добавляем '000' к числу 'a'
+            a += '000';
             updateOutput(a || '0');
         } else {
-            b += '000'; // Добавляем '000' к числу 'b'
+            b += '000';
             expressionString = a + ' ' + selectedOperation + ' ' + b;
             updateOutput(expressionString);
         }
     };
+    function onDigitButtonClicked(digit) {
+        // проверка на NaN и сбрасываем калькулятор, если это необходимо
+        if (checkInfinity()) return;
+    
+        // если текущий результат NaN, сбрасываем калькулятор
+        if (isNaN(+a) || isNaN(+b)) {
+            resetCalculator(); // сбрасываем калькулятор
+            a = ''; // обнуляем переменную a
+        }
+    
+        // Предотвращаем ввод, если текущий результат NaN
+        if (isNaN(+a) || isNaN(+b)) return;
+    
+        if (!selectedOperation) {
+            // Убираем блокировку на ввод "0"
+            if ((digit !== '.') || (digit === '.' && !a.includes(digit))) {
+                a = (a === '0' && digit !== '.' ? '' : a) + digit; // Убираем лишний 0
+            }
+            updateOutput(a || '0');
+        } else {
+            if (digit === '0' && b === '0') return; // Блокируем ведущие нули для b
+            if ((digit !== '.') || (digit === '.' && !b.includes(digit))) {
+                b = (b === '0' && digit !== '.' ? '' : b) + digit; // Убираем лишний 0
+            }
+            expressionString = a + ' ' + selectedOperation + ' ' + b;
+            updateOutput(expressionString);
+        }
+    }
 };
+
