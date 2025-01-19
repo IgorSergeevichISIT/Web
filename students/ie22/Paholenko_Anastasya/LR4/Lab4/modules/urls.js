@@ -1,4 +1,4 @@
-import {accessToken, version} from "./consts.js";
+import { accessToken, version } from "./consts.js";
 
 class Urls {
     constructor() {
@@ -7,7 +7,7 @@ class Urls {
     }
 
     getUserInfo(userId) {
-        return `${this.url}/users.get?user_ids=${userId}&fields=photo_400_orig&${this.commonInfo}`;
+        return `${this.url}/users.get?user_ids=${userId}&fields=photo_400_orig,city,country,bdate,status&${this.commonInfo}`;
     }
 
     getGroupMembers(groupId) {
@@ -32,4 +32,3 @@ class Urls {
 }
 
 export const urls = new Urls();
-
