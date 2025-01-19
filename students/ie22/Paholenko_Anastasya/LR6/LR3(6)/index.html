@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошки</title>
+    <link href="css/tailwind-output.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="tailwind.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-pink-400 p-4 text-center">
+        <h1 class="text-3xl font-bold text-white">Список кисок</h1>
+        <h3 class="text-lg text-white animate-jump">Выбери любую</h3> <!-- анимация прыжка -->
+    </header>
+    <main>
+        <div id="notificationContainer" class="my-5"></div>
+        
+        <section id="catList" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4"></section>
+
+        <section id="addCatSection" class="p-4">
+            <h2 class="text-xl font-bold">Добавить новую кошку</h2>
+            <form id="addCatForm" class="flex flex-col space-y-4">
+                <div class="flex space-x-4">
+                    <input type="text" id="catNameInput" placeholder="Имя кошки" required class="flex-1 p-2 border border-gray-300 rounded">
+                    <input type="text" id="catImageInput" placeholder="URL изображения" required class="flex-1 p-2 border border-gray-300 rounded">
+                </div>
+                <textarea id="catDescriptionInput" placeholder="Описание" required class="p-2 border border-gray-300 rounded"></textarea>
+                <button type="submit" class="bg-green-500 text-white p-2 rounded">Добавить</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/alert.js"></script>
+</body>
+</html>
