@@ -13,13 +13,13 @@ body {
 .light-background {
     background-color: #f0f0f0;
     color: #000; /* Цвет текста для светлой темы */
-    background-image: url('https://imgur.la/images/2024/10/28/ddf054e3d32be9b6bc34681b34100af8.jpg'); /* путь к изображению для светлой темы */
+    background-image: url('lighttheme.jpg'); /* путь к изображению для светлой темы */
 }
 
 .dark-background {
     background-color: #2c2c2c;
     color: #fff; /* Цвет текста для тёмной темы */
-    background-image: url('https://imgur.la/images/2024/10/28/111Picsart_24-10-24_08-48-44-242.jpg'); /* путь к изображению для тёмной темы */
+    background-image: url('darktheme.jpg'); /* путь к изображению для тёмной темы */
 }
 .theme-toggle {
     display: inline-block; /* Отображение как блочный элемент для ссылок */
