@@ -1,0 +1,33 @@
+body {
+  color: #000000;
+  font-family: 'Montserrat';
+  font-weight: 100;
+  background-color: rgb(214, 214, 214);
+  margin: 0;
+  padding-top: 6vh; /* Добавлен отступ для учета фиксированного header */
+}
+
+
+.card {
+    width: 540px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+  }
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+}
+
+.refresh-button{
+  margin-left: 35%;
+  margin-top: 1vh;
+  background-color: blue;
+}
+
+

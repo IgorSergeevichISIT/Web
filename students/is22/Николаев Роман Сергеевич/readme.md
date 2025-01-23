@@ -6,3 +6,4 @@
 - [Лабораторная работа №3](https://uh-well-niko.github.io/Web-labs-pages/lab_3/)
 - [Лабораторная работа №4](https://uh-well-niko.github.io/Web-labs-pages/lab_4/)
 - [Лабораторная работа №5](https://uh-well-niko.github.io/Web-labs-pages/lab_5/)
+- Лабораторная работа №6 не размещена на хостинге, так как нужно локально запускать сервер, без него работать не будет.
