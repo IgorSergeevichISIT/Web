@@ -3,7 +3,7 @@ class Urls {
         return `http://127.0.0.1:8000/get-userInfo?userId=${userId}`
     }
 
-    getGroupMembers2(groupId) {
+    getGroupMembers2() {
         return `http://127.0.0.1:8000/get-members/`
     }
 }

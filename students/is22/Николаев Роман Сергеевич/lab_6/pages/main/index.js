@@ -36,7 +36,7 @@ export class MainPage {
     }
 
     updateDataWithGroupId() {
-        ajax.post(urls.getGroupMembers2(groupId), (data) => {
+        ajax.post(urls.getGroupMembers2(), (data) => {
             this.renderData(data.response.items);
         });
     }
