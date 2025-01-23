@@ -10,7 +10,7 @@ export class FilterComponent {
                 <label for="filter">Фильтр:</label>
                 <select id="filter" name="filter">
                     <option value="">Все</option>
-                    <option value="friends">Друзья</option>
+                    <option value="managers">Модерация</option>
                 </select>
             </div>
         `;
