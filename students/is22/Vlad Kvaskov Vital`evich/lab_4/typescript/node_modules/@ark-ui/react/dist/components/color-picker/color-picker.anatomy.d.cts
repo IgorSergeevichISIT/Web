@@ -1,0 +1,2 @@
+import { AnatomyInstance } from '@zag-js/anatomy';
+export declare const colorPickerAnatomy: AnatomyInstance<"area" | "label" | "view" | "content" | "root" | "trigger" | "control" | "positioner" | "formatSelect" | "areaThumb" | "channelInput" | "channelSliderTrack" | "channelSliderThumb" | "valueText" | "areaBackground" | "channelSlider" | "channelSliderLabel" | "channelSliderValueText" | "transparencyGrid" | "swatchGroup" | "swatchTrigger" | "swatchIndicator" | "swatch" | "eyeDropperTrigger" | "formatTrigger">;

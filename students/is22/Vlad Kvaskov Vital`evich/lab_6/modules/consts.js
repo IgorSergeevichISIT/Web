@@ -1,0 +1,3 @@
+export const groupId = 228811338
+export const accessToken = 'vk1.a.R-qMsRTvk-uV2Hs2nvasSd-5oYdsiSfzvi2vqr64m9SiMVT0ZW2XZ-TKVgWe-5n7wd-4nCdMzP8xA5JL5sMRPphFzSLjnT480hzwC1y0NP-cSh_hTbqHBUy_rpBnmGLrVh5vQJPF4vCGC5DdRclYIp27LaonXPRz2i9YzmtnXErjW1gJ47VC8QaXfMggreAFs2NIfkkvxEMNGgV39BwcBg'
+export const version = '5.199'
