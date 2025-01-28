@@ -1,0 +1,652 @@
+{
+  "response": {
+    "count": 7,
+    "unread_count": 7,
+    "items": [
+      {
+        "conversation": {
+          "peer": {
+            "id": 2000000004,
+            "type": "chat",
+            "local_id": 4
+          },
+          "last_message_id": 46,
+          "last_conversation_message_id": 12,
+          "in_read": 0,
+          "out_read": 46,
+          "in_read_cmid": 0,
+          "out_read_cmid": 12,
+          "version": 10000165,
+          "sort_id": {
+            "major_id": 0,
+            "minor_id": 46
+          },
+          "unread_count": 2,
+          "is_marked_unread": false,
+          "important": false,
+          "unanswered": true,
+          "can_write": {
+            "allowed": true
+          },
+          "chat_settings": {
+            "title": "TEST 5",
+            "members_count": 3,
+            "owner_id": -228811338,
+            "description": "",
+            "pinned_messages_count": 0,
+            "state": "in",
+            "photo": {
+              "photo_50": "https://sun145-1.userapi.com/s/v1/ig2/cd4cH73nwx6NtbMjAam9WsyAfgGje6pQ5e2K2B-jDB_o5iAywUaSRuZBmRSoBFg0P4Sa7kh5GoLFpLC8u1bqSJEj.jpg?quality=96&crop=137,0,828,828&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720&ava=1&cs=50x50",
+              "photo_100": "https://sun145-1.userapi.com/s/v1/ig2/cd4cH73nwx6NtbMjAam9WsyAfgGje6pQ5e2K2B-jDB_o5iAywUaSRuZBmRSoBFg0P4Sa7kh5GoLFpLC8u1bqSJEj.jpg?quality=96&crop=137,0,828,828&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720&ava=1&cs=100x100",
+              "photo_200": "https://sun145-1.userapi.com/s/v1/ig2/cd4cH73nwx6NtbMjAam9WsyAfgGje6pQ5e2K2B-jDB_o5iAywUaSRuZBmRSoBFg0P4Sa7kh5GoLFpLC8u1bqSJEj.jpg?quality=96&crop=137,0,828,828&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720&ava=1&cs=200x200",
+              "is_default_photo": false,
+              "is_default_call_photo": false
+            },
+            "admin_ids": [
+              247361820
+            ],
+            "active_ids": [
+              178905092,
+              247361820
+            ],
+            "is_group_channel": false,
+            "acl": {
+              "can_change_info": true,
+              "can_change_invite_link": true,
+              "can_change_pin": true,
+              "can_invite": true,
+              "can_promote_users": true,
+              "can_see_invite_link": true,
+              "can_moderate": true,
+              "can_copy_chat": false,
+              "can_call": false,
+              "can_use_mass_mentions": true,
+              "can_change_style": true,
+              "can_send_reactions": true
+            },
+            "permissions": {
+              "invite": "all",
+              "change_info": "owner_and_admins",
+              "change_pin": "owner_and_admins",
+              "use_mass_mentions": "owner_and_admins",
+              "see_invite_link": "all",
+              "call": "owner_and_admins",
+              "change_admins": "owner",
+              "change_style": "all"
+            },
+            "is_disappearing": false,
+            "is_service": false
+          },
+          "peer_flags": 637534210
+        },
+        "last_message": {
+          "date": 1738004235,
+          "from_id": 178905092,
+          "id": 46,
+          "version": 10000165,
+          "out": 0,
+          "important": false,
+          "is_hidden": false,
+          "attachments": [],
+          "conversation_message_id": 12,
+          "fwd_messages": [],
+          "text": "Н",
+          "peer_id": 2000000004,
+          "random_id": 0
+        }
+      },
+      {
+        "conversation": {
+          "peer": {
+            "id": 2000000001,
+            "type": "chat",
+            "local_id": 1
+          },
+          "last_message_id": 45,
+          "last_conversation_message_id": 8,
+          "in_read": 0,
+          "out_read": 45,
+          "in_read_cmid": 0,
+          "out_read_cmid": 8,
+          "version": 10000165,
+          "sort_id": {
+            "major_id": 0,
+            "minor_id": 45
+          },
+          "unread_count": 1,
+          "is_marked_unread": false,
+          "important": false,
+          "unanswered": true,
+          "can_write": {
+            "allowed": true
+          },
+          "chat_settings": {
+            "title": "TEST 1",
+            "members_count": 2,
+            "owner_id": -228811338,
+            "description": "",
+            "pinned_messages_count": 0,
+            "state": "in",
+            "photo": {
+              "photo_50": "https://sun145-1.userapi.com/s/v1/ig2/IGdVy8bPTLh_8nFQUoGbXPlQCxuK03bQEFRJRk_TuORYNSJbxo_XbqCWAF2EoqOuyxnOg-MptG_c4HdM3t0Qjzjp.jpg?quality=96&crop=11,0,488,488&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480&ava=1&cs=50x50",
+              "photo_100": "https://sun145-1.userapi.com/s/v1/ig2/IGdVy8bPTLh_8nFQUoGbXPlQCxuK03bQEFRJRk_TuORYNSJbxo_XbqCWAF2EoqOuyxnOg-MptG_c4HdM3t0Qjzjp.jpg?quality=96&crop=11,0,488,488&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480&ava=1&cs=100x100",
+              "photo_200": "https://sun145-1.userapi.com/s/v1/ig2/IGdVy8bPTLh_8nFQUoGbXPlQCxuK03bQEFRJRk_TuORYNSJbxo_XbqCWAF2EoqOuyxnOg-MptG_c4HdM3t0Qjzjp.jpg?quality=96&crop=11,0,488,488&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480&ava=1&cs=200x200",
+              "is_default_photo": false,
+              "is_default_call_photo": false
+            },
+            "admin_ids": [
+              247361820
+            ],
+            "active_ids": [
+              247361820,
+              -228811338
+            ],
+            "is_group_channel": false,
+            "acl": {
+              "can_change_info": true,
+              "can_change_invite_link": true,
+              "can_change_pin": true,
+              "can_invite": true,
+              "can_promote_users": true,
+              "can_see_invite_link": true,
+              "can_moderate": true,
+              "can_copy_chat": false,
+              "can_call": false,
+              "can_use_mass_mentions": true,
+              "can_change_style": true,
+              "can_send_reactions": true
+            },
+            "permissions": {
+              "invite": "all",
+              "change_info": "owner_and_admins",
+              "change_pin": "owner_and_admins",
+              "use_mass_mentions": "owner_and_admins",
+              "see_invite_link": "all",
+              "call": "owner_and_admins",
+              "change_admins": "owner",
+              "change_style": "all"
+            },
+            "is_disappearing": false,
+            "is_service": false
+          },
+          "peer_flags": 637534210
+        },
+        "last_message": {
+          "date": 1738000504,
+          "from_id": 247361820,
+          "id": 45,
+          "version": 10000165,
+          "out": 0,
+          "important": false,
+          "is_hidden": false,
+          "attachments": [],
+          "conversation_message_id": 8,
+          "fwd_messages": [],
+          "text": "H",
+          "peer_id": 2000000001,
+          "random_id": 0
+        }
+      },
+      {
+        "conversation": {
+          "peer": {
+            "id": 2000000006,
+            "type": "chat",
+            "local_id": 6
+          },
+          "last_message_id": 44,
+          "last_conversation_message_id": 4,
+          "in_read": 0,
+          "out_read": 44,
+          "in_read_cmid": 0,
+          "out_read_cmid": 4,
+          "version": 10000165,
+          "sort_id": {
+            "major_id": 0,
+            "minor_id": 44
+          },
+          "unread_count": 1,
+          "is_marked_unread": false,
+          "important": false,
+          "unanswered": true,
+          "can_write": {
+            "allowed": true
+          },
+          "chat_settings": {
+            "title": "TEST 6",
+            "members_count": 2,
+            "owner_id": -228811338,
+            "description": "",
+            "pinned_messages_count": 0,
+            "state": "in",
+            "photo": {
+              "photo_50": "https://sun145-1.userapi.com/s/v1/ig2/Ofef5B8kIZ-lDRnozk76xrNGdCXpKMbaCbhxc4HOdzzvZbWHXn8EqJhFRC2j8YInBNb_pzgGmNv9Vz1W7Fy5ogGI.jpg?quality=96&crop=0,0,1024,1024&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720&ava=1&cs=50x50",
+              "photo_100": "https://sun145-1.userapi.com/s/v1/ig2/Ofef5B8kIZ-lDRnozk76xrNGdCXpKMbaCbhxc4HOdzzvZbWHXn8EqJhFRC2j8YInBNb_pzgGmNv9Vz1W7Fy5ogGI.jpg?quality=96&crop=0,0,1024,1024&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720&ava=1&cs=100x100",
+              "photo_200": "https://sun145-1.userapi.com/s/v1/ig2/Ofef5B8kIZ-lDRnozk76xrNGdCXpKMbaCbhxc4HOdzzvZbWHXn8EqJhFRC2j8YInBNb_pzgGmNv9Vz1W7Fy5ogGI.jpg?quality=96&crop=0,0,1024,1024&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720&ava=1&cs=200x200",
+              "is_default_photo": false,
+              "is_default_call_photo": false
+            },
+            "admin_ids": [
+              247361820
+            ],
+            "active_ids": [
+              247361820,
+              -228811338
+            ],
+            "is_group_channel": false,
+            "acl": {
+              "can_change_info": true,
+              "can_change_invite_link": true,
+              "can_change_pin": true,
+              "can_invite": true,
+              "can_promote_users": true,
+              "can_see_invite_link": true,
+              "can_moderate": true,
+              "can_copy_chat": false,
+              "can_call": false,
+              "can_use_mass_mentions": true,
+              "can_change_style": true,
+              "can_send_reactions": true
+            },
+            "permissions": {
+              "invite": "all",
+              "change_info": "owner_and_admins",
+              "change_pin": "owner_and_admins",
+              "use_mass_mentions": "owner_and_admins",
+              "see_invite_link": "all",
+              "call": "owner_and_admins",
+              "change_admins": "owner",
+              "change_style": "all"
+            },
+            "is_disappearing": false,
+            "is_service": false
+          },
+          "peer_flags": 637534210
+        },
+        "last_message": {
+          "date": 1738000272,
+          "from_id": 247361820,
+          "id": 44,
+          "version": 10000165,
+          "out": 0,
+          "important": false,
+          "is_hidden": false,
+          "attachments": [],
+          "conversation_message_id": 4,
+          "fwd_messages": [],
+          "text": "H",
+          "peer_id": 2000000006,
+          "random_id": 0
+        }
+      },
+      {
+        "conversation": {
+          "peer": {
+            "id": 2000000002,
+            "type": "chat",
+            "local_id": 2
+          },
+          "last_message_id": 43,
+          "last_conversation_message_id": 4,
+          "in_read": 0,
+          "out_read": 43,
+          "in_read_cmid": 0,
+          "out_read_cmid": 4,
+          "version": 10000165,
+          "sort_id": {
+            "major_id": 0,
+            "minor_id": 43
+          },
+          "unread_count": 1,
+          "is_marked_unread": false,
+          "important": false,
+          "unanswered": true,
+          "can_write": {
+            "allowed": true
+          },
+          "chat_settings": {
+            "title": "TEST 2",
+            "members_count": 2,
+            "owner_id": -228811338,
+            "description": "",
+            "pinned_messages_count": 0,
+            "state": "in",
+            "photo": {
+              "photo_50": "https://sun145-2.userapi.com/s/v1/ig2/T7LEtccDNKLEdSZ4cBEx_Tmorz3svhv0a-buYsjNfWL6dGIL1yOLg-y6D0Uh_mP4MOprsfaGehguMcB0mmzSCc7S.jpg?quality=96&crop=48,0,720,720&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720&ava=1&cs=50x50",
+              "photo_100": "https://sun145-2.userapi.com/s/v1/ig2/T7LEtccDNKLEdSZ4cBEx_Tmorz3svhv0a-buYsjNfWL6dGIL1yOLg-y6D0Uh_mP4MOprsfaGehguMcB0mmzSCc7S.jpg?quality=96&crop=48,0,720,720&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720&ava=1&cs=100x100",
+              "photo_200": "https://sun145-2.userapi.com/s/v1/ig2/T7LEtccDNKLEdSZ4cBEx_Tmorz3svhv0a-buYsjNfWL6dGIL1yOLg-y6D0Uh_mP4MOprsfaGehguMcB0mmzSCc7S.jpg?quality=96&crop=48,0,720,720&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720&ava=1&cs=200x200",
+              "is_default_photo": false,
+              "is_default_call_photo": false
+            },
+            "admin_ids": [
+              247361820
+            ],
+            "active_ids": [
+              247361820,
+              -228811338
+            ],
+            "is_group_channel": false,
+            "acl": {
+              "can_change_info": true,
+              "can_change_invite_link": true,
+              "can_change_pin": true,
+              "can_invite": true,
+              "can_promote_users": true,
+              "can_see_invite_link": true,
+              "can_moderate": true,
+              "can_copy_chat": false,
+              "can_call": false,
+              "can_use_mass_mentions": true,
+              "can_change_style": true,
+              "can_send_reactions": true
+            },
+            "permissions": {
+              "invite": "all",
+              "change_info": "owner_and_admins",
+              "change_pin": "owner_and_admins",
+              "use_mass_mentions": "owner_and_admins",
+              "see_invite_link": "all",
+              "call": "owner_and_admins",
+              "change_admins": "owner",
+              "change_style": "all"
+            },
+            "is_disappearing": false,
+            "is_service": false
+          },
+          "peer_flags": 637534210
+        },
+        "last_message": {
+          "date": 1738000265,
+          "from_id": 247361820,
+          "id": 43,
+          "version": 10000165,
+          "out": 0,
+          "important": false,
+          "is_hidden": false,
+          "attachments": [],
+          "conversation_message_id": 4,
+          "fwd_messages": [],
+          "text": "H",
+          "peer_id": 2000000002,
+          "random_id": 0
+        }
+      },
+      {
+        "conversation": {
+          "peer": {
+            "id": 2000000007,
+            "type": "chat",
+            "local_id": 7
+          },
+          "last_message_id": 40,
+          "last_conversation_message_id": 8,
+          "in_read": 0,
+          "out_read": 40,
+          "in_read_cmid": 0,
+          "out_read_cmid": 8,
+          "version": 10000165,
+          "sort_id": {
+            "major_id": 0,
+            "minor_id": 40
+          },
+          "unread_count": 1,
+          "is_marked_unread": false,
+          "important": false,
+          "unanswered": true,
+          "can_write": {
+            "allowed": true
+          },
+          "chat_settings": {
+            "title": "TEST 7",
+            "members_count": 2,
+            "owner_id": -228811338,
+            "description": "",
+            "pinned_messages_count": 0,
+            "state": "in",
+            "photo": {
+              "photo_50": "https://sun145-2.userapi.com/s/v1/ig2/q0gJpZpbk517mNQlcfK7D-lV5nae5FVADr-Qh4dD-QbDJWeryIhax6Jb9ZLDoM1W-XXZdIrYFINc9R7gkP322rSH.jpg?quality=96&crop=435,10,807,807&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720&ava=1&cs=50x50",
+              "photo_100": "https://sun145-2.userapi.com/s/v1/ig2/q0gJpZpbk517mNQlcfK7D-lV5nae5FVADr-Qh4dD-QbDJWeryIhax6Jb9ZLDoM1W-XXZdIrYFINc9R7gkP322rSH.jpg?quality=96&crop=435,10,807,807&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720&ava=1&cs=100x100",
+              "photo_200": "https://sun145-2.userapi.com/s/v1/ig2/q0gJpZpbk517mNQlcfK7D-lV5nae5FVADr-Qh4dD-QbDJWeryIhax6Jb9ZLDoM1W-XXZdIrYFINc9R7gkP322rSH.jpg?quality=96&crop=435,10,807,807&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720&ava=1&cs=200x200",
+              "is_default_photo": false,
+              "is_default_call_photo": false
+            },
+            "admin_ids": [
+              247361820
+            ],
+            "active_ids": [
+              247361820,
+              -228811338
+            ],
+            "is_group_channel": false,
+            "acl": {
+              "can_change_info": true,
+              "can_change_invite_link": true,
+              "can_change_pin": true,
+              "can_invite": true,
+              "can_promote_users": true,
+              "can_see_invite_link": true,
+              "can_moderate": true,
+              "can_copy_chat": false,
+              "can_call": false,
+              "can_use_mass_mentions": true,
+              "can_change_style": true,
+              "can_send_reactions": true
+            },
+            "permissions": {
+              "invite": "all",
+              "change_info": "owner_and_admins",
+              "change_pin": "owner_and_admins",
+              "use_mass_mentions": "owner_and_admins",
+              "see_invite_link": "all",
+              "call": "owner_and_admins",
+              "change_admins": "owner",
+              "change_style": "all"
+            },
+            "is_disappearing": false,
+            "is_service": false
+          },
+          "peer_flags": 637534210
+        },
+        "last_message": {
+          "date": 1738000209,
+          "from_id": 247361820,
+          "id": 40,
+          "version": 10000165,
+          "out": 0,
+          "important": false,
+          "is_hidden": false,
+          "attachments": [],
+          "conversation_message_id": 8,
+          "fwd_messages": [],
+          "text": "G",
+          "peer_id": 2000000007,
+          "random_id": 0
+        }
+      },
+      {
+        "conversation": {
+          "peer": {
+            "id": 2000000005,
+            "type": "chat",
+            "local_id": 5
+          },
+          "last_message_id": 36,
+          "last_conversation_message_id": 4,
+          "in_read": 0,
+          "out_read": 36,
+          "in_read_cmid": 0,
+          "out_read_cmid": 4,
+          "version": 10000165,
+          "sort_id": {
+            "major_id": 0,
+            "minor_id": 36
+          },
+          "unread_count": 1,
+          "is_marked_unread": false,
+          "important": false,
+          "unanswered": true,
+          "can_write": {
+            "allowed": true
+          },
+          "chat_settings": {
+            "title": "TEST 4",
+            "members_count": 2,
+            "owner_id": -228811338,
+            "description": "",
+            "pinned_messages_count": 0,
+            "state": "in",
+            "photo": {
+              "photo_50": "https://sun145-2.userapi.com/s/v1/ig2/rNAGC540QRykFW6OB0AZ9b2B6Y4rf9RzhCJWjHoJX4taSLAB_mx9xQ1nMog-HFjgChDP9utIU3Ir3XPU28xdxshm.jpg?quality=96&crop=56,0,847,847&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720&ava=1&cs=50x50",
+              "photo_100": "https://sun145-2.userapi.com/s/v1/ig2/rNAGC540QRykFW6OB0AZ9b2B6Y4rf9RzhCJWjHoJX4taSLAB_mx9xQ1nMog-HFjgChDP9utIU3Ir3XPU28xdxshm.jpg?quality=96&crop=56,0,847,847&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720&ava=1&cs=100x100",
+              "photo_200": "https://sun145-2.userapi.com/s/v1/ig2/rNAGC540QRykFW6OB0AZ9b2B6Y4rf9RzhCJWjHoJX4taSLAB_mx9xQ1nMog-HFjgChDP9utIU3Ir3XPU28xdxshm.jpg?quality=96&crop=56,0,847,847&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720&ava=1&cs=200x200",
+              "is_default_photo": false,
+              "is_default_call_photo": false
+            },
+            "admin_ids": [
+              247361820
+            ],
+            "active_ids": [
+              247361820,
+              -228811338
+            ],
+            "is_group_channel": false,
+            "acl": {
+              "can_change_info": true,
+              "can_change_invite_link": true,
+              "can_change_pin": true,
+              "can_invite": true,
+              "can_promote_users": true,
+              "can_see_invite_link": true,
+              "can_moderate": true,
+              "can_copy_chat": false,
+              "can_call": false,
+              "can_use_mass_mentions": true,
+              "can_change_style": true,
+              "can_send_reactions": true
+            },
+            "permissions": {
+              "invite": "all",
+              "change_info": "owner_and_admins",
+              "change_pin": "owner_and_admins",
+              "use_mass_mentions": "owner_and_admins",
+              "see_invite_link": "all",
+              "call": "owner_and_admins",
+              "change_admins": "owner",
+              "change_style": "all"
+            },
+            "is_disappearing": false,
+            "is_service": false
+          },
+          "peer_flags": 637534210
+        },
+        "last_message": {
+          "date": 1735522857,
+          "from_id": 247361820,
+          "id": 36,
+          "version": 10000165,
+          "out": 0,
+          "important": false,
+          "is_hidden": false,
+          "attachments": [],
+          "conversation_message_id": 4,
+          "fwd_messages": [],
+          "text": "G",
+          "peer_id": 2000000005,
+          "random_id": 0
+        }
+      },
+      {
+        "conversation": {
+          "peer": {
+            "id": 2000000003,
+            "type": "chat",
+            "local_id": 3
+          },
+          "last_message_id": 35,
+          "last_conversation_message_id": 4,
+          "in_read": 0,
+          "out_read": 35,
+          "in_read_cmid": 0,
+          "out_read_cmid": 4,
+          "version": 10000165,
+          "sort_id": {
+            "major_id": 0,
+            "minor_id": 35
+          },
+          "unread_count": 1,
+          "is_marked_unread": false,
+          "important": false,
+          "unanswered": true,
+          "can_write": {
+            "allowed": true
+          },
+          "chat_settings": {
+            "title": "TEST 3",
+            "members_count": 2,
+            "owner_id": -228811338,
+            "description": "",
+            "pinned_messages_count": 0,
+            "state": "in",
+            "photo": {
+              "photo_50": "https://sun145-1.userapi.com/s/v1/ig2/p-a6JjC-FjjgfPGl_QeWqtEJ8xzaZVcTBr7TmgCY2qtby5uztcRklS99mfMoOMF71SqcHscmnyAA8buhcD6Ar3b4.jpg?quality=96&crop=57,0,960,960&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720&ava=1&cs=50x50",
+              "photo_100": "https://sun145-1.userapi.com/s/v1/ig2/p-a6JjC-FjjgfPGl_QeWqtEJ8xzaZVcTBr7TmgCY2qtby5uztcRklS99mfMoOMF71SqcHscmnyAA8buhcD6Ar3b4.jpg?quality=96&crop=57,0,960,960&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720&ava=1&cs=100x100",
+              "photo_200": "https://sun145-1.userapi.com/s/v1/ig2/p-a6JjC-FjjgfPGl_QeWqtEJ8xzaZVcTBr7TmgCY2qtby5uztcRklS99mfMoOMF71SqcHscmnyAA8buhcD6Ar3b4.jpg?quality=96&crop=57,0,960,960&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720&ava=1&cs=200x200",
+              "is_default_photo": false,
+              "is_default_call_photo": false
+            },
+            "admin_ids": [
+              247361820
+            ],
+            "active_ids": [
+              247361820,
+              -228811338
+            ],
+            "is_group_channel": false,
+            "acl": {
+              "can_change_info": true,
+              "can_change_invite_link": true,
+              "can_change_pin": true,
+              "can_invite": true,
+              "can_promote_users": true,
+              "can_see_invite_link": true,
+              "can_moderate": true,
+              "can_copy_chat": false,
+              "can_call": false,
+              "can_use_mass_mentions": true,
+              "can_change_style": true,
+              "can_send_reactions": true
+            },
+            "permissions": {
+              "invite": "all",
+              "change_info": "owner_and_admins",
+              "change_pin": "owner_and_admins",
+              "use_mass_mentions": "owner_and_admins",
+              "see_invite_link": "all",
+              "call": "owner_and_admins",
+              "change_admins": "owner",
+              "change_style": "all"
+            },
+            "is_disappearing": false,
+            "is_service": false
+          },
+          "peer_flags": 637534210
+        },
+        "last_message": {
+          "date": 1735522849,
+          "from_id": 247361820,
+          "id": 35,
+          "version": 10000165,
+          "out": 0,
+          "important": false,
+          "is_hidden": false,
+          "attachments": [],
+          "conversation_message_id": 4,
+          "fwd_messages": [],
+          "text": "F",
+          "peer_id": 2000000003,
+          "random_id": 0
+        }
+      }
+    ]
+  }
+}

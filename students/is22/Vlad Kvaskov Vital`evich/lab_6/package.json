@@ -1,0 +1,16 @@
+{
+  "name": "lab_6",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",  
+  
+  "scripts": {
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "express": "^4.21.2"
+  }
+}

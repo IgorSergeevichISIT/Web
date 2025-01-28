@@ -1,0 +1,156 @@
+import { JSX } from '@zag-js/types';
+
+interface EventMap extends DocumentEventMap, WindowEventMap, HTMLElementEventMap {
+}
+type Node = Document | HTMLElement | EventTarget | null;
+type Target = (() => Node) | Node;
+declare const addDomEvent: <K extends keyof EventMap>(target: Target, eventName: K, handler: (event: EventMap[K]) => void, options?: boolean | AddEventListenerOptions) => () => void;
+
+declare function isKeyboardClick(e: Pick<MouseEvent, "detail" | "clientX" | "clientY">): boolean;
+declare function isPrintableKey(e: Pick<KeyboardEvent, "key" | "ctrlKey" | "metaKey">): boolean;
+declare function isVirtualPointerEvent(e: PointerEvent): boolean;
+declare function isVirtualClick(e: MouseEvent | PointerEvent): boolean;
+declare const isLeftClick: (e: Pick<MouseEvent, "button">) => boolean;
+declare const isContextMenuEvent: (e: Pick<MouseEvent, "button" | "ctrlKey" | "metaKey">) => boolean;
+declare const isModifierKey: (e: Pick<KeyboardEvent, "ctrlKey" | "metaKey" | "altKey">) => boolean;
+
+declare function clickIfLink(element: HTMLElement | null | undefined): void;
+
+declare function fireCustomEvent(el: HTMLElement | null, type: string, init?: CustomEventInit): boolean | undefined;
+declare function fireBlurEvent(el: HTMLElement, init?: FocusEventInit): boolean;
+
+type EventKey = "ArrowDown" | "ArrowUp" | "ArrowLeft" | "ArrowRight" | "Space" | "Enter" | "Comma" | "Escape" | "Backspace" | "Delete" | "Home" | "End" | "Tab" | "PageUp" | "PageDown" | (string & {});
+type EventKeyMap = {
+    [key in EventKey]?: (event: JSX.KeyboardEvent) => void;
+};
+interface EventKeyOptions {
+    dir?: "ltr" | "rtl";
+    orientation?: "horizontal" | "vertical";
+}
+
+/**
+ * Determine the event key based on text direction.
+ */
+declare function getEventKey(event: Pick<KeyboardEvent, "key">, options?: EventKeyOptions): string;
+
+type PointType = "page" | "client";
+declare function getEventPoint(event: any, type?: PointType): {
+    x: number;
+    y: number;
+};
+
+/**
+ * Determine the step factor for keyboard events
+ */
+declare function getEventStep(event: Pick<KeyboardEvent, "ctrlKey" | "metaKey" | "key" | "shiftKey">): 1 | 10 | 0.1;
+
+type NativeEvent<E> = JSX.ChangeEvent<any> extends E ? InputEvent : E extends JSX.SyntheticEvent<any, infer T> ? T : never;
+declare function getNativeEvent<E>(event: E): NativeEvent<E>;
+
+type Point$2 = {
+    x: number;
+    y: number;
+};
+type PercentValueOptions = {
+    inverted?: boolean | {
+        x?: boolean;
+        y?: boolean;
+    };
+    dir?: "ltr" | "rtl";
+    orientation?: "vertical" | "horizontal";
+};
+declare function getRelativePoint(point: Point$2, element: HTMLElement): {
+    offset: {
+        x: number;
+        y: number;
+    };
+    percent: {
+        x: number;
+        y: number;
+    };
+    getPercentValue: (options?: PercentValueOptions) => number;
+};
+
+declare function queueBeforeEvent(element: EventTarget, type: string, cb: () => void): () => void;
+
+declare function requestPointerLock(doc: Document, fn?: (locked: boolean) => void): (() => void) | undefined;
+
+interface Point$1 {
+    x: number;
+    y: number;
+}
+interface PointerMoveDetails {
+    /**
+     * The current position of the pointer.
+     */
+    point: Point$1;
+    /**
+     * The event that triggered the move.
+     */
+    event: PointerEvent;
+    /**
+     * The velocity of the pointer on the x and y axis.
+     */
+    velocity: Point$1;
+}
+interface PointerMoveHandlers {
+    /**
+     * Called when the pointer is released.
+     */
+    onPointerUp: VoidFunction;
+    /**
+     * Called when the pointer moves.
+     */
+    onPointerMove: (details: PointerMoveDetails) => void;
+}
+declare function trackPointerMove(doc: Document, handlers: PointerMoveHandlers): () => void;
+
+interface Point {
+    x: number;
+    y: number;
+}
+interface TapDetails {
+    /**
+     * The current position of the pointer.
+     */
+    point: Point;
+    /**
+     * The event that triggered the move.
+     */
+    event: PointerEvent;
+}
+interface TrackPressOptions {
+    /**
+     * The element that will be used to track the pointer events.
+     */
+    pointerNode: Element | null;
+    /**
+     * The element that will be used to track the keyboard focus events.
+     */
+    keyboardNode?: Element | null;
+    /**
+     * A function that determines if the key is valid for the press event.
+     */
+    isValidKey?(event: KeyboardEvent): boolean;
+    /**
+     * A function that will be called when the pointer is pressed.
+     */
+    onPress?(details: TapDetails): void;
+    /**
+     * A function that will be called when the pointer is pressed down.
+     */
+    onPressStart?(details: TapDetails): void;
+    /**
+     * A function that will be called when the pointer is pressed up or cancelled.
+     */
+    onPressEnd?(details: TapDetails): void;
+}
+declare function trackPress(options: TrackPressOptions): () => void;
+
+interface ViewportSize {
+    width: number;
+    height: number;
+}
+declare function trackVisualViewport(doc: Document, fn: (data: ViewportSize) => void): () => void;
+
+export { type EventKeyMap, type Point$2 as Point, type PointerMoveDetails, type PointerMoveHandlers, type TrackPressOptions, type ViewportSize, addDomEvent, clickIfLink, fireBlurEvent, fireCustomEvent, getEventKey, getEventPoint, getEventStep, getNativeEvent, getRelativePoint, isContextMenuEvent, isKeyboardClick, isLeftClick, isModifierKey, isPrintableKey, isVirtualClick, isVirtualPointerEvent, queueBeforeEvent, requestPointerLock, trackPointerMove, trackPress, trackVisualViewport };

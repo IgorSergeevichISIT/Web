@@ -1,0 +1,24 @@
+import { type HTMLChakraProps, type InferRecipeProps, type JsxStyleProps } from "../../styled-system";
+declare const StyledGroup: import("../..").ChakraComponent<"div", {
+    orientation?: import("../..").ConditionalValue<"horizontal" | "vertical" | undefined>;
+    attached?: import("../..").ConditionalValue<boolean | undefined>;
+    grow?: import("../..").ConditionalValue<boolean | undefined>;
+    stacking?: import("../..").ConditionalValue<"first-on-top" | "last-on-top" | undefined>;
+}>;
+type VariantProps = InferRecipeProps<typeof StyledGroup>;
+export interface GroupProps extends HTMLChakraProps<"div", VariantProps> {
+    /**
+     * The `alignItems` style property
+     */
+    align?: JsxStyleProps["alignItems"];
+    /**
+     * The `justifyContent` style property
+     */
+    justify?: JsxStyleProps["justifyContent"];
+    /**
+     * The `flexWrap` style property
+     */
+    wrap?: JsxStyleProps["flexWrap"];
+}
+export declare const Group: import("react").MemoExoticComponent<import("react").ForwardRefExoticComponent<GroupProps & import("react").RefAttributes<HTMLDivElement>>>;
+export {};

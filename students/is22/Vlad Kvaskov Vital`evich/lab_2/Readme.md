@@ -3,9 +3,9 @@
 ![alt text](image/okno_vivoda.png)
 ![alt text](image/rezultat.jpg)
 ### Реализация смены цвета темы
-![alt text](image/smena_cveta_okna.png)
+![alt text](image/smena_cveta_okna.png.jpg)
 ### Реализация смены цвета окна результата
-![alt text](image/smena_cveta_rezultata.png)
+![alt text](image/smena_cveta_rezultata.jpg)
 
 
 # Выполненые задания
