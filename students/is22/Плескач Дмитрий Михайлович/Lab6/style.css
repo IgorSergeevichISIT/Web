@@ -1,0 +1,163 @@
+.chat-page{
+    background: rgb(225, 207, 254); 
+    color: rgb(255, 255, 255); 
+    padding: 20px;
+}
+
+.chat-section {
+    background: rgb(110, 64, 132);
+    padding: 20px; 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.chat-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    width: 100vw; 
+    text-align: center; 
+    padding: 15px; 
+    background: rgb(110, 64, 132); 
+    color: white; 
+    font-family: 'Courier New', Courier, monospace;
+}
+.asd{
+    margin: 0; 
+    font-size: 3em;
+    font-family: 'Arial', sans-serif;
+}
+.zxc{
+    margin: 0px 0px 0px 10px; 
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+}
+.card{
+    width: 300px; 
+    background: black; 
+    color: white; 
+    border: none; 
+    border-radius: 50px;
+    margin: 10px;
+}
+.card-header{
+    background:rgb(110, 64, 132); 
+    color: rgb(255, 255, 255); 
+    text-align: center; 
+    padding: 10px; 
+    font-family: 'Arial', sans-serif;
+}
+.card-img-top{
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
+}
+.card-body{
+    text-align: center;
+    background:rrgb(110, 64, 132);
+    border-radius: 10px;
+    width: 300px;
+    height: 180px;
+}
+.btn-btn-primary{
+    background: rgb(250, 232, 255);
+    color: rrgb(110, 64, 132); 
+    font-family: 'Arial', sans-serif; 
+    border: none; 
+    border-radius: 10px; 
+    padding: 10px 20px; 
+    cursor: help;
+    margin: 5px;
+}
+
+.card-mb-3{
+    width: 540px;
+}
+
+.btn-btn-danger{
+    background-color:rgb(184, 170, 203);
+    color:white;
+    border:none;
+    padding:10px;
+    border-radius:5px;
+}
+.filter-container {
+    background: rgb(255, 255, 255); /* Тот же фон, что и другие элементы */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 20px; /* Пространство под фильтром */
+}
+
+.filter-container input {
+    width: 250px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.filter-container button {
+    background: rgb(254, 243, 255); /* Соответствует кнопке "Назад" */
+    color: rgb(150, 72, 186);
+    font-family: 'Arial', sans-serif;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.filter-container button:hover {
+    background: rgb(110, 64, 132); /* Легкий акцент при наведении */
+}
+
+.filter-container input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgb(110, 64, 132);
+}
+.btn-btn-primary {
+    background: rgb(254, 243, 255);
+    color: rgb(137, 71, 168);
+    font-family: 'Arial', sans-serif;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.select-primary {
+    background: rgb(255, 243, 253);
+    color: rgb(110, 64, 132);
+    font-family: 'Arial', sans-serif;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+    appearance: none; /* Убираем стандартный вид браузера */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.select-primary:focus {
+    outline: none; /* Убираем обводку при фокусе */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Добавляем легкий эффект тени */
+}
+h1 {
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    font-size: 2em;
+    color: rgb(110, 64, 132); /* Можно изменить цвет, если нужно */
+    padding-bottom: 15px;
+}   
