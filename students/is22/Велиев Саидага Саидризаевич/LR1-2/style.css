@@ -1,6 +1,6 @@
 body
 {
-    background-image: url("depositphotos_53106465-stock-photo-beautiful-morning-light-in-public.jpg");
+    background-image: url("background_image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; /* Закрепляет фон */
@@ -27,7 +27,7 @@ body
     height: 50px;
     padding-right: 3px;
         /* отступ снизу */
-    background: #aa4e47; /* цвет можно задавать и таким образом */
+    background: white; /* цвет можно задавать и таким образом */
     text-align: right;           /* примагнитим текст к правой стороне */
     color: #ffffff;              /* цвет текста белый */
     font-size: 1.5rem;
@@ -35,6 +35,7 @@ body
     border-radius: 7px;
     white-space: nowrap; /* не переносить текст на новую строку */
     overflow-x: auto; /* добавляем горизонтальную прокрутку */
+    color: black;
 }
 .my-btn 
 { 
@@ -100,6 +101,11 @@ details
 {
     color: white;
     grid-column: 1 / -1;
+}
+
+#btn_op_change_result_color
+{
+    font-size: 1rem; 
 }
 
 @media (prefers-color-scheme: light) {

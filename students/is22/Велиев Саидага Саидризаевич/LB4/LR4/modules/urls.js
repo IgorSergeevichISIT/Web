@@ -7,7 +7,7 @@ class Urls {
     }
 
     getUserInfo(userId) {
-        return `${this.url}/users.get?user_ids=${userId}&fields=photo_400_orig&${this.commonInfo}`
+        return `${this.url}/users.get?user_ids=${userId}&fields=photo_400_orig,city&${this.commonInfo}`
     }
 
     getGroupMembers(groupId, sort) {

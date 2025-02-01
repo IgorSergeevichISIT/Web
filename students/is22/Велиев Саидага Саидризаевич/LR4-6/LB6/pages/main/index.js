@@ -4,6 +4,7 @@ import { ajax } from "../../modules/ajax.js";
 import { groupId } from "../../modules/consts.js";
 import { SortPanelComponent } from "../../components/sort-panel/index.js";
 import { urls } from "../../modules/urls.js";
+import { ReturnBackChooserComponent } from "../../components/return-back-chooser/index.js";
 
 
 export class MainPage {
@@ -56,6 +57,30 @@ export class MainPage {
         this.getData("",null);
     }
 
+    addReturnCard(selectedUserId)
+    {
+        ajax.post(`${urls.getLocalServer()[0]}/return_user/${selectedUserId}`)
+        
+        this.getData("",null);
+    }
+
+    async getDeletedIdFromServer()
+    {
+        try {
+            const response = await fetch(`${urls.getLocalServer()[0]}/all_deleted_id`);
+            
+            if (!response.ok) {
+                throw new Error('Не удалось получить данные');
+            }
+    
+            const data = await response.json();
+            return data;
+        } catch (error) {
+            console.error('Ошибка при выполнении запроса:', error);
+            return { error: error.message };
+        }
+    }
+
     render() {
         this.parent.innerHTML = '';
         const html = this.getHTML();
@@ -63,8 +88,15 @@ export class MainPage {
         const sort = new SortPanelComponent(this.parent);
         sort.render(this.getData.bind(this));
 
-        this.parent.insertAdjacentHTML('beforeend', html);
-        this.getData("",null);
+        const returnBack = new ReturnBackChooserComponent(this.parent);
+        this.getDeletedIdFromServer().then(deletedId => {
+            returnBack.render(deletedId, this.addReturnCard.bind(this)); // Передаем полученные данные в компонент
+
+            this.parent.insertAdjacentHTML('beforeend', html);
+            this.getData("",null);
+        });
+
+        
         
     }
 }

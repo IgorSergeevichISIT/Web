@@ -6,6 +6,8 @@ import fs from 'fs/promises';  // Используем промисы для р�
 const app = express();
 const port = urls.getLocalServer()[1];
 const jsonFilePath = './groupMembers.json';  
+const deletedUsersFilePath = './deletedUsers.json';  // Путь к файлу для сохранения удаленных пользователей
+
 
 let isWriting = false;
 
@@ -26,8 +28,11 @@ app.get('/new/group/:groupId/members', async (req, res) => {
         const response = await ajax.post(urls.getGroupMembers(groupId, sort));
         const data = await response.json();
         
-        // Обновляем файл
+        // Обновляем файл с данными группы
         await fs.writeFile(jsonFilePath, JSON.stringify(data, null, 2), 'utf8');
+
+        await fs.writeFile(deletedUsersFilePath, JSON.stringify([], null, 2), 'utf8');
+
         res.send(data);
     } catch (error) {
         res.status(500).send({ message: 'Ошибка при получении участников группы', error: error.message });
@@ -64,11 +69,32 @@ app.post('/delete_user/:userid', async (req, res) => {
         const userIndex = jsonData.response.items.findIndex(user => user.id === parseInt(userid));
 
         if (userIndex !== -1) {
-            // Удаляем элемент по индексу
+            // Получаем удаленного пользователя
+            const deletedUser = jsonData.response.items[userIndex];
+
+            // Сохраняем удаленного пользователя в отдельный файл
+            let deletedUsersData = [];
+
+            // Если файл существует, считываем данные из него
+            try {
+                const deletedData = await fs.readFile(deletedUsersFilePath, 'utf8');
+                deletedUsersData = JSON.parse(deletedData);
+            } catch (err) {
+                // Если файл не существует (например, в первый раз), пропускаем ошибку
+            }
+
+            // Добавляем удаленного пользователя в массив
+            deletedUsersData.push(deletedUser);
+
+            // Записываем данные о удаленных пользователях в отдельный файл
+            await fs.writeFile(deletedUsersFilePath, JSON.stringify(deletedUsersData, null, 2), 'utf8');
+
+            // Удаляем элемент из основного массива
             jsonData.response.items.splice(userIndex, 1);
 
-            // Запись только изменённой части данных в файл
+            // Запись только изменённой части данных в основной файл
             await fs.writeFile(jsonFilePath, JSON.stringify(jsonData, null, 2), 'utf8');
+            
             res.send('Пользователь удалён успешно');
         } else {
             res.status(404).send('Пользователь не найден');
@@ -80,6 +106,82 @@ app.post('/delete_user/:userid', async (req, res) => {
         isWriting = false;
     }
 });
+
+app.post('/return_user/:userid', async (req, res) => {
+    try {
+        const { userid } = req.params;
+
+        let deletedUsersData = [];
+        
+        const deletedData = await fs.readFile(deletedUsersFilePath, 'utf8');
+        deletedUsersData = JSON.parse(deletedData);
+
+        // Находим пользователя по ID в списке удаленных пользователей
+        const userIndex = deletedUsersData.findIndex(user => user.id === parseInt(userid));
+
+        if (userIndex !== -1) {
+            // Получаем удаленного пользователя
+            const returnedUser = deletedUsersData.splice(userIndex, 1)[0];
+
+            let jsonData = [];
+            
+            try {
+                const data = await fs.readFile(jsonFilePath, 'utf8');
+                jsonData = await JSON.parse(data);
+            } catch (err) {
+                if (err.code !== 'ENOENT') {
+                    throw err;
+                }
+            }
+
+            console.log(jsonData);
+            // Добавляем пользователя в начало массива основного файла
+            jsonData.response.items.unshift(returnedUser);
+
+            // Записываем обновленные данные в основной файл
+            await fs.writeFile(jsonFilePath, JSON.stringify(jsonData, null, 2), 'utf8');
+
+            // Записываем обновленные данные в файл с удаленными пользователями (удаляем возвращенного пользователя)
+            await fs.writeFile(deletedUsersFilePath, JSON.stringify(deletedUsersData, null, 2), 'utf8');
+
+            res.send({ message: 'Пользователь успешно возвращен', user: returnedUser });
+        } else {
+            res.status(404).send({ message: 'Пользователь не найден в списке удаленных' });
+        }
+    } catch (error) {
+        console.error('Ошибка при возвращении пользователя:', error);
+        res.status(500).send({ message: 'Ошибка при возвращении пользователя', error: error.message });
+    }
+});
+
+app.get('/all_deleted_id', async (req, res) => {
+    try {
+        let deletedUsersData = [];
+
+        // Чтение данных из файла
+        try {
+            const deletedData = await fs.readFile(deletedUsersFilePath, 'utf8');
+            deletedUsersData = JSON.parse(deletedData);
+        } catch (err) {
+            if (err.code === 'ENOENT') {
+                // Если файл не найден, просто возвращаем пустой массив
+                return res.send([]);
+            }
+            throw err;  // Если ошибка другого типа, выбрасываем ее
+        }
+
+        // Извлекаем все id пользователей из массива
+        const deletedUserIds = deletedUsersData.map(user => user.id);
+
+        // Отправляем список всех удаленных id
+        res.send(deletedUserIds);
+    } catch (error) {
+        console.error('Ошибка при получении удаленных пользователей:', error);
+        res.status(500).send({ message: 'Ошибка при получении удаленных пользователей', error: error.message });
+    }
+});
+
+
 
 // Запуск сервера
 app.listen(port, () => {
