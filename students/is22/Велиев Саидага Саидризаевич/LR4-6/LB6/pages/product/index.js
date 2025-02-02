@@ -9,10 +9,14 @@ export class ProductPage {
         this.id = id;
     }
 
-    async getData() {
-        ajax.get(`/user/${this.id}`, (data) => {
-            this.renderData(data.response);
-        });
+    getData() {
+        ajax.get(`/user/${this.id}`)
+            .then(data => {
+                this.renderData(data.response);  // Рендерим данные, полученные от сервера
+            })
+            .catch(error => {
+                console.error('Ошибка при получении данных:', error);  // Обработка ошибок
+            });
     }
 
     get pageRoot() {

@@ -17,21 +17,23 @@ class Ajax {
         }
     }
 
-    async get(url, callback) {
+    // Метод get с async/await
+    async get(url) {
         try {
             const response = await fetch(`${urls.getLocalServer()[0]}${url}`);
 
             if (!response.ok) {
                 throw new Error(`Error: ${response.statusText}`);
             }
-            
-            const data = await response.json();
-            callback(data);
 
+            const data = await response.json();
+            return data;
         } catch (error) {
             console.error('Request failed', error);
+            throw error;
         }
     }
 }
 
 export const ajax = new Ajax();
+

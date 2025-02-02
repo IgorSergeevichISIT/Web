@@ -40,15 +40,6 @@
         "id_inside": 4
       },
       {
-        "id": 487696844,
-        "photo_400_orig": "https://sun33-1.userapi.com/s/v1/ig2/v52FfcH6sMe9iJvFitml8E5zX_TAgAZUbv5zW_rFPhqkz3fSOuZsixSK66ZeHpzTkLPLThsAwTQGXhOnEsPl447N.jpg?quality=95&crop=74,111,441,441&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360&ava=1&cs=240x240",
-        "first_name": "Asterixik",
-        "last_name": "Karyagin",
-        "can_access_closed": true,
-        "is_closed": false,
-        "id_inside": 5
-      },
-      {
         "id": 574517071,
         "photo_400_orig": "https://sun33-1.userapi.com/s/v1/ig2/nQ6bdbVQFHKt-Kyj-ldw7mog8lhFBy66H9j5VG1Bdi9DPkCjcq1lgRdmON71_UA2vMrnYJ_Aw9R1ySdaT4kRgScQ.jpg?quality=96&crop=92,92,736,736&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720&ava=1&cs=240x240",
         "first_name": "Евгенстер",
@@ -56,16 +47,6 @@
         "can_access_closed": false,
         "is_closed": true,
         "id_inside": 6
-      },
-      {
-        "id": 235825127,
-        "photo_400_orig": "https://sun33-1.userapi.com/impf/_nb2NhfE_jv_qxgCOx2FOjBdyXDTRZoApoB7ow/mLrG7mi-98Y.jpg?quality=96&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360&sign=027f3a6ab46c06112aaff21998198fb8&u=Gsgve_JGBJIKsdpKeqSEdgzA8QnKETeW3ILhU4seZNI&cs=240x240",
-        "deactivated": "banned",
-        "first_name": "Михаил",
-        "last_name": "Скоробогатский",
-        "can_access_closed": true,
-        "is_closed": false,
-        "id_inside": 7
       },
       {
         "id": 259500148,
@@ -84,16 +65,6 @@
         "can_access_closed": false,
         "is_closed": true,
         "id_inside": 9
-      },
-      {
-        "id": 32589039,
-        "photo_400_orig": "https://sun33-1.userapi.com/impf/_nb2NhfE_jv_qxgCOx2FOjBdyXDTRZoApoB7ow/mLrG7mi-98Y.jpg?quality=96&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360&sign=027f3a6ab46c06112aaff21998198fb8&u=Gsgve_JGBJIKsdpKeqSEdgzA8QnKETeW3ILhU4seZNI&cs=240x240",
-        "deactivated": "deleted",
-        "first_name": "DELETED",
-        "last_name": "",
-        "can_access_closed": true,
-        "is_closed": false,
-        "id_inside": 10
       },
       {
         "id": 509198828,

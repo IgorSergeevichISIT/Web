@@ -18,21 +18,16 @@ export class MainPage {
         `;
     }
 
-    async getData(mode, fromwha) 
-    {
-        if(fromwha==null)
-        {
-            ajax.get(`/groupINFO`, (data) => {
-                this.renderData(data.response.items);
+    getData(mode, fromwha) {
+        let url = fromwha == null ? `/groupINFO` : `/new/group/${groupId}/members?sort=${mode}`;
+
+        ajax.get(url)
+            .then(data => {
+                this.renderData(data.response.items);  // Рендерим данные
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);  // Обработка ошибок
             });
-        }
-        else
-        {
-            ajax.get(`/new/group/${groupId}/members?sort=${mode}`, (data) => {
-                this.renderData(data.response.items);
-            });
-        }
-        
     }
 
     renderData(items) {
