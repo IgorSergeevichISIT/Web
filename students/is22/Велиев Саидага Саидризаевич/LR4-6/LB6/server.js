@@ -26,8 +26,13 @@ app.get('/new/group/:groupId/members', async (req, res) => {
         const { groupId } = req.params;
         const { sort } = req.query;
         const response = await ajax.post(urls.getGroupMembers(groupId, sort));
-        const data = await response.json();
-        
+        let data = await response.json();
+
+        var next_id = 0;
+        for (var item of data.response.items) {
+            item.id_inside = next_id;
+            next_id += 1;
+        }
         // Обновляем файл с данными группы
         await fs.writeFile(jsonFilePath, JSON.stringify(data, null, 2), 'utf8');
 
@@ -134,9 +139,15 @@ app.post('/return_user/:userid', async (req, res) => {
                 }
             }
 
-            console.log(jsonData);
-            // Добавляем пользователя в начало массива основного файла
-            jsonData.response.items.unshift(returnedUser);
+            const wherePut = jsonData.response.items.findIndex(user => user.id_inside >= returnedUser.id_inside);
+            if (wherePut !== -1) {
+                // Вставляем пользователя на позицию перед wherePut
+                jsonData.response.items.splice(wherePut, 0, returnedUser);
+            } else {
+                // Если не найдено подходящее место, добавляем пользователя в конец
+                jsonData.response.items.unshift(returnedUser);
+            }
+         
 
             // Записываем обновленные данные в основной файл
             await fs.writeFile(jsonFilePath, JSON.stringify(jsonData, null, 2), 'utf8');
