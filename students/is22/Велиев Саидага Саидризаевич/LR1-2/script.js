@@ -226,10 +226,10 @@ document.getElementById("btn_op_factorial").onclick = function() {
     document.getElementById("change-theme").onclick = function () {
         let changebutton = document.getElementsByClassName("all_ground")[0];
 
-        if (changebutton.style.backgroundColor === colors[0]) {
-            changebutton.style.backgroundColor = colors[1];
-        } else {
+        if (changebutton.style.backgroundColor === colors[1]) {
             changebutton.style.backgroundColor = colors[0];
+        } else {
+            changebutton.style.backgroundColor = colors[1];
         }
     };
 
