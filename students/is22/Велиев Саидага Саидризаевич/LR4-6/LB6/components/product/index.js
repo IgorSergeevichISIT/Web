@@ -13,7 +13,9 @@ export class ProductComponent {
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
+                                <h5 class="card-title">id: ${data.id || 'Неизвестно'}</h5>
                                 <h5 class="card-title">${data.first_name} ${data.last_name}</h5>
+                                <h5 class="card-title">Город: ${data.city?.title || 'Неизвестно'}</h5>
                             </div>
                         </div>
                     </div>

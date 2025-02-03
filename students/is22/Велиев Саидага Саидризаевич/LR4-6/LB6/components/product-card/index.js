@@ -11,7 +11,7 @@ export class ProductCardComponent {
                     <div class="card-body">
                         <h5 class="card-title">${data.first_name} ${data.last_name}</h5>
                         <button class="btn btn-primary" id="click-card-${data.id}" data-id="${data.id}">Нажми на меня</button>
-                        <button class="btn btn-primary" id="delete-card-${data.id}" data-id="${data.id}" style="margin-top:5px">Удалить карточку</button>
+                        <button class="btn btn-danger" id="delete-card-${data.id}" data-id="${data.id}" style="margin-top:5px">Удалить карточку</button>
                     </div>
                 </div>
             `
