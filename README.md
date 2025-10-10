@@ -53,8 +53,8 @@ Service Workers, PWA, Virtual DOM, Deploy, Производительность
 
 ## Задания
 
-* [Установка](https://github.com/iu5git/Web/blob/main/tutorials/install/README.md) `Python`, `NodeJS`, `Git`, `Docker` на Windows, MacOS, Linux
-* [Основные команды git и описание Docker Compose](https://github.com/iu5git/Web/blob/main/tutorials/git-docker/). 
+* [Установка](https://github.com/igorsergeevichisit/web/tutorials/install/README.md) `Python`, `NodeJS`, `Git`, `Docker` на Windows, MacOS, Linux
+* [Основные команды git и описание Docker Compose](https://github.com/igorsergeevichisit/web/tutorials/git-docker/). 
 
 * каждому студенту весь код необходимо переписать по теме, только у вас будут такие названия переменных, массивов, страниц и тд. Никаких общих text, search, order, cart, basket, service и т.д. Это должны быть `airplane`, `document`, `software_request`, `shipName`, `softwarePrice` и тд.
 
