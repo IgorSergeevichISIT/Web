@@ -93,8 +93,8 @@ Service Workers, PWA, Virtual DOM, Deploy, Производительность
 - **Задание**: Работа с коллекциями, функциями, классами.
 - **Порядок показа**: объяснить реализацию требуемых функций
 
-* [Методические указания](/tutorials/tasks/README.md)
-* [Пример работы с three.js](/tutorials/threejs/README.md)
+* [Методические указания](/turorials/tasks/README.md)
+* [Пример работы с three.js](/turorials/threejs/README.md)
 
 
 #### Рубежный контроль 1
@@ -128,7 +128,7 @@ Service Workers, PWA, Virtual DOM, Deploy, Производительность
 #### Лабораторная работа 7
 
 - Продолжение Лабораторной работы 6 - добавление уведомлений/обновлений через Polling
-- [Подключение](/tutorials/vk/README.md) к API VK
+- [Подключение](/turorials/vk/README.md) к API VK
 - библиотека `three.js`
 
 #### Требования к отчету
