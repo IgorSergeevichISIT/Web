@@ -1,3 +1,0 @@
-export const groupId = 228771235
-export const accessToken = 'vk1.a.V8QmRxBlYk95c7Ab1b6Z1Wu9L96MAgE-IOshcds4QTvCacuq6g82CgOmA7Y1LEDAbAIuhPvhI3JJTAZPbo9uIDPT5UmpdazcQDJibuCXFlezzaLaBxA_r8ZlNg82GTm1em3z3RT2nziFCGDmdv25xyYD6_H5zA3HlNnYFP6M9PfiY4vqAYPHMe18YaEszW9SSjYJODQ_fejDICeddERqtA'
-export const version = '5.131'
