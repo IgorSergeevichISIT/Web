@@ -93,7 +93,7 @@ Service Workers, PWA, Virtual DOM, Deploy, Производительность
 - **Задание**: Работа с коллекциями, функциями, классами.
 - **Порядок показа**: объяснить реализацию требуемых функций
 
-* [Методические указания](/turorials/tasks/README.md)
+* [Методические указания](/turorials/hw1.md)
 * [Пример работы с three.js](/turorials/threejs/README.md)
 
 
