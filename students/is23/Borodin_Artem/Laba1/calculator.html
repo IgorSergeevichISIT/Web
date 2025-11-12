@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <!-- Подключаем внешний CSS файл со стилями -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Основной контейнер калькулятора. Используется для центрирования (Задание 10) -->
+    <div class="calculator-wrapper">  <!-- Псевдокласс -->
+        
+        <!-- Блок с целью ЛР и подробностями (Задания 18, 19) -->
+        <div class="info-block">
+            <!-- Задание 19: Поле с целью ЛР и подсветка слов -->
+            <p class="purpose">
+                Цель ЛР: <mark>Знакомство</mark> с инструментами: <mark>HTML</mark>, <mark>CSS</mark>.
+            </p>
+
+            <!-- Задание 18: Сворачивающиеся и разворачивающиеся подробности (Автор -> ФИО, Группа) -->
+            <details class="author-details">
+                <summary>Автор</summary>
+                <p>ФИО: Бородин Артём</p>
+                <p>Группа: ИС-23</p>
+            </details>
+        </div>
+
+        <!-- Основной контейнер калькулятора -->
+        <div class="calculator-container">
+            <!-- Экран калькулятора с выводом результата. Базовый класс "result" -->
+            <div id="result" class="result">
+                0
+            </div>
+
+            <!-- Блок с кнопками калькулятора -->
+            <div class="buttons-container">
+                <!-- Первый ряд -->
+                <div class="button-row">
+                    <button id="btn_op_clear" class="my-btn secondary">C</button>
+                    <button id="btn_op_sign" class="my-btn secondary">+/-</button>
+                    <button id="btn_op_percent" class="my-btn secondary">%</button>
+                    <button id="btn_op_div" class="my-btn primary">/</button>
+                </div>
+
+                <!-- Второй ряд -->
+                <div class="button-row">
+                    <button id="btn_digit_7" class="my-btn">7</button>
+                    <button id="btn_digit_8" class="my-btn">8</button>
+                    <button id="btn_digit_9" class="my-btn">9</button>
+                    <button id="btn_op_mult" class="my-btn primary">x</button>
+                </div>
+
+                <!-- Третий ряд -->
+                <div class="button-row">
+                    <button id="btn_digit_4" class="my-btn">4</button>
+                    <button id="btn_digit_5" class="my-btn">5</button>
+                    <button id="btn_digit_6" class="my-btn">6</button>
+                    <button id="btn_op_minus" class="my-btn primary">-</button>
+                </div>
+
+                <!-- Четвёртый ряд -->
+                <div class="button-row">
+                    <button id="btn_digit_1" class="my-btn">1</button>
+                    <button id="btn_digit_2" class="my-btn">2</button>
+                    <button id="btn_digit_3" class="my-btn">3</button>
+                    <button id="btn_op_plus" class="my-btn primary">+</button>
+                </div>
+
+                <!-- Пятый ряд -->
+                <div class="button-row">
+                    <button id="btn_digit_0" class="my-btn">0</button>
+                    <button id="btn_digit_dot" class="my-btn">.</button>
+                    <button id="btn_op_equal" class="my-btn primary execute">=</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Дополнительные элементы для заданий -->
+        <div class="extra-elements">
+            <!-- Задание 12: Кнопка для смены темы -->
+            <button id="btn_theme_toggle" class="theme-btn">Сменить тему</button>
+
+            <!-- Задание 17: Поле с выпадающим списком -->
+            <select id="theme-select" class="theme-select">
+                <option value="default">Тема 1</option>
+                <option value="theme2">Тема 2</option>
+            </select>
+
+            <!-- Задание 16: Кнопка со ссылкой на GitHub -->
+            <a href="https://github.com/artem5438" target="_blank" class="github-link">GitHub</a>
+        </div>
+
+        <!-- Задание 9: Надпись внизу "ЛР выполнена ФИО" -->
+        <footer class="footer">
+            ЛР выполнена ФИО: Бородин Артём Сергеевич
+        </footer>
+    </div>
+
+    <!-- Скрипт крипт для работы Заданий 12 и 17 -->
+    <script>
+        const body = document.body;
+        const themeToggleBtn = document.getElementById('btn_theme_toggle');
+        const themeSelect = document.getElementById('theme-select');
+
+        // Задание 12: Кнопка для смены темы
+        themeToggleBtn.addEventListener('click', function() {
+            body.classList.toggle('theme-alt');
+        });
+
+        // Задание 17: Выпадающий список
+        themeSelect.addEventListener('change', function() {
+            if (this.value === 'theme2') {
+                body.classList.add('theme-alt');
+            } else {
+                body.classList.remove('theme-alt');
+            }
+        });
+    </script>
+</body>
+</html>
+
