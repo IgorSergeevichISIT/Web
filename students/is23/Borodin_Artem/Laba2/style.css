@@ -1,0 +1,255 @@
+
+/* Задание 15: Добавьте любое изображение на фон. (Используем простой цвет) */
+body {
+    /* Задание 2: Сделайте фон калькулятора темным (наподобие ночной темы) */
+    background-color: #333; /* Установлен простой тёмно-серый фон */
+    font-family: Arial, Helvetica, sans-serif; /* Базовый шрифт для всего документа */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Задание 10: Выровняйте калькулятор по центру */
+.calculator-wrapper {
+    width: 300px; /* Фиксированная ширина калькулятора */
+    margin: 50px auto; /* Центрирование по горизонтали и отступ сверху  */
+    padding: 15px; /* Внутренний отступ */
+    background-color: #444; /* Фон основного блока калькулятора */
+    border-radius: 10px; /* Скругление углов основного блока */
+}
+
+/* Блок с информацией и целью ЛР */
+.info-block {
+    margin-bottom: 15px;
+    color: #fff; /* Цвет текста по умолчанию (для темной темы) */
+    font-size: 0.9rem;
+}
+
+/* Задание 18: Сворачивающиеся и разворачивающиеся подробности */
+.author-details {
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid #666; /* рамка */
+    border-radius: 5px;
+}
+
+/* Задание 19: Подсветка слов */
+mark {
+    background-color: yellow; /* Цвет фона для подсветки */
+    color: black; /* Цвет текста для подсветки */
+    padding: 2px 4px;
+}
+
+.result {
+    /* Исправление: box-sizing, чтобы padding не увеличивал ширину  */
+    box-sizing: border-box; 
+    width: 100%; /* Занимает всю доступную ширину */
+    
+    /* Задание 11: Увеличьте размер окна вывода */
+    height: 60px; /* Увеличенная высота */
+    
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #222; /* Фон экрана */
+    text-align: right; /* Выравнивание текста по правому краю */
+    
+    /* Задание 4: Измените цвет вывода результата на любой другой */
+    color: #00ffc8; /* Светло-бирюзовый цвет текста */
+    
+    /* Задание 5: Сделайте окно вывода со скруглеными краями */
+    border-radius: 10px; 
+    
+    /* Задание 6: Поменяйте шрифт цифр */
+    font-family: 'Courier New', monospace;
+    
+    /* Задание 7: Сделайте шрифт более толстым */
+    font-weight: bold; 
+    
+    /* Задание 11: Увеличьте размер окна вывода (размер шрифта) */
+    font-size: 2rem; 
+    line-height: 40px; /* Центрирование текста по вертикали  */
+}
+
+
+.buttons-container {
+    display: flex;
+    flex-direction: column; /* кнопки вместе */
+    gap: 10px; /* растояние между кнопками в горизонталь */
+}
+
+.button-row {
+    display: flex;
+    gap: 10px; /* растояние между кнопками в вертикаль */
+}
+
+/* Базовый стиль кнопки (применяется ко всем кнопкам) */
+.my-btn {
+    flex: 1; /* Равномерное распределение ширины между кнопками в ряду */
+    
+    /* Задание 3: Сделайте кнопки квадратными вместо круглых. */
+    border-radius: 5px; /* Минимальное скругление */
+    
+    border: none; /* границы кнопок */
+    width: 60px;
+    height: 60px;
+    background: #515151; /* цвет цифр */
+    
+    /* Задание 14: Смените цвет шрифта */
+    color: white; 
+    
+    /* Задание 6: Поменяйте шрифт цифр */
+    font-family: 'Verdana', sans-serif; 
+    
+    /* Задание 7: Сделайте шрифт более толстым */
+    font-weight: 700; 
+    
+    font-size: 1.5rem; /* Жирность кнопок */
+    transition: background 0.2s;
+}
+
+/* Задание 8: Измените цвет при наведении мышки на кнопку на другой */
+.my-btn:hover {
+    background: #777; /* Светлее серый при наведении */
+}
+
+.my-btn:active {
+    filter: brightness(130%); /* Эффект "вспышки" при нажатии */
+}
+
+/* Задание 1: Поменяйте цветовую палитру калькулятора с оранжево-серой на любую другую; */
+/* Кнопки операций (primary) - Синий цвет */
+.my-btn.primary {
+    background: #007bff; /* Синий */
+}
+
+.my-btn.primary:hover {
+    background: #0056b3; /* Темно-синий при наведении */
+}
+
+/* Кнопки второстепенных операций (secondary) - Бирюзовый цвет */
+.my-btn.secondary {
+    background: #17a2b8; 
+}
+
+.my-btn.secondary:hover {
+    background: #138496; /* Темно-бирюзовый при наведении */
+}
+
+/* Кнопка равно */
+.my-btn.execute {
+    flex: 2; /* Занимает в два раза больше места */
+    width: auto;
+    background: #28a745; 
+}
+
+.my-btn.execute:hover {
+    background: #1e7e34; /* Темно-зеленый при наведении */
+}
+
+.extra-elements {
+    margin-top: 20px; /* Отступ снизу */
+}
+
+/* Задание 12: Кнопка для смены темы */
+.theme-btn {
+    padding: 8px 15px;
+    background-color: #ffc107; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Задание 16: Кнопка со ссылкой на GitHub */
+.github-link {
+    padding: 8px 15px;
+    background-color: #6c757d; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+/* обращение к псевдоклассу */
+.github-link:hover {
+    background-color: #5a6268;
+}
+
+/* Задание 17: Поле с выпадающим списком */
+.theme-select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Задание 9: Добавьте надпись внизу "ЛР выполнена ФИО" */
+.footer {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #666;
+    color: #ccc;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+
+/* Применяется к <body> при нажатии кнопки "Сменить тему" или выборе в списке */
+body.theme-alt {
+    color: #333; /* Исправление: делаем основной текст темным (для светлого фона) */
+}
+
+body.theme-alt .calculator-wrapper {
+    /* Задание 13: Сделайте шрифт тоньше */
+    font-weight: 300; 
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc;
+}
+
+body.theme-alt .result {
+    background-color: white;
+    color: #333; 
+    border: 1px solid #ccc;
+    font-weight: 300; /* Задание 13: Тонкий шрифт */
+}
+
+body.theme-alt .my-btn {
+    background: #e0e0e0;
+    color: #333;
+    font-weight: 300; 
+}
+
+body.theme-alt .my-btn:hover {
+    background: #ccc;
+}
+
+body.theme-alt .my-btn.primary {
+    background: #dc3545; 
+}
+
+body.theme-alt .my-btn.primary:hover {
+    background: #c82333;
+}
+
+body.theme-alt .my-btn.secondary {
+    background: #6c757d;
+    color: white;
+}
+
+body.theme-alt .my-btn.execute {
+    background: #20c997; 
+}
+
+body.theme-alt .footer {
+    color: #333;
+    border-top: 1px solid #333;
+}
+
+/* Исправление: делаем текст в info-block темным */
+body.theme-alt .info-block {
+    color: #333;
+}
+
+/* Исправление: делаем текст в details темным */
+body.theme-alt .author-details {
+    color: #333;
+    
+}
+
+
