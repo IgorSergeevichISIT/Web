@@ -1,0 +1,215 @@
+/* Фон страницы с изображением */
+body {
+  background-image: url('../public/background.png');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+}
+
+/* Тёмная тема */
+body {
+  background-color: #1b1b2f;
+  display: flex;/*  для выравнивания содержимого */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;/* высота страницы равна высоте экрана */
+}
+
+/* кнопка смены темы */
+.theme-btn {
+  margin-bottom: 15px; /* отступ снизу */
+  padding: 8px 16px; /*  высота и ширина */
+  border-radius: 6px; /*  скругляем углы */
+  background-color: #0000CD;
+  color: #B0E0E6;
+  font-family: 'Arial', sans-serif; /* шрифт */
+  font-weight: 500; /* средняя толщина текста */
+}
+
+/*  контейнер калькулятора */
+.calculator-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* базовый стиль кнопок */
+.my-btn {
+  margin: 5px 5px 5px 5px; /* отступы между кнопками */
+  width: 60px; height: 60px; /* размер кнопок */
+  border-radius: 8px; /* скругление */
+  border: none; /* убираем контур */
+  background-color: #0000CD;
+  color: #B0E0E6;
+  font-size: 1.6rem; /* размер цифр */
+  font-family: 'Courier New', Courier, monospace; /*  шрифт */
+}
+
+
+/* первостепенные кнопки */
+.my-btn.primary {
+  background-color: #EE82EE;
+  color: #B0E0E6;
+}
+
+
+/* второстепенные кнопки */
+.my-btn.secondary {
+  background-color: #EE82EE;
+  color: #B0E0E6;
+}
+
+/* кнопка "=" */
+.my-btn.execute {
+  font-weight: 400;
+  width: 130px;/*ширина кнопик*/
+  grid-column: span 2;
+}
+
+.my-btn:active{
+  box-shadow: 2px 2px 5px #ff0000;
+}
+/* меняем цвет при наведении */
+.my-btn:hover {
+  background-color: #00FFFF;
+}
+
+/* окно вывода результата */
+.result {
+  width: 280px;
+  height: 70px;
+  margin-bottom: 15px;
+  padding: 0 15px;
+    background-color: #2C2C54; /* начальный цвет */
+  color: #B0E0E6;
+  font-size: 1.8rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 400;
+  border-radius: 10px; /* скругление */
+  line-height: 70px; /*  текст по центру окошка вывода */
+}
+.result:hover {
+  box-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff, 0 0 45px #00ffff;
+}
+/* надпись внизу */
+.footer-text {
+  position: fixed;          /* закрепляем внизу экрана */
+  bottom: 50px;                /* прижимаем к нижнему краю */
+  left: 0;
+  width: 100vw;             /* растягиваем на всю ширину окна */
+  background: #EE82EE;         /* фон */
+  color: white;             /* цвет текста */
+  padding: 5px 0;
+  white-space: nowrap;      /* чтобы текст не переносился */
+
+}
+
+.scroll-text {
+  display: inline-block;
+  animation: moveText 10s linear infinite; /* 15s — скорость */
+  padding-left: 100%; /* начинаем за правым краем */
+  transform: scale(1.2); /* увеличиваем размер текста на 20% */
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+.footer-text:hover .scroll-text {
+  animation-play-state: paused; /* пауза при наведении */
+}
+
+
+/* Кнопка GitHub и выпадающий список */
+.dropdown {
+  margin: 10px 0;
+  padding: 6px;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #0000CD;
+  color: #B0E0E6;
+}
+
+.details-box {
+  margin: 10px 0;
+  padding: 5px 10px;
+  border-radius: 6px;
+  background-color: #0000CD;
+  color: #B0E0E6;
+  width: 250px;
+}
+
+/* Поле с целью ЛР */
+.goal-box {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #0000CD;
+  color: #B0E0E6;
+  width: 280px;
+  text-align: center;
+}
+
+/* Подсветка слов */
+.highlight {
+  color: #EE82EE;
+  font-weight: bold;
+}
+
+/* Отступы между кнопками темы и GitHub */
+.theme-btn {
+  margin: 5px;
+}
+.calculator-main {
+  display: flex;
+  flex-direction: row; /* колонки горизонтально */
+  gap: 10px;           /* отступ между колонками */
+}
+
+.functions-column {
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.digits-column {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.new-colomn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;          /* расстояние между кнопками */
+  align-items: flex-start; /* выравнивание по левому краю колонки */
+}
+
+.my-btn.vertical-double {
+  height: 130px;       /* примерно 2 x 60px + небольшой отступ */
+  font-size: 1.2rem;   /* уменьшаем шрифт, чтобы текст помещался */
+  line-height: 1.2;    /* чтобы текст выровнялся по центру */
+  padding: 5px;        /* небольшой внутренний отступ */
+  grid-row: span 2;
+  background-color: #EE82EE;
+  color: #B0E0E6;
+}
+.my-btn.funny {
+  font-size: 1rem;      /* уменьшаем шрифт */
+  padding: 4px;         /* немного меньше внутренние отступы */
+  line-height: 1.2;     /* более плотный текст */
+  background-color: #EE82EE;
+  color: #B0E0E6;
+}
