@@ -1,0 +1,151 @@
+/* Фон страницы с изображением и тема*/
+body {
+    background-image: url('./images/rjnbr.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    background-color: #1b1b2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /*высота стр = высоте экрана*/
+    }
+
+    /* кнопка смены темы */
+
+    .theme-btn {
+        margin-bottom: 15px; /* отступ снизу */
+        padding: 8px 16px; /*  высота и ширина */
+        border-radius: 6px; /*  скругляем углы */
+        background-color: #0000CD;
+        color: #B0E0E6;
+        font-family: 'Arial', sans-serif; /* шрифт */
+        font-weight: 500; /* средняя толщина текста */
+    }
+
+    /*  контейнер калькулятора */
+
+    .calculator-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+.calculator-container-buttons{
+    display: grid; /* включаем grid */
+    grid-template-columns: repeat(4, 1fr); /* 4 равных столбца */
+    grid-template-rows: repeat(5, 1fr); /* 5 равных столбца */
+}
+
+    /* базовый стиль кнопок */
+
+    .my-btn {
+        margin: 5px 5px 5px 5px; /* отступы между кнопками */
+        width: 60px;
+        height: 60px; /* размер кнопок */
+        border-radius: 8px; /* скругление */
+        border: none; /* убираем контур */
+        background-color: #0000CD;
+        color: #B0E0E6;
+        font-size: 1.6rem; /* размер цифр */
+        font-family: 'Courier New', Courier, monospace; /*  шрифт */
+    }
+
+    /* первостепенные кнопки */
+
+    .my-btn.primary {
+        background-color: #EE82EE;
+        color: #B0E0E6;
+    }
+
+    /* второстепенные кнопки */
+
+    .my-btn.secondary {
+        background-color: #EE82EE;
+        color: #B0E0E6;
+    }
+
+    /* кнопка "=" */
+
+    .my-btn.execute {
+        font-weight: 400;
+        width: 130px; /*ширина кнопик*/
+        grid-column: span 2;
+    }
+
+    /* меняем цвет при наведении */
+
+    .my-btn:hover {
+        background-color: #00FFFF;
+    }
+
+    /* окно вывода результата */
+
+    .result {
+        width: 280px;
+        height: 70px;
+        margin-bottom: 15px;
+        padding: 0 15px;
+        background: linear-gradient(145deg, #2C2C54, #1F1F3A);
+        color: #B0E0E6;
+        font-size: 1.8rem;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 400;
+        border-radius: 10px; /* скругление */
+        line-height: 70px; /*  текст по центру окошка вывода */
+    }
+
+    /* надпись внизу */
+
+    .footer-text {
+        color: #FFB6C1;
+        text-align: center;
+        margin-top: 20px;
+        font-family: 'Arial', Helvetica, sans-serif;
+        font-size: 1rem;
+    }
+
+    /* Кнопка GitHub и выпадающий список */
+
+    .dropdown {
+        margin: 10px 0;
+        padding: 6px;
+        border-radius: 6px;
+        font-size: 1rem;
+        background-color: #0000CD;
+        color: #B0E0E6;
+    }
+
+    .details-box {
+        margin: 10px 0;
+        padding: 5px 10px;
+        border-radius: 6px;
+        background-color: #0000CD;
+        color: #B0E0E6;
+        width: 250px;
+    }
+
+    /* Поле с целью ЛР */
+
+    .goal-box {
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 6px;
+        background-color: #0000CD;
+        color: #B0E0E6;
+        width: 280px;
+        text-align: center;
+    }
+
+    /* Подсветка слов */
+
+    .highlight {
+        color: #EE82EE;
+        font-weight: bold;
+    }
+
+    /* Отступы между кнопками темы и GitHub */
+
+    .theme-btn {
+        margin: 5px;
+    }
