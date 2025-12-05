@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-wrapper">
+        
+        <div class="info-block">
+            <p class="purpose">
+                Цель ЛР: <mark>Знакомство</mark> с инструментами: <mark>HTML</mark>, <mark>CSS</mark>.
+            </p>
+
+            <details class="author-details">
+                <summary>Автор</summary>
+                <p>ФИО: Бородин Артём</p>
+                <p>Группа: ИС-23</p>
+            </details>
+        </div>
+
+        <div class="calculator-container">
+            <div id="result" class="result">0</div>
+
+            <div class="buttons-container">
+                <!-- Первый ряд -->
+                <div class="button-row">
+                    <button id="btn_op_clear" class="my-btn secondary">C</button>
+                    <button id="btn_op_backspace" class="my-btn secondary">←</button>
+                    <button id="btn_op_div" class="my-btn primary">/</button>
+                    <button id="btn_op_mult" class="my-btn primary">x</button>
+                </div>
+
+                <!-- Второй ряд -->
+                <div class="button-row">
+                    <button id="btn_digit_7" class="my-btn">7</button>
+                    <button id="btn_digit_8" class="my-btn">8</button>
+                    <button id="btn_digit_9" class="my-btn">9</button>
+                    <button id="btn_op_minus" class="my-btn primary">-</button>
+                </div>
+
+                <!-- Третий ряд -->
+                <div class="button-row">
+                    <button id="btn_digit_4" class="my-btn">4</button>
+                    <button id="btn_digit_5" class="my-btn">5</button>
+                    <button id="btn_digit_6" class="my-btn">6</button>
+                    <button id="btn_op_plus" class="my-btn primary">+</button>
+                </div>
+
+                <!-- Четвёртый ряд -->
+                <div class="button-row">
+                    <button id="btn_digit_1" class="my-btn">1</button>
+                    <button id="btn_digit_2" class="my-btn">2</button>
+                    <button id="btn_digit_3" class="my-btn">3</button>
+                    <button id="btn_op_equal" class="my-btn primary execute">=</button>
+                </div>
+
+                <!-- Пятый ряд -->
+                <div class="button-row">
+                    <button id="btn_digit_0" class="my-btn">0</button>
+                    <button id="btn_digit_dot" class="my-btn">.</button>
+                    <button id="btn_digit_000" class="my-btn secondary">000</button>
+                </div>
+
+                <!-- Шестой ряд - Новые операции -->
+                <div class="button-row">
+                    <button id="btn_op_sign" class="my-btn secondary">+/-</button>
+                    <button id="btn_op_percent" class="my-btn secondary">%</button>
+                    <button id="btn_op_sqrt" class="my-btn secondary">√</button>
+                    <button id="btn_op_square" class="my-btn secondary">x²</button>
+                </div>
+
+                <!-- Седьмой ряд - Дополнительные операции -->
+                <div class="button-row">
+                    <button id="btn_op_factorial" class="my-btn secondary">x!</button>
+                    <button id="btn_change_bg_color" class="my-btn secondary">🎨 Bg</button>
+                    <button id="btn_op_change_result_color" class="my-btn secondary">🎨 Tx</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="extra-elements">
+            <button id="btn_theme_toggle" class="theme-btn">Сменить тему</button>
+
+            <select id="theme-select" class="theme-select">
+                <option value="default">Тема 1</option>
+                <option value="theme2">Тема 2</option>
+            </select>
+
+            <a href="https://github.com/artem5438" target="_blank" class="github-link">GitHub</a>
+        </div>
+
+        <footer class="footer">
+            ЛР выполнена ФИО: Бородин Артём Сергеевич
+        </footer>
+    </div>
+
+    <!-- ПРАВИЛЬНОЕ ПОДКЛЮЧЕНИЕ main.js -->
+    <script src="main.js"></script>
+
+    <!-- Скрипт для смены темы -->
+    <script>
+        const body = document.body;
+        const themeToggleBtn = document.getElementById('btn_theme_toggle');
+        const themeSelect = document.getElementById('theme-select');
+
+        if (themeToggleBtn) {
+            themeToggleBtn.addEventListener('click', function() {
+                body.classList.toggle('theme-alt');
+            });
+        }
+
+        if (themeSelect) {
+            themeSelect.addEventListener('change', function() {
+                if (this.value === 'theme2') {
+                    body.classList.add('theme-alt');
+                } else {
+                    body.classList.remove('theme-alt');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
