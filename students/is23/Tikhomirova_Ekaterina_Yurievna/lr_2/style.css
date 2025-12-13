@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f6f4;
+  color: #2c2c2c;
+  min-height: 100vh;
+}
+
+body.dark {
+  background: #1a1a1a;
+  color: white;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #D8FB00;
+  border-radius: 20px;
+}
+
+body.dark .header {
+  background: #2c3e50;
+}
+
+.header h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+#theme-toggle {
+  padding: 12px 24px;
+  background: #2c2c2c;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#theme-toggle:hover {
+  background: #1a1a1a;
+  transform: scale(1.05);
+}
+
+body.dark #theme-toggle {
+  background: #D8FB00;
+  color: #2c2c2c;
+}
+
+body.dark #theme-toggle:hover {
+  background: #c4e600;
+}
+
+.controls {
+  margin-bottom: 25px;
+}
+
+.controls > div {
+  margin-bottom: 15px;
+}
+
+.controls label {
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+select, .goal {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 15px;
+  border: 2px solid #e8e8e8;
+  background: white;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+select:hover {
+  border-color: #D8FB00;
+}
+
+body.dark select,
+body.dark .goal {
+  background: #404040;
+  color: white;
+  border-color: #555;
+}
+
+.goal {
+  line-height: 1.5;
+}
+
+.highlight {
+  background-color: #D8FB00;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+body.dark .highlight {
+  background-color: #2c3e50;
+  color: #D8FB00;
+}
+
+.calculator {
+  background: white;
+  border-radius: 25px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+body.dark .calculator {
+  background: #2d2d2d;
+}
+
+.display {
+  width: 100%;
+  height: 120px;
+  background: #f8f6f4;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 30px;
+  font-size: 48px;
+  font-family: 'Courier New', monospace;
+  border: 3px solid #e8e8e8;
+  transition: all 0.3s ease;
+}
+
+body.dark .display {
+  background: #1a1a1a;
+  color: #D8FB00;
+  border-color: #404040;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  height: 70px;
+  border: none;
+  border-radius: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn.number {
+  background: white;
+  color: #2c2c2c;
+  border: 2px solid #e8e8e8;
+}
+
+.btn.number:hover {
+  background: #f8f8f8;
+  border-color: #D8FB00;
+}
+
+body.dark .btn.number {
+  background: #404040;
+  color: white;
+  border-color: #555;
+}
+
+body.dark .btn.number:hover {
+  background: #505050;
+  border-color: #D8FB00;
+}
+
+.btn.operator {
+  background: #2c2c2c;
+  color: white;
+  font-size: 22px;
+}
+
+.btn.operator:hover {
+  background: #1a1a1a;
+}
+
+body.dark .btn.operator {
+  background: #D8FB00;
+  color: #2c2c2c;
+}
+
+body.dark .btn.operator:hover {
+  background: #c4e600;
+}
+
+.btn.special {
+  background: #e8e8e8;
+  color: #2c2c2c;
+  font-weight: 500;
+}
+
+.btn.special:hover {
+  background: #D8FB00;
+}
+
+body.dark .btn.special {
+  background: #555;
+  color: white;
+}
+
+body.dark .btn.special:hover {
+  background: #D8FB00;
+  color: #2c2c2c;
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+.equals {
+  grid-column: span 3;
+}
+
+.colors {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.colors button, .github-btn {
+  padding: 15px 25px;
+  background: #D8FB00;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  color: #2c2c2c;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.colors button:hover, .github-btn:hover {
+  background: #c4e600;
+  transform: scale(1.05);
+}
+
+.author {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+body.dark .author {
+  background: #2d2d2d;
+}
+
+.author summary {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.author p {
+  margin: 10px 0;
+}
+
+.footer {
+  padding: 25px;
+  background: #2c2c2c;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+}
+
+body.dark .footer {
+  background: #1a1a1a;
+}
+
+.body-color-1 { background: #f8f6f4; }
+.body-color-2 { background: #fff9e6; }
+.body-color-3 { background: #f0f8ff; }
+.body-color-4 { background: #f5f5f5; }
+
+body.dark.body-color-1 { background: #1a1a1a; }
+body.dark.body-color-2 { background: #2a2a2a; }
+body.dark.body-color-3 { background: #1a2a3a; }
+body.dark.body-color-4 { background: #2a1a2a; }
+
+.display-color-1 { background: #f8f6f4; color: #2c2c2c; }
+.display-color-2 { background: #fff9e6; color: #8b6b00; }
+.display-color-3 { background: #f0f8ff; color: #0066cc; }
+.display-color-4 { background: #f5f5f5; color: #666666; }
+
+body.dark .display-color-1 { background: #1a1a1a; color: #D8FB00; }
+body.dark .display-color-2 { background: #2a2a2a; color: #ffd700; }
+body.dark .display-color-3 { background: #1a2a3a; color: #66b3ff; }
+body.dark .display-color-4 { background: #2a1a2a; color: #cc99ff; }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+  
+  .buttons {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .btn {
+    height: 60px;
+    font-size: 18px;
+  }
+  
+  .display {
+    height: 100px;
+    font-size: 36px;
+    padding: 0 20px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+  }
+  
+  .colors {
+    flex-direction: column;
+  }
+  
+  .colors button, .github-btn {
+    width: 100%;
+  }
+}
