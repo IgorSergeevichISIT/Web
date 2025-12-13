@@ -1,0 +1,9 @@
+# macOS системные файлы
+.DS_Store
+
+# IDE
+.idea/
+
+# Node.js папка с зависимостями
+node_modules/
+
