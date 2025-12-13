@@ -38,7 +38,7 @@
 ## Скриншоты
 
 ### Общий вид калькулятора
-![Снимок экрана 2025-12-13 в 10.00.07.png](..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fvv%2Fxg0391l55fd7mk2lcrngwdlm0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_Y4WH0o%2F%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202025-12-13%20%D0%B2%2010.00.07.png)
+[Снимок экрана 2025-12-13 в 10.00.07.png](..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fvv%2Fxg0391l55fd7mk2lcrngwdlm0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_Y4WH0o%2F%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202025-12-13%20%D0%B2%2010.00.07.png)
 
 ---
 
