@@ -1,0 +1,17 @@
+{
+  "name": "lab3",
+  "version": "1.0.0",
+  "description": "Магазин продуктов с карточками товаров",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["продукты", "магазин", "bootstrap"],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}
