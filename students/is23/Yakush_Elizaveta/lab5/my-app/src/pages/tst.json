@@ -1,0 +1,53 @@
+{
+  "response": {
+    "count": 5,
+    "items": [
+      {
+        "id": 115706630,
+        "photo_200": "https:\/\/sun9-81.userapi.com\/impg\/DW4IDqvukChyc-WPXmzIot46En40R00idiUAXw\/l5w5aIHioYc.jpg?quality=96&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360&sign=10ad7d7953daabb7b0e707fdfb7ebefd&u=I6EtahnrCRLlyd0MhT2raQt6ydhuyxX4s72EHGuUSoM&cs=200x200",
+        "sex": 2,
+        "first_name": "Никита",
+        "last_name": "Якуш",
+        "can_access_closed": true,
+        "is_closed": false
+      },
+      {
+        "id": 323773073,
+        "photo_200": "https:\/\/sun9-81.userapi.com\/impg\/DW4IDqvukChyc-WPXmzIot46En40R00idiUAXw\/l5w5aIHioYc.jpg?quality=96&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360&sign=10ad7d7953daabb7b0e707fdfb7ebefd&u=I6EtahnrCRLlyd0MhT2raQt6ydhuyxX4s72EHGuUSoM&cs=200x200",
+        "sex": 2,
+        "first_name": "Артём",
+        "last_name": "Бородин",
+        "can_access_closed": true,
+        "is_closed": false
+      },
+      {
+        "id": 363299693,
+        "photo_200": "https:\/\/sun9-11.userapi.com\/s\/v1\/ig2\/DJGcOR3bce_q-h8I2tYrOnTO9iyKjWExEHuV-bj_vJ4mUE49wotuCdFrHkA381haerlu4OiBt4jSjcma19ufyzm4.jpg?quality=95&crop=472,962,1157,1157&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1080x1080&ava=1&cs=200x200",
+        "sex": 1,
+        "first_name": "Елизавета",
+        "last_name": "Якуш",
+        "can_access_closed": true,
+        "is_closed": true
+      },
+      {
+        "id": 363760495,
+        "photo_200": "https:\/\/sun9-81.userapi.com\/impg\/DW4IDqvukChyc-WPXmzIot46En40R00idiUAXw\/l5w5aIHioYc.jpg?quality=96&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360&sign=10ad7d7953daabb7b0e707fdfb7ebefd&u=I6EtahnrCRLlyd0MhT2raQt6ydhuyxX4s72EHGuUSoM&cs=200x200",
+        "sex": 2,
+        "first_name": "Никита",
+        "last_name": "Поляков",
+        "can_access_closed": true,
+        "is_closed": false
+      },
+      {
+        "id": 477910527,
+        "photo_200": "https:\/\/sun9-6.userapi.com\/s\/v1\/ig2\/NV5Oh6rsbcs4ENG5ur9DOe0GeoxMPpkc767SKSU9Zvq2ZfXEoX7H9Mss_sgcnK_8qxc-6j8quSjm_FSoGWa2SKUy.jpg?quality=95&crop=526,57,1713,1713&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1080x1080,1280x1280,1440x1440&ava=1&cs=200x200",
+        "sex": 2,
+        "first_name": "Иван",
+        "last_name": "Киселёв",
+        "can_access_closed": true,
+        "is_closed": false
+      }
+    ],
+    "next_from": ""
+  }
+}
