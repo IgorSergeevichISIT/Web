@@ -1,0 +1,17 @@
+{
+  "name": "dogs-api",
+  "version": "1.0.0",
+  "description": "API для пород собак",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.22.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
