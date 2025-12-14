@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Calculator Pro</h1>
+      <button id="theme-toggle">🌙 Тема</button>
+    </header>
+
+    <main class="main">
+      <div class="controls">
+        <div>
+          <label>Тип вычислений:</label>
+          <select id="calculation-type">
+            <option value="basic">Базовые операции</option>
+            <option value="scientific">Научные вычисления</option>
+            <option value="financial">Финансовые расчеты</option>
+          </select>
+        </div>
+        
+        <div>
+          <label>Цель лабораторной работы:</label>
+          <div class="goal" id="lab-goal">
+            Разработка веб-приложения "Калькулятор" с использованием HTML, CSS и TypeScript для изучения работы обработки событий и создания интерактивного пользовательского интерфейса.
+          </div>
+        </div>
+      </div>
+
+      <div class="calculator">
+        <div class="display" id="result">0</div>
+        
+        <div class="buttons">
+          <button class="btn special" data-action="clear">C</button>
+          <button class="btn special" data-action="backspace">⌫</button>
+          <button class="btn special" data-action="percentage">%</button>
+          <button class="btn special" data-action="sqrt">√</button>
+          <button class="btn special" data-action="square">x²</button>
+          <button class="btn operator" data-action="divide">/</button>
+
+          <button class="btn number" data-number="7">7</button>
+          <button class="btn number" data-number="8">8</button>
+          <button class="btn number" data-number="9">9</button>
+          <button class="btn special" data-action="factorial">x!</button>
+          <button class="btn special" data-action="cube">x³</button>
+          <button class="btn operator" data-action="multiply">×</button>
+
+          <button class="btn number" data-number="4">4</button>
+          <button class="btn number" data-number="5">5</button>
+          <button class="btn number" data-number="6">6</button>
+          <button class="btn special" data-action="toggleSign">±</button>
+          <button class="btn special" data-action="addZeros">000</button>
+          <button class="btn operator" data-action="subtract">-</button>
+
+          <button class="btn number" data-number="1">1</button>
+          <button class="btn number" data-number="2">2</button>
+          <button class="btn number" data-number="3">3</button>
+          <button class="btn number wide" data-number="0">0</button>
+          <button class="btn number" data-number=".">.</button>
+          <button class="btn operator" data-action="add">+</button>
+
+          <button class="btn operator equals" data-action="calculate">=</button>
+        </div>
+
+        <div class="colors">
+          <button id="change-bg-color">🎨 Цвет фона</button>
+          <button id="change-display-color">🖥️ Цвет экрана</button>
+          <a href="https://github.com/teoxxid" target="_blank" class="github-btn">📂 Мой GitHub</a>
+        </div>
+      </div>
+
+      <div class="author">
+        <details>
+          <summary>👤 Информация об авторе</summary>
+          <div>
+            <p><strong>ФИО:</strong> Тихомирова Екатерина Юрьевна</p>
+            <p><strong>Группа:</strong> ИС-23</p>
+            <p><strong>Специальность:</strong> Информационные системы</p>
+          </div>
+        </details>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p><strong>Лабораторная работа выполнена:</strong> Тихомировой Екатериной Юрьевной</p>
+      <p>© 2025 Все права защищены</p>
+    </footer>
+  </div>
+
+  <script src="calculator.js"></script>
+</body>
+</html>
