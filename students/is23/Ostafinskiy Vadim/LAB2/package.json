@@ -1,0 +1,18 @@
+{
+  "name": "calculator-lab",
+  "version": "1.0.0",
+  "description": "Калькулятор на TypeScript",
+  "main": "dist/script.js",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "start": "npx live-server .",
+    "dev": "tsc --watch"
+  },
+  "keywords": ["calculator", "typescript", "html", "css"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

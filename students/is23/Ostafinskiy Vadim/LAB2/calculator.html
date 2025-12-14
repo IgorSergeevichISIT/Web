@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="dist/script.js" defer></script>
+</head>
+<body>
+    <p class="lab-purpose">Цель ЛР: <mark>Знакомство</mark> с <mark>HTML</mark> и <mark>CSS</mark> для создания веб-калькулятора.</p>
+    <div class="calculator">
+        <div id="result" class="result">0</div>
+        <div class="buttons-grid">
+            <div class="button-row">
+                <button id="btn_op_clear" class="my-btn secondary">C</button>
+                <button id="btn_op_backspace" class="my-btn secondary">⌫</button>
+                <button id="btn_op_sqrt" class="my-btn secondary">√</button>
+                <button id="btn_op_div" class="my-btn primary">/</button>
+            </div>
+            
+            <div class="button-row">
+                <button id="btn_op_square" class="my-btn secondary">x²</button>
+                <button id="btn_op_cube" class="my-btn secondary">x³</button>
+                <button id="btn_op_factorial" class="my-btn secondary">x!</button>
+                <button id="btn_op_mult" class="my-btn primary">×</button>
+            </div>
+            
+            <div class="button-row">
+                <button id="btn_digit_7" class="my-btn digit">7</button>
+                <button id="btn_digit_8" class="my-btn digit">8</button>
+                <button id="btn_digit_9" class="my-btn digit">9</button>
+                <button id="btn_op_minus" class="my-btn primary">-</button>
+            </div>
+            
+            <div class="button-row">
+                <button id="btn_digit_4" class="my-btn digit">4</button>
+                <button id="btn_digit_5" class="my-btn digit">5</button>
+                <button id="btn_digit_6" class="my-btn digit">6</button>
+                <button id="btn_op_plus" class="my-btn primary">+</button>
+            </div>
+            
+            <div class="button-row">
+                <button id="btn_digit_1" class="my-btn digit">1</button>
+                <button id="btn_digit_2" class="my-btn digit">2</button>
+                <button id="btn_digit_3" class="my-btn digit">3</button>
+                <button id="btn_op_equal" class="my-btn primary execute">=</button>
+            </div>
+            
+            <div class="button-row">
+                <button id="btn_digit_0" class="my-btn digit wide">0</button>
+                <button id="btn_digit_dot" class="my-btn digit">.</button>
+                <button id="btn_op_triple_zero" class="my-btn secondary">000</button>
+            </div>
+            
+            <div class="button-row">
+                <button id="btn_op_sign" class="my-btn secondary">+/-</button>
+                <button id="btn_op_percent" class="my-btn secondary">%</button>
+            </div>
+            
+            <div class="button-row">
+                <button id="theme-toggle" class="my-btn theme-btn">Сменить тему фона</button>
+                <button id="display-theme-toggle" class="my-btn theme-btn">Сменить тему экрана</button>
+            </div>
+            
+            <div class="button-row">
+                <a href="https://github.com/Slavyanin2005/Calculator_lab" class="my-btn git-btn" target="_blank">GitHub</a>
+            </div>
+            
+            <div class="button-row">
+                <div class="select-container">
+                    <label for="options">Выберите опцию:</label>
+                    <select id="options" class="my-select">
+                        <option value="option1">Опция 1</option>
+                        <option value="option2">Опция 2</option>
+                        <option value="option3">Опция 3</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <details>
+        <summary>Автор</summary>
+        <p>ФИО: Остафинский В. А.</p>
+        <p>Группа: ИС-23</p>
+    </details>
+</body>
+</html>

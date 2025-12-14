@@ -1,0 +1,19 @@
+{
+  "name": "vk-users-api",
+  "version": "1.0.0",
+  "description": "API для пользователей VK с возможностью добавления",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "axios": "^1.6.0",
+    "node-fetch": "^2.6.9"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
