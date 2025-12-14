@@ -96,25 +96,6 @@ export class MainPage {
                 if (value === "man") items = items.filter(u => u.sex === 2);
                 if (value === "woman") items = items.filter(u => u.sex === 1);
 
-                //if (value === "man" || value === "MAN" || value === "Man" || value.trim().toLowerCase() === "мужчина") {
-                //     items = items.filter(u => {
-                //         if (u.sex === 2) {
-                //             return true;
-                //         } else {
-                //             return false;
-                //         }
-                //     });
-                // } else if (value === "woman" || value === "WOMAN" || value === "Woman" || value.trim().toLowerCase() === "женщина") {
-                //     items = items.filter(u => {
-                //         if (u.sex === 1) {
-                //             return true;
-                //         } else {
-                //             return false;
-                //         }
-                //     });
-                // } else {
-                //     items = items;
-                // }
 
                 this.renderData(items);
 
