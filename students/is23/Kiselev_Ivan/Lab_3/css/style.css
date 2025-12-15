@@ -1,0 +1,65 @@
+body {
+    padding: 20px;
+    background-color: #caf0ff;
+    font-family: 'Segoe UI';
+}
+
+.card {
+    margin: 15px;
+    border: none;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+.toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1050;
+}
+
+.toast {
+    min-width: 320px;
+    max-width: 400px;
+    border-radius: 12px;
+}
+
+.toast-header {
+    border-bottom: none;
+    padding: 10px 15px;
+}
+
+.toast-body {
+    padding: 15px;
+    font-size: 0.95rem;
+}
+
+/* Стили для страницы продукта */
+#product-page .card {
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+#product-page .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#product-page .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#product-page .card-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}

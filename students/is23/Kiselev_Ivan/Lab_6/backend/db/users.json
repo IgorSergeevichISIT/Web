@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "first_name": "Иван",
+    "last_name": "Киселёв",
+    "photo_200": "https://placehold.co/200x200/4A90E2/FFFFFF?text=ИК",
+    "bdate": "12.06.2005",
+    "domain": "ivan_kiselev"
+  },
+  {
+    "id": 2,
+    "first_name": "Артём",
+    "last_name": "Бородин",
+    "photo_200": "https://placehold.co/200x200/50C878/FFFFFF?text=АБ",
+    "bdate": "05.08.2004",
+    "domain": "artem_borodin"
+  },
+  {
+    "id": 3,
+    "first_name": "Илья",
+    "last_name": "Сныткин",
+    "photo_200": "https://placehold.co/200x200/FF6F61/FFFFFF?text=АС",
+    "bdate": "22.03.1999",
+    "domain": "ilya_snitkin"
+  },
+  {
+    "id": 4,
+    "first_name": "Никита",
+    "last_name": "Поляков",
+    "photo_200": "https://placehold.co/200x200/FF6F61/FFFFFF?text=НП",
+    "bdate": "22.03.1999",
+    "domain": "nik_polyakov"
+  },
+  {
+    "first_name": "Евгений",
+    "last_name": "Розин",
+    "photo_200": "https://i.pinimg.com/736x/16/eb/27/16eb2770ae424ada34867f3de1b8e418.jpg",
+    "bdate": "12.12.2005",
+    "domain": "CoolNickname",
+    "id": 5
+  }
+]
