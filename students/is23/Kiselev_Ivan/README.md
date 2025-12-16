@@ -20,3 +20,5 @@
 ---
 
 > Файлы `README.md` внутри директорий `Lab_1 - Lab_6` содержат поясниткльное описание к каждой лабораторной работе.
+
+### Ссылка на GitHub Pages (используется отдельный, публичный репозиторий) - [https://valder111.github.io/EDU-WEB-labs/](https://valder111.github.io/EDU-WEB-labs/)
