@@ -1,0 +1,114 @@
+
+.my-btn { 
+  margin-right: 5px;           
+  margin-top: 5px;            
+  width: 50px;                 
+  height: 50px;                
+  background: #ff4949;         
+  color: white;                
+  font-size: 1.4rem;           
+  font-family: 'Agency FB'; 
+  cursor: pointer;
+  user-select: none;
+} 
+
+
+.my-btn:hover {
+  background: #484bff; 
+}
+
+
+.my-btn:active {
+  filter: brightness(130%); 
+}
+
+
+.my-btn.primary { 
+  background: #484bff; 
+}
+
+.my-btn.primary:hover { 
+  background: #ff4949; 
+}
+
+
+.my-btn.secondary { 
+  background: #ffffff; 
+  color: #000000;
+}
+
+
+.my-btn.execute { 
+  width: 110px;          
+}
+
+.my-btn.mode { 
+  width: 100px;          
+}
+
+.my-btn.git { 
+  width: 50px;
+}
+
+
+.result { 
+  width: 220px;
+  height: 50px;
+  border-radius: 40px;
+  margin-bottom: 15px;         
+  padding-right: 10px;         
+  padding-top: 10px;
+  background: #ffffff; 
+  text-align: right;           
+  color: #000000;              
+  font-size: 1.5rem;
+  font-family: 'Agency FB';
+}
+
+.calculator-background {
+  background-color:navy;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  width: 240px; 
+  height: 480px; 
+  padding: 10px; 
+  justify-items: center;
+}
+
+.calculator-background {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.calculator-background.dark-theme {
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+.calculator-background.dark-theme .my-btn {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+.calculator-background.dark-theme .my-btn.primary {
+    background-color: #0066cc;
+}
+
+.calculator-background.dark-theme .my-btn.secondary {
+    background-color: #555;
+}
+
+.calculator-background.dark-theme .result {
+  background-color: #444;
+    color:#fff;
+}
+
+.author-credits {
+  color: aquamarine;
+  font-size: medium;
+  font-family: sans-serif;
+  margin: 10px;
+}
