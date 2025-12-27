@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="theme-switcher">
+        <button id="themeToggle" class="theme-btn">Сменить тему</button>
+    </div>
+
+    <div class="calculator-container">
+        <details class="implementation-details">
+            <summary>Автор</summary>
+            <div class="details-content">
+                <p><strong>ФИО:</strong> Янко Ирина Юрьевна</p>
+                <p><strong>Группа:</strong> ИС-23</p>
+            </div>
+        </details>
+
+        <details class="implementation-details">
+            <summary>Цель лабораторной работы</summary>
+            <div class="details-content">
+                <p>Цель работы: <mark>знакомство</mark> с технологиями <mark>HTML</mark> и <mark>CSS</mark>, создание интерактивного веб-приложения - калькулятора.</p>
+            </div>
+        </details>
+
+        <div class="dropdown-container">
+            <select id="operationMode" class="dropdown">
+                <option value="Базовые операции">Базовые операции</option>
+                <option value="Научный режим">Научный режим</option>
+                <option value="Программистский режим">Программистский режим</option>
+            </select>
+        </div>
+
+        <!-- Основной калькулятор -->
+        <div class="calculator">
+            <!-- Экран калькулятора -->
+            <div id="result" class="result">
+                0
+            </div>
+
+            <div class="buttons-container">
+                <div class="button-row">
+                    <button id="btn_op_clear" class="my-btn secondary">C</button>
+                    <button id="btn_op_backspace" class="my-btn secondary">⌫</button>
+                    <button id="btn_op_sign" class="my-btn secondary">+/-</button>
+                    <button id="btn_op_percent" class="my-btn secondary">%</button>
+                    <button id="btn_op_div" class="my-btn primary">/</button>
+                </div>
+
+                <div class="button-row">
+                    <button id="btn_op_sqrt" class="my-btn scientific">√</button>
+                    <button id="btn_op_square" class="my-btn scientific">x²</button>
+                    <button id="btn_op_factorial" class="my-btn scientific">x!</button>
+                    <button id="btn_op_custom" class="my-btn scientific custom">x³</button>
+                    <button id="btn_op_mult" class="my-btn primary">x</button>
+                </div>
+
+                <div class="button-row">
+                    <button id="btn_digit_7" class="my-btn">7</button>
+                    <button id="btn_digit_8" class="my-btn">8</button>
+                    <button id="btn_digit_9" class="my-btn">9</button>
+                    <button id="btn_triple_zero" class="my-btn">000</button>
+                    <button id="btn_op_minus" class="my-btn primary">-</button>
+                </div>
+
+                <div class="button-row">
+                    <button id="btn_digit_4" class="my-btn">4</button>
+                    <button id="btn_digit_5" class="my-btn">5</button>
+                    <button id="btn_digit_6" class="my-btn">6</button>
+                    <button id="btn_result_color" class="my-btn color-btn">#</button>
+                    <button id="btn_op_plus" class="my-btn primary">+</button>
+                </div>
+
+                <div class="button-row">
+                    <button id="btn_digit_1" class="my-btn">1</button>
+                    <button id="btn_digit_2" class="my-btn">2</button>
+                    <button id="btn_digit_3" class="my-btn">3</button>
+                    <button id="btn_bg_color" class="my-btn color-btn">@</button>
+                    <button id="btn_op_equal" class="my-btn primary execute">=</button>
+                </div>
+
+                <div class="button-row">
+                    <button id="btn_digit_0" class="my-btn zero">0</button>
+                    <button id="btn_digit_dot" class="my-btn">.</button>
+                    <button id="btn_accumulate_plus" class="my-btn accumulate">+∑</button>
+                    <button id="btn_accumulate_minus" class="my-btn accumulate">-∑</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Кнопка GitHub -->
+        <div class="github-section">
+            <a href="https://github.com" target="_blank" class="github-btn">
+                 GitHub
+            </a>
+        </div>
+
+        <div class="signature">
+            ЛР Янко Ирина Юрьевна
+        </div>
+    </div>
+
+    <script src="dist/calculator.js"></script>
+</body>
+
+</html>
