@@ -1,0 +1,372 @@
+/* СТИЛИ ДЛЯ КАЛЬКУЛЯТОРА */
+/* Добавил красивые шрифты с гугла */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* сброс стандартных отступов */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* тело страницы */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+/* контейнер калькулятора */
+.calculator-container {
+    width: 400px;
+    background: #0a0a0a;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 50px auto;
+    border: 2px solid gold;
+    box-shadow: 0 0 10px gold;
+    transition: all 0.3s ease;
+}
+
+/* Кнопка темы */
+.theme-btn {
+    background: gold;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.theme-btn:hover {
+    background: yellow;
+    transform: scale(1.05);
+}
+
+/* Светлая тема */
+body.light-theme {
+    background: white;
+    color: black;
+}
+
+body.light-theme .calculator-container {
+    background: white;
+    border: 2px solid gold;
+    box-shadow: 0 0 10px gold;
+}
+
+/* Блоки с информацией */
+.implementation-details {
+    background: #111;
+    border: 1px solid gold;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.implementation-details summary {
+    color: gold;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.implementation-details summary:hover {
+    color: yellow;
+}
+
+.details-content {
+    margin-top: 10px;
+    padding: 10px;
+    background: #1a1a1a;
+    border-radius: 5px;
+    color: gold;
+    transition: all 0.3s ease;
+}
+
+body.light-theme .implementation-details {
+    background: #f8f8f8;
+    border-color: #8b6914;
+}
+
+body.light-theme .details-content {
+    background: #f0f0f0;
+    color: #8b6914;
+}
+
+/* Выпадающий список */
+.dropdown {
+    width: 100%;
+    padding: 10px;
+    background: #111;
+    color: gold;
+    border: 1px solid gold;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dropdown:hover {
+    border-color: yellow;
+}
+
+body.light-theme .dropdown {
+    background: gold;
+    color: #8b6914;
+    border-color: #8b6914;
+}
+
+body.light-theme .dropdown:hover {
+    background: yellow;
+}
+
+/* Калькулятор */
+.calculator {
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid gold;
+    transition: all 0.3s ease;
+}
+
+body.light-theme .calculator {
+    background: white;
+    border: 1px solid #ddd;
+}
+
+/* Экран результата */
+.result {
+    width: 100%;
+    height: 70px;
+    background: #111;
+    color: gold;
+    font-size: 2em;
+    text-align: right;
+    border: 2px solid #333;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    line-height: 75px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+body.light-theme .result {
+    background: #f8f8f8;
+    color: #8b6914;
+    border-color: #ddd;
+}
+
+/* Кнопки */
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button-row {
+    display: flex;
+    gap: 8px;
+}
+
+.my-btn {
+    flex: 1;
+    height: 60px;
+    background: #111;
+    color: gold;
+    border: 1px solid #333;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-btn:hover {
+    background: gold;
+    color: black;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3);
+}
+
+.my-btn:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.my-btn.zero {
+    flex: 2;
+}
+
+/* Особые кнопки */
+.my-btn.secondary {
+    background: #1a1a1a;
+    color: gold;
+}
+
+.my-btn.primary {
+    background: gold;
+    color: black;
+    border: 1px solid gold;
+    font-weight: 600;
+}
+
+.my-btn.primary:hover {
+    background: yellow;
+    border-color: yellow;
+}
+
+.my-btn.execute {
+    background: gold;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.my-btn.execute:hover {
+    background: yellow;
+}
+
+/* Научные кнопки */
+.my-btn.scientific {
+    background: #2a0a4a;
+    color: #b19cd9;
+    border: 1px solid #4b0082;
+}
+
+.my-btn.scientific:hover {
+    background: #4b0082;
+    color: white;
+}
+
+.my-btn.scientific.custom {
+    background: #0a2a4a;
+    color: #87ceeb;
+    border: 1px solid #1e90ff;
+}
+
+.my-btn.scientific.custom:hover {
+    background: #1e90ff;
+    color: white;
+}
+
+/* Кнопки накопления */
+.my-btn.accumulate {
+    background: #0a4a2a;
+    color: #90ee90;
+    border: 1px solid #32cd32;
+}
+
+.my-btn.accumulate:hover {
+    background: #32cd32;
+    color: white;
+}
+
+/* Цветные кнопки */
+.my-btn.color-btn {
+    background: linear-gradient(45deg, #ff6b6b, #ffeaa7);
+    color: black;
+    border: 1px solid white;
+    font-weight: 600;
+}
+
+.my-btn.color-btn:hover {
+    background: linear-gradient(45deg, #ff8e8e, #fff1c2);
+    transform: scale(1.05);
+}
+
+/* Гитхаб кнопка */
+.github-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.github-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: gold;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.github-btn:hover {
+    background: yellow;
+    transform: scale(1.05);
+}
+
+/* Подпись */
+.signature {
+    text-align: center;
+    margin-top: 15px;
+    color: gold;
+    background: #111;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+}
+
+body.light-theme .signature {
+    background: #f8f8f8;
+    color: #8b6914;
+    border-color: #ddd;
+}
+
+/* Подсветка текста */
+mark {
+    background: rgba(255, 215, 0, 0.2);
+    color: gold;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+/* Анимация для кнопок */
+.my-btn.pressed {
+    transform: scale(0.95);
+}
+
+/* Стиль для ошибок */
+.result.error {
+    color: #ff6b6b;
+    border-color: #ff6b6b;
+    background: #2a0a0a;
+}
+
+/* дополнительные стили для красоты */
+.calculator-container {
+    position: relative;
+}
+
+.theme-switcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+
+/* Специфические стили для кнопок с иконками */
+.my-btn:nth-child(2) { /* Backspace */
+    font-size: 1.4em;
+}
+
+.my-btn.color-btn {
+    font-size: 1.3em;
+}
