@@ -16,4 +16,7 @@
 -  [Лабораторная работа №5](LAB5/README.md)
 -  [Лабораторная работа №6](LAB6/README.md)
 
+---
 
+Список лабораторных работ на GitPages
+- [Web-страница](https://slavyanin2005.github.io/WebPages/)
