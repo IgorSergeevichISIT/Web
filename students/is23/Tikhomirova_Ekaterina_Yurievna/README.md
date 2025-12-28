@@ -8,3 +8,5 @@
 -  [Лабораторная работа №4](lr_4/README.md)
 -  [Лабораторная работа №5](lr_5/README.md)
 -  [Лабораторная работа №6](lr_6/README.md)
+
+Посмотреть все работы можно по ссылке: [Github Pages](https://teoxxid.github.io/labs_web/)
