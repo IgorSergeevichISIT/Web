@@ -1,0 +1,84 @@
+.my-btn { 
+  margin-right: 5px;   
+  margin-top: 5px; 
+  width: 50px;         
+  height: 50px;            
+  background: #ff4949;         
+  color: white;               
+  font-size: 1.4rem;          
+  font-family: 'Agency FB'; 
+  cursor: pointer;             
+  user-select: none;           
+} 
+
+
+.my-btn:hover {
+  background: #484bff;
+  transform: translate(5px, -5px); 
+}
+
+
+.my-btn:active {
+  filter: brightness(130%); 
+}
+
+
+.my-btn.primary { 
+  background: #484bff;
+  font-weight: 900; 
+}
+
+.my-btn.primary:hover { 
+  background: #ff4949; 
+}
+
+
+.my-btn.secondary { 
+  background: #ffffff; 
+  color: #000000;
+  font-weight: 100;
+}
+
+
+.my-btn.execute { 
+  width: 110px;          
+}
+
+.my-btn.mode { 
+  width: 170px;          
+}
+
+.my-btn.git { 
+  width: 50px;          
+}
+
+
+.result { 
+  width: 220px;
+  height: 50px;
+  border-radius: 40px;
+  margin-bottom: 15px;        
+  padding-right: 10px;         
+  padding-top: 10px;
+  background: #ffffff; 
+  text-align: right;          
+  color: #000000;              
+  font-size: 1.5rem;
+  font-family: 'Agency FB';
+}
+
+.calculator-background {
+  background-color:navy; 
+  width: 20vw; 
+  height: 55vh; 
+  padding: 10px; 
+  justify-items: center;
+  transition: transform 0.5s ease;
+}
+
+.author-credits {
+  color:lavender;
+  font-size: medium;
+  font-family: sans-serif;
+  margin: 10px;
+}

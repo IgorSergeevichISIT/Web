@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Калькулятор</title>
+</head>
+
+<body style="background-image: url('i.jpg')">
+  <div style="display: flexbox; justify-items: center;"> 
+    <div class="calculator-background" style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr;">
+      <div id="result" class="result" style="grid-column: 1/5;">0</div>
+        <button id="btn_op_clear" class="my-btn secondary">C</button>
+        <button id="btn_op_sign" class="my-btn secondary">+/-</button>
+        <button id="btn_op_percent" class="my-btn secondary">%</button>
+        <button id="btn_op_div" class="my-btn secondary">/</button>
+
+        <button id="btn_digit_7" class="my-btn">7</button>
+        <button id="btn_digit_8" class="my-btn">8</button>
+        <button id="btn_digit_9" class="my-btn">9</button>
+        <button id="btn_op_mult" class="my-btn primary">x</button>
+
+
+        <button id="btn_digit_4" class="my-btn">4</button>
+        <button id="btn_digit_5" class="my-btn">5</button>
+        <button id="btn_digit_6" class="my-btn">6</button>
+        <button id="btn_op_minus" class="my-btn primary">-</button>
+
+        <button id="btn_digit_1" class="my-btn">1</button>
+        <button id="btn_digit_2" class="my-btn">2</button>
+        <button id="btn_digit_3" class="my-btn">3</button>
+        <button id="btn_op_plus" class="my-btn primary">+</button>
+
+        <button id="btn_digit_0" class="my-btn">0</button>
+        <button id="btn_digit_dot" class="my-btn">.</button>
+        <button id="btn_op_equal" class="my-btn primary execute" style="grid-column: 3/5;">=</button>
+
+        <button id="btn_mode" class="my-btn mode" style="grid-column: 1/4;">Mode</button>
+        <button id="btn_git" class="my-btn git"><a href="https://github.com">Git</a></button>
+      </div>
+    </div>
+        <div style="background-color:mediumblue">
+          <p class="author-credits">Цель данной лабораторной работы - <i>знакомство</i> с инструментами построения пользовательских интерфейсов web-сайтов: <u>HTML</u>, <b>CSS</b>. В ходе выполнения работы предстоит ознакомиться с кодом реализации простого калькулятора, и затем выполнить задания по варианту.</p>
+          <p class="author-credits">Лабораторная работа №1</p>
+          <details>  
+            <summary class="author-credits">Автор</summary>  
+            <p class="author-credits">Долгополов М. Ю., ИС-23</p>  
+          </details>
+        </div>  
+  </div>
+</body>
+</html>

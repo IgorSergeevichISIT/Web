@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" type="text/html">
+<head>
+    <meta charset="UTF-8">
+    <title>VK Members App</title>
+    <link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        /*Анимации*/
+        @keyframes gradientFlowBackground {
+            0% {
+            background-position: 0% 50%;
+            }
+            50% {
+            background-position: 100% 50%;
+            }
+            100% {
+            background-position: 0% 50%;
+            }
+        }
+
+        body.background {
+            font-family: 'Ubuntu Mono', monospace;
+            overflow-x: hidden;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            background: linear-gradient(-45deg, #2c3e50, #34495e, #7f8c8d, #95a5a6);
+            background-size: 400% 400%;
+            animation: gradientFlowBackground 15s ease infinite;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body class="background">
+<div id="root"></div>
+<script src="main.js" type="module"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
