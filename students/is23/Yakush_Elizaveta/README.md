@@ -15,5 +15,7 @@
 -  [Лабораторная работа №4](lab4/README.md)
 -  [Лабораторная работа №5](lab5/README.md)
 -  [Лабораторная работа №6](lab6/README.md)
-
+ 
+Cсылка на GitHub.io:
+https://elizansk.github.io/Web/
 
