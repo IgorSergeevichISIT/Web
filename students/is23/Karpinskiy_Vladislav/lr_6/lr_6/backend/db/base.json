@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Алексей Иванов",
+    "text": "Frontend разработчик, любит React и UI",
+    "src": "./assets/ava1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Мария Смирнова",
+    "text": "Backend разработчик, Node.js и базы данных",
+    "src": "./assets/ava2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Дмитрий Кузнецов",
+    "text": "Fullstack разработчик, любит Express и Vue",
+    "src": "./assets/ava4.jpg"
+  }
+]

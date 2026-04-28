@@ -1,0 +1,166 @@
+/* опишем базовый стиль кнопки калькулятора */
+.my-btn {   
+  margin: 5px;           /* одинаковые отступы со всех сторон */
+  width: 65px;              /* увеличим */
+  height: 60px;
+  border-radius: 8px;
+  border: none;
+  background: #565656;
+  color: rgb(227, 226, 224);
+  font-size: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between; /* центрируем кнопки */
+    gap: 10px;
+    margin-bottom: 10px; /* расстояние между кнопками */
+}
+
+.calculator {
+  width:320px; /* Фиксированная ширина калькулятора */
+  margin: 50px auto; /* Центрирование по горизонтали и отступ сверху  */
+  padding: 20px; /* Внутренний отступ */
+  background-color: #1f1e1e; /* Фон основного блока калькулятора */
+  border-radius: 10px; /* Скругление углов основного блока */
+  display: inline-block;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* чтобы надпись под калькулятором */
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    margin: 0;
+    background: rgba(187, 223, 241, 0.964); /* пример фона */
+    background: url(uch.png);
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+/* Задание 18: Сворачивающиеся и разворачивающиеся подробности */
+.author {
+    margin-top: 1px;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid #094298; /* рамка */
+    border-radius: 5px;
+    background: #197ab2;
+    margin-bottom: 20px;
+    color: #ffffff;
+    width: 305px;
+}
+
+
+.footer {
+    text-align: center;
+    margin-top: 5px;
+    color: #efefef;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.target {
+    margin-top: 5px;
+    color: #efefef;
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+.extras {
+  margin-top: 10px;
+}
+
+.theme-btn {
+    padding: 8px 15px;
+    width: 310px;
+    padding: 10px;
+    background-color: #53c1ad; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+.opt-select {
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #53c1ad;
+    border: 1px solid #ccc;
+    margin: 5px;
+    cursor: pointer;
+    height: 33px;
+    width: 210px;
+}
+
+.github-link {
+    padding: 8px 17px;
+    line-height: 60px;
+    background-color: #6c757d; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+    margin: 5px;
+}
+
+/* обращение к псевдоклассу */
+.github-link:hover {
+    background-color: #5a6268;
+}
+
+
+
+/* hover - это состояние элемента, когда на него наведен курсор */
+.my-btn:hover,
+.my-btn.execute:hover,
+.my-btn.primary:hover,
+.my-btn.secondary:hover {
+  transform: scale(1.05);
+}
+
+
+/* active - это состояние активации элемента. В случае кнопки - нажатие на нее */
+.my-btn:active {
+  filter: brightness(130%); /* увеличим интенсивность цвета для эффекта вспышки */
+}
+
+/* селектор для кнопок первостепенных операций */
+.my-btn.primary { 
+  background: #197ab2; /* цвет кнопки оранжевый */
+}
+
+/* селектор для кнопок второстепенных операций */
+.my-btn.secondary { 
+  background: #11595d; /* цвет кнопки сервый */
+}
+
+/* селектор для кнопки расчета выражения (=) */
+.my-btn.execute { 
+  width: 150px;          /* сделаем кнопку шире других */
+  border-radius: 5px;   /* подкорректируем округлость */
+}
+
+/* селектор для поля вывода результата */
+.result { 
+  width: 295px;
+  height: 50px;
+  border-radius: 5px;
+  line-height: 50px;
+  margin: 5px;
+  margin-bottom: 10px;         /* отступ снизу */         /* выступ справа */
+  background: rgb(216, 218, 218); /* цвет можно задавать и таким образом */
+  text-align: right;           /* примагнитим текст к правой стороне */
+  padding-right: 15px;
+  color: #171617;              /* цвет текста белый */
+  font-size: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
